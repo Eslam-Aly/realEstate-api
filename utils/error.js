@@ -1,0 +1,8 @@
+const errorHandler = (statusCode, messsage) => {
+  const error = new Error();
+  error.statusCode = statusCode;
+  error.message = messsage;
+  return error;
+};
+
+export default errorHandler;
