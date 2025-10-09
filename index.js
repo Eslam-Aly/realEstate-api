@@ -3,10 +3,12 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRoute from "./routees/user.route.js";
 import authRoute from "./routees/auth.route.js";
+import cookieParser from "cookie-parser";
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 
 mongoose
   .connect(process.env.MONGO)
