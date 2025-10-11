@@ -1,7 +1,8 @@
 import bcryptjs from "bcryptjs";
-import jwt from "jsonwebtoken";
+
 import User from "../models/User.model.js";
 import errorHandler from "../utils/error.js";
+import Listing from "../models/Listing.model.js";
 
 export const test = (req, res) => {
   res.json({ message: "api route is working" });
@@ -39,6 +40,21 @@ export const deleteUser = async (req, res, next) => {
     await User.findByIdAndDelete(req.params.id);
     res.clearCookie("access_token");
     res.status(200).json("User has been deleted.");
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const getUserListings = async (req, res, next) => {
+  try {
+    const userId = req.params.id || req.user.id;
+
+    if (req.user.id !== userId) {
+      return next(errorHandler(401, "You can access only your listings!"));
+    }
+
+    const listings = await Listing.find({ userRef: userId });
+    res.status(200).json(listings);
   } catch (error) {
     next(error);
   }
