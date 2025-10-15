@@ -88,8 +88,18 @@ export const getListings = async (req, res, next) => {
     if (req.query.furnished === "true") filter.furnished = true;
     if (req.query.parking === "true") filter.parking = true;
 
+    // Handle type filtering for rent/sale categories and specific types
     if (typeof req.query.type === "string" && req.query.type !== "false") {
-      filter.type = req.query.type; // "rent" | "sale"
+      if (req.query.type === "rent") {
+        // Match any type containing "Rent"
+        filter.type = { $regex: "Rent", $options: "i" };
+      } else if (req.query.type === "sale") {
+        // Match any type containing "Sale"
+        filter.type = { $regex: "Sale", $options: "i" };
+      } else {
+        // Exact match for specific types (apartmentRent, apartmentSale, etc.)
+        filter.type = req.query.type;
+      }
     }
 
     const listings = await Listing.find(filter)
