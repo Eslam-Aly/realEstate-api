@@ -1,10 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import userRoute from "./routees/user.route.js";
-import authRoute from "./routees/auth.route.js";
+import userRoute from "./routes/user.route.js";
+import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
-import listingsRoute from "./routees/listings.route.js";
+import listingsRoute from "./routes/listings.route.js";
+import locationsRoute from "./routes/locations.route.js";
 dotenv.config();
 
 const app = express();
@@ -30,6 +31,7 @@ app.listen(3000, () => {
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/listings", listingsRoute);
+app.use("/api/locations", locationsRoute);
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

@@ -1,7 +1,7 @@
-const errorHandler = (statusCode, messsage) => {
-  const error = new Error();
+// utils/error.js
+const errorHandler = (statusCode, message) => {
+  const error = new Error(message);
   error.statusCode = statusCode;
-  error.message = messsage;
   return error;
 };
 
