@@ -6,6 +6,8 @@ import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import listingsRoute from "./routes/listings.route.js";
 import locationsRoute from "./routes/locations.route.js";
+import favoriteRoute from "./routes/favorite.route.js";
+
 dotenv.config();
 
 const app = express();
@@ -32,6 +34,7 @@ app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/listings", listingsRoute);
 app.use("/api/locations", locationsRoute);
+app.use("/api/favorites", favoriteRoute);
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;

@@ -1,13 +1,39 @@
 import bcryptjs from "bcryptjs";
 
-import User from "../models/User.model.js";
+import User from "../models/user.model.js";
 import errorHandler from "../utils/error.js";
-import Listing from "../models/Listing.model.js";
+import Listing from "../models/listing.model.js";
 
+/**
+ * Public endpoint: fetches limited public user info (username, avatar, createdAt).
+ */
+
+export const getUserPublic = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.id).select(
+      "username avatar createdAt"
+    );
+    if (!user)
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    res.status(200).json(user);
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
+ * Basic health check route to confirm the user router is mounted.
+ */
 export const test = (req, res) => {
   res.json({ message: "api route is working" });
 };
 
+/**
+ * Allows a user to update their own profile. Supports username/email/password/avatar.
+ * Hashes the password if provided before persisting it.
+ */
 export const updateUser = async (req, res, next) => {
   if (req.user.id !== req.params.id)
     return next(errorHandler(403, "You can update only your account!"));
@@ -33,6 +59,10 @@ export const updateUser = async (req, res, next) => {
     next(error);
   }
 };
+
+/**
+ * Deletes the authenticated user's account and clears the auth cookie.
+ */
 export const deleteUser = async (req, res, next) => {
   if (req.user.id !== req.params.id)
     return next(errorHandler(401, "You can delete only your account!"));
@@ -45,6 +75,10 @@ export const deleteUser = async (req, res, next) => {
   }
 };
 
+/**
+ * Lists all listings that belong to the authenticated user.
+ * Accepts either `:id` param or defaults to the token's user id.
+ */
 export const getUserListings = async (req, res, next) => {
   try {
     const userId = req.params.id || req.user.id;

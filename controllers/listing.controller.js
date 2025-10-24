@@ -3,7 +3,10 @@ import SuggestedArea from "../models/suggestedArea.model.js";
 import errorHandler from "../utils/error.js";
 import mongoose from "mongoose";
 
-/* --------------------------- helpers & constants --------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                             helpers & constants                            */
+/* -------------------------------------------------------------------------- */
+
 const RESIDENTIAL_CATEGORIES = new Set([
   "apartment",
   "villa",
@@ -12,13 +15,26 @@ const RESIDENTIAL_CATEGORIES = new Set([
 ]);
 const COMMERCIAL_CATEGORIES = new Set(["shop", "office", "warehouse"]);
 
+/**
+ * Coerces a numeric field, returning `undefined` when the value is empty.
+ */
 const numOrUndef = (v) =>
   v === null || v === undefined || v === "" ? undefined : Number(v);
+/**
+ * Coerces a boolean field, returning `undefined` when the value is empty.
+ */
 const boolOrUndef = (v) =>
   v === null || v === undefined ? undefined : Boolean(v);
+/**
+ * Coerces a string field, returning `undefined` when the value is empty.
+ */
 const strOrUndef = (v) =>
   v === null || v === undefined || v === "" ? undefined : String(v);
 
+/**
+ * Builds the nested sub-document payload for the selected category so the
+ * listing schema receives only the relevant fields.
+ */
 function buildSubdocsByCategory(category, body) {
   const out = {
     residential: undefined,
@@ -36,6 +52,7 @@ function buildSubdocsByCategory(category, body) {
       floor: numOrUndef(body.floor),
       furnished: boolOrUndef(body.furnished),
       parking: boolOrUndef(body.parking),
+      landArea: numOrUndef(body.landArea),
     };
   } else if (category === "land") {
     out.land = {
@@ -72,6 +89,9 @@ function buildSubdocsByCategory(category, body) {
   return out;
 }
 
+/**
+ * Validates that the request payload includes the full location object.
+ */
 function requireLocation(loc) {
   if (!loc?.governorate?.slug || !loc?.governorate?.name)
     return "Governorate is required";
@@ -79,6 +99,10 @@ function requireLocation(loc) {
   return null;
 }
 
+/**
+ * Generates the legacy `address` string used throughout the UI from the
+ * normalised location object.
+ */
 function composeAddressDisplay(loc) {
   const extra =
     loc.city.slug === "other" && loc.city_other_text
@@ -88,6 +112,9 @@ function composeAddressDisplay(loc) {
 }
 
 /* --------------------------------- CREATE --------------------------------- */
+/**
+ * Creates a new listing and attaches the authenticated user as owner.
+ */
 export const createListing = async (req, res, next) => {
   try {
     const {
@@ -100,6 +127,9 @@ export const createListing = async (req, res, next) => {
       location, // { governorate:{slug,name}, city:{slug,name}, city_other_text? }
       // plus flat fields for the group (size, bedrooms, plotArea, floorArea, etc.)
     } = req.body;
+
+    const negotiable =
+      req.body.negotiable === true || req.body.negotiable === "true";
 
     // required checks
     if (!title || !description || price == null || !purpose || !category) {
@@ -131,6 +161,7 @@ export const createListing = async (req, res, next) => {
       category,
       images: imageArray,
       userRef,
+      negotiable,
       address: addressDisplay,
       location: {
         governorate: {
@@ -178,6 +209,9 @@ export const createListing = async (req, res, next) => {
 };
 
 /* --------------------------------- DELETE --------------------------------- */
+/**
+ * Deletes a listing owned by the authenticated user.
+ */
 export const deleteListing = async (req, res, next) => {
   try {
     const listing = await Listing.findById(req.params.id);
@@ -197,6 +231,9 @@ export const deleteListing = async (req, res, next) => {
 };
 
 /* --------------------------------- UPDATE --------------------------------- */
+/**
+ * Updates an existing listing owned by the authenticated user.
+ */
 export const updateListing = async (req, res, next) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
@@ -212,6 +249,11 @@ export const updateListing = async (req, res, next) => {
     }
 
     const payload = { ...req.body };
+
+    if (typeof payload.negotiable !== "undefined") {
+      payload.negotiable =
+        payload.negotiable === true || payload.negotiable === "true";
+    }
 
     // if location provided, validate + compose address
     if (payload.location) {
@@ -261,6 +303,9 @@ export const updateListing = async (req, res, next) => {
 };
 
 /* ----------------------------------- GET ---------------------------------- */
+/**
+ * Returns a single listing by id.
+ */
 export const getListing = async (req, res, next) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
@@ -275,6 +320,9 @@ export const getListing = async (req, res, next) => {
 };
 
 /* --------------------------------- GET MANY -------------------------------- */
+/**
+ * Provides a filtered, paginated list of listings for search/browse screens.
+ */
 export const getListings = async (req, res, next) => {
   try {
     const limit = parseInt(req.query.limit) || 12;
@@ -283,15 +331,14 @@ export const getListings = async (req, res, next) => {
     const order = (req.query.order || "desc").toLowerCase() === "desc" ? -1 : 1;
 
     const filter = {};
+    const andClauses = [];
 
-    // free text
+    // free text (Level 1: MongoDB text index)
     const term = (req.query.searchTerm || "").trim();
-    if (term) {
-      filter.$or = [
-        { title: { $regex: term, $options: "i" } },
-        { description: { $regex: term, $options: "i" } },
-        { address: { $regex: term, $options: "i" } },
-      ];
+    const usingTextSearch = Boolean(term);
+    if (usingTextSearch) {
+      // Use $text to leverage the weighted text index
+      filter.$text = { $search: term };
     }
 
     // purpose & category
@@ -313,18 +360,79 @@ export const getListings = async (req, res, next) => {
       if (max != null) filter.price.$lte = max;
     }
 
-    // feature filters (residential)
+    // residential attribute ranges
+    const minBeds =
+      req.query.minBedrooms != null ? Number(req.query.minBedrooms) : undefined;
+    const maxBeds =
+      req.query.maxBedrooms != null ? Number(req.query.maxBedrooms) : undefined;
+    const minBaths =
+      req.query.minBathrooms != null
+        ? Number(req.query.minBathrooms)
+        : undefined;
+    const maxBaths =
+      req.query.maxBathrooms != null
+        ? Number(req.query.maxBathrooms)
+        : undefined;
+    const minSize =
+      req.query.minSize != null ? Number(req.query.minSize) : undefined;
+    const maxSize =
+      req.query.maxSize != null ? Number(req.query.maxSize) : undefined;
+
     if (req.query.furnished === "true") filter["residential.furnished"] = true;
     if (req.query.parking === "true") filter["residential.parking"] = true;
-    if (req.query.bedrooms)
-      filter["residential.bedrooms"] = Number(req.query.bedrooms);
-    if (req.query.bathrooms)
-      filter["residential.bathrooms"] = Number(req.query.bathrooms);
 
-    const listings = await Listing.find(filter)
-      .sort({ [sort]: order })
-      .skip(startIndex)
-      .limit(limit);
+    if (req.query.bedrooms) {
+      filter["residential.bedrooms"] = Number(req.query.bedrooms);
+    } else if (minBeds != null || maxBeds != null) {
+      const range = {};
+      if (minBeds != null) range.$gte = minBeds;
+      if (maxBeds != null) range.$lte = maxBeds;
+      filter["residential.bedrooms"] = range;
+    }
+
+    if (req.query.bathrooms) {
+      filter["residential.bathrooms"] = Number(req.query.bathrooms);
+    } else if (minBaths != null || maxBaths != null) {
+      const range = {};
+      if (minBaths != null) range.$gte = minBaths;
+      if (maxBaths != null) range.$lte = maxBaths;
+      filter["residential.bathrooms"] = range;
+    }
+
+    if (minSize != null || maxSize != null) {
+      const sizeRange = {};
+      if (minSize != null) sizeRange.$gte = minSize;
+      if (maxSize != null) sizeRange.$lte = maxSize;
+
+      andClauses.push({
+        $or: [
+          { "residential.size": sizeRange },
+          { "land.plotArea": sizeRange },
+          { "commercial.floorArea": sizeRange },
+          { "building.landArea": sizeRange },
+          { "other.size": sizeRange },
+        ],
+      });
+    }
+
+    if (andClauses.length) {
+      filter.$and = andClauses;
+    }
+
+    // If using text, include score and sort by relevance first, then secondary sort
+    const projection = usingTextSearch
+      ? { score: { $meta: "textScore" } }
+      : undefined;
+
+    let query = Listing.find(filter, projection);
+    if (usingTextSearch) {
+      // Relevance first, then requested sort (e.g., createdAt desc)
+      query = query.sort({ score: { $meta: "textScore" }, [sort]: order });
+    } else {
+      query = query.sort({ [sort]: order });
+    }
+
+    const listings = await query.skip(startIndex).limit(limit);
 
     return res.status(200).json(listings);
   } catch (error) {

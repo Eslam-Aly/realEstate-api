@@ -3,6 +3,10 @@ import errorHandler from "../utils/error.js";
 import jwt from "jsonwebtoken";
 import User from "../models/User.model.js";
 
+/**
+ * Handles local email/password sign-up.
+ * Expects { username, email, password } in the request body.
+ */
 export const signup = async (req, res, next) => {
   const { username, email, password } = req.body;
   const hashedPassword = bcryptjs.hashSync(password, 10);
@@ -15,6 +19,10 @@ export const signup = async (req, res, next) => {
   }
 };
 
+/**
+ * Signs in a user using email/password.
+ * Returns the user document (sans password) and sets an httpOnly JWT cookie.
+ */
 export const signin = async (req, res, next) => {
   const { email, password } = req.body;
   try {
@@ -40,6 +48,10 @@ export const signin = async (req, res, next) => {
   }
 };
 
+/**
+ * Handles Google OAuth sign-in/up. Creates a new user if none exists.
+ * Responds with user data and sets the auth cookie.
+ */
 export const google = async (req, res, next) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -76,7 +88,10 @@ export const google = async (req, res, next) => {
   }
 };
 
-export const signout = (req, res) => {
+/**
+ * Clears the JWT cookie to invalidate the current session.
+ */
+export const signout = (req, res, next) => {
   try {
     res.clearCookie("access_token");
     res.status(200).json({ message: "User signed out successfully" });

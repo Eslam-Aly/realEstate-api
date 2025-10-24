@@ -1,6 +1,6 @@
-import mangoose from "mongoose";
-import { type } from "os";
-const userSchema = new mangoose.Schema(
+import mongoose from "mongoose";
+
+const userSchema = new mongoose.Schema(
   {
     username: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
@@ -13,5 +13,5 @@ const userSchema = new mangoose.Schema(
   },
   { timestamps: true }
 );
-const User = mangoose.model("User", userSchema);
+const User = mongoose.models.User || mongoose.model("User", userSchema);
 export default User;

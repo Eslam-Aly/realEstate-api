@@ -26,6 +26,7 @@ const residentialSchema = new mongoose.Schema(
     floor: { type: Number, min: 0 },
     furnished: { type: Boolean, default: false },
     parking: { type: Boolean, default: false },
+    landArea: { type: Number, min: 0 }, // optional for villas with gardens
   },
   { _id: false }
 );
@@ -90,6 +91,8 @@ const listingSchema = new mongoose.Schema(
 
     price: { type: Number, required: true, min: 0 },
 
+    negotiable: { type: Boolean, default: false },
+
     // Purpose and category drive which groups are relevant
     purpose: { type: String, required: true, enum: ["rent", "sale"] },
     category: {
@@ -136,10 +139,34 @@ const listingSchema = new mongoose.Schema(
 );
 
 // Helpful indexes for common queries
+
 listingSchema.index({ purpose: 1, category: 1 });
 listingSchema.index({ "location.governorate.slug": 1 });
 listingSchema.index({ "location.city.slug": 1 });
 listingSchema.index({ price: 1 });
+
+// Text index for Level 1 search (relevance ranking)
+listingSchema.index(
+  {
+    title: "text",
+    description: "text",
+    address: "text",
+    "location.governorate.name": "text",
+    "location.city.name": "text",
+  },
+  {
+    name: "ListingTextIndex",
+    // Title is most important, then address/city, then description
+    weights: {
+      title: 10,
+      address: 5,
+      "location.city.name": 4,
+      "location.governorate.name": 3,
+      description: 2,
+    },
+    default_language: "english",
+  }
+);
 
 const Listing =
   mongoose.models.Listing || mongoose.model("Listing", listingSchema);
