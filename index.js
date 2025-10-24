@@ -54,4 +54,21 @@ app.use((err, req, res, next) => {
   });
 });
 
+const shouldListen =
+  process.env.NODE_ENV !== "test" && process.env.VERCEL !== "1";
+
+if (shouldListen) {
+  const PORT = process.env.PORT || 3000;
+  ensureMongo()
+    .then(() => {
+      app.listen(PORT, () => {
+        console.log(`API server running on http://localhost:${PORT}`);
+      });
+    })
+    .catch((err) => {
+      console.error("Failed to start server:", err.message);
+      process.exit(1);
+    });
+}
+
 export default app;
