@@ -14,21 +14,29 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-mongoose
-  .connect(process.env.MONGO)
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((err) => {
+let mongoReady = false;
+
+async function ensureMongo() {
+  if (mongoReady || mongoose.connection.readyState === 1) return;
+  try {
+    await mongoose.connect(process.env.MONGO);
+    mongoReady = true;
+    console.log("MongoDB connected");
+  } catch (err) {
     console.error("Failed to connect to MongoDB", err.message);
-  });
+    throw err;
+  }
+}
 
-app.listen(3000, () => {
-  console.log("API server running on http://localhost:3000");
+// In serverless, make sure we have a connection for each invocation
+app.use(async (req, res, next) => {
+  try {
+    await ensureMongo();
+    next();
+  } catch (e) {
+    next(e);
+  }
 });
-
-//eslammahmud18_db_user
-//92AUf7IWO6lwnrGk
 
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
@@ -45,3 +53,5 @@ app.use((err, req, res, next) => {
     message,
   });
 });
+
+export default app;
