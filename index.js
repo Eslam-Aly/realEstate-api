@@ -7,12 +7,35 @@ import cookieParser from "cookie-parser";
 import listingsRoute from "./routes/listings.route.js";
 import locationsRoute from "./routes/locations.route.js";
 import favoriteRoute from "./routes/favorite.route.js";
+import cors from "cors";
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
+
+// CORS: allow local dev + deployed Vercel client
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://real-estate-client-nu.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      // allow REST tools or same-origin requests with no Origin header
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      console.log("❌ Blocked by CORS:", origin);
+      return callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true,
+  })
+);
+
+// (optional) handle preflight for all routes
+app.options("*", cors());
 
 let mongoReady = false;
 
