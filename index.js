@@ -44,6 +44,11 @@ app.use("/api/listings", listingsRoute);
 app.use("/api/locations", locationsRoute);
 app.use("/api/favorites", favoriteRoute);
 
+// Health check route
+app.get("/api/health", (_req, res) => {
+  res.json({ ok: true, message: "API is running" });
+});
+
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   const message = err.message || "Internal Server Error";
