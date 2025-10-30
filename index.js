@@ -46,7 +46,13 @@ app.use("/api/favorites", favoriteRoute);
 
 // Health check route
 app.get("/api/health", (_req, res) => {
-  res.json({ ok: true, message: "API is running" });
+  const mongoStatus =
+    mongoose.connection.readyState === 1 ? "connected" : "disconnected";
+  res.json({
+    ok: mongoStatus === "connected",
+    message: "API is running",
+    mongo: mongoStatus,
+  });
 });
 
 app.use((err, req, res, next) => {
