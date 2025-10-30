@@ -34,9 +34,6 @@ app.use(
   })
 );
 
-// (optional) handle preflight for all routes
-app.options("*", cors());
-
 let mongoReady = false;
 
 async function ensureMongo() {
