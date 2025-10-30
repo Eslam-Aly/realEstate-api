@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "seeds:locations": "node api/seeds/seedLocations.js",
+    "seeds:locations": "node seeds/seedLocations.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon api/index.js",
-    "start": "node api/index.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "build": "npm ci --prefix client --include=dev && npm run build --prefix client"
   },
   "keywords": [],
