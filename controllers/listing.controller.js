@@ -1,5 +1,6 @@
 import Listing from "../models/listing.model.js";
 import SuggestedArea from "../models/suggestedArea.model.js";
+import Location from "../models/locations.model.js";
 import errorHandler from "../utils/error.js";
 import mongoose from "mongoose";
 
@@ -30,6 +31,19 @@ const boolOrUndef = (v) =>
  */
 const strOrUndef = (v) =>
   v === null || v === undefined || v === "" ? undefined : String(v);
+
+/**
+ * Normalizes phone numbers by stripping spaces, dashes, and parentheses.
+ */
+// Simple helper to normalize phone numbers
+const normalizeEgPhone = (raw) => {
+  const s = String(raw || "").replace(/[\s\-().]/g, "");
+  if (s.startsWith("0") && s.length === 11) return `+2${s}`; // convert to +20...
+  return s;
+};
+
+// Egyptian local number validation
+const PHONE_EG_RE = /^01[0-9]{9}$/;
 
 /**
  * Builds the nested sub-document payload for the selected category so the
@@ -93,9 +107,8 @@ function buildSubdocsByCategory(category, body) {
  * Validates that the request payload includes the full location object.
  */
 function requireLocation(loc) {
-  if (!loc?.governorate?.slug || !loc?.governorate?.name)
-    return "Governorate is required";
-  if (!loc?.city?.slug || !loc?.city?.name) return "City is required";
+  if (!loc?.governorate?.slug) return "Governorate is required";
+  if (!loc?.city?.slug) return "City is required";
   return null;
 }
 
@@ -108,7 +121,75 @@ function composeAddressDisplay(loc) {
     loc.city.slug === "other" && loc.city_other_text
       ? ` (${loc.city_other_text})`
       : "";
-  return `${loc.governorate.name} - ${loc.city.name}${extra}`;
+  const areaSegment = loc.area?.name ? ` - ${loc.area.name}` : "";
+  return `${loc.governorate.name} - ${loc.city.name}${areaSegment}${extra}`;
+}
+
+async function normalizeLocationPayload(loc) {
+  const governorateSlug = String(loc?.governorate?.slug || "").toLowerCase();
+  if (!governorateSlug) throw errorHandler(400, "Governorate is required");
+
+  const governorateDoc = await Location.findOne(
+    { slug: governorateSlug },
+    { name: 1, nameAr: 1, slug: 1, cities: 1 }
+  ).lean();
+
+  if (!governorateDoc) throw errorHandler(400, "Governorate not found");
+
+  const governorate = {
+    slug: governorateSlug,
+    name: governorateDoc.name || governorateDoc.nameAr || "",
+    nameAr: governorateDoc.nameAr || governorateDoc.name || "",
+  };
+
+  const citySlug = String(loc?.city?.slug || "").toLowerCase();
+  if (!citySlug) throw errorHandler(400, "City is required");
+
+  let city;
+  let area;
+
+  if (citySlug === "other") {
+    city = {
+      slug: citySlug,
+      name: "Other",
+      nameAr: "أخرى",
+    };
+  } else {
+    const cityDoc = (governorateDoc.cities || []).find(
+      (c) => String(c.slug).toLowerCase() === citySlug
+    );
+    if (!cityDoc) throw errorHandler(400, "City not found in governorate");
+
+    city = {
+      slug: citySlug,
+      name: cityDoc.name || cityDoc.nameAr || "",
+      nameAr: cityDoc.nameAr || cityDoc.name || "",
+    };
+
+    if (loc?.area?.slug) {
+      const areaSlug = String(loc.area.slug).toLowerCase();
+      const areaDoc = (cityDoc.areas || []).find(
+        (a) => String(a.slug).toLowerCase() === areaSlug
+      );
+      if (!areaDoc) throw errorHandler(400, "Area not found in city");
+      area = {
+        slug: areaSlug,
+        name: areaDoc.name || areaDoc.nameAr || "",
+        nameAr: areaDoc.nameAr || areaDoc.name || "",
+      };
+    }
+  }
+
+  const rawOther = strOrUndef(loc?.city_other_text);
+  const cityOtherText = citySlug === "other" && rawOther ? rawOther.trim() : "";
+
+  const result = {
+    governorate,
+    city,
+    city_other_text: cityOtherText || "",
+  };
+  if (area) result.area = area;
+  return result;
 }
 
 /* --------------------------------- CREATE --------------------------------- */
@@ -131,6 +212,19 @@ export const createListing = async (req, res, next) => {
     const negotiable =
       req.body.negotiable === true || req.body.negotiable === "true";
 
+    // Phone number validation (Egypt)
+    const rawPhoneCreate = req.body?.contact?.phone || req.body?.phone;
+    if (!PHONE_EG_RE.test(String(rawPhoneCreate || ""))) {
+      return res
+        .status(400)
+        .json({ success: false, message: "Valid phone number is required" });
+    }
+    const phoneNormalized = normalizeEgPhone(rawPhoneCreate);
+    const whatsappEnabled =
+      typeof req.body?.contact?.whatsapp !== "undefined"
+        ? Boolean(req.body.contact.whatsapp)
+        : true;
+
     // required checks
     if (!title || !description || price == null || !purpose || !category) {
       return next(errorHandler(400, "Missing required fields"));
@@ -144,6 +238,9 @@ export const createListing = async (req, res, next) => {
 
     const locErr = requireLocation(location);
     if (locErr) return next(errorHandler(400, locErr));
+
+    const normalizedLocation = await normalizeLocationPayload(location);
+
     // Ensure at least one image (default fallback)
     const defaultImage =
       process.env.DEFAULT_LISTING_IMAGE_URL || "/placeholder.jpg";
@@ -151,7 +248,7 @@ export const createListing = async (req, res, next) => {
       Array.isArray(images) && images.length > 0 ? images : [defaultImage];
 
     const groups = buildSubdocsByCategory(category, req.body);
-    const addressDisplay = composeAddressDisplay(location);
+    const addressDisplay = composeAddressDisplay(normalizedLocation);
 
     const doc = await Listing.create({
       title: String(title).trim(),
@@ -162,37 +259,30 @@ export const createListing = async (req, res, next) => {
       images: imageArray,
       userRef,
       negotiable,
+      contact: { phone: phoneNormalized, whatsapp: whatsappEnabled },
       address: addressDisplay,
-      location: {
-        governorate: {
-          slug: location.governorate.slug.toLowerCase(),
-          name: location.governorate.name,
-        },
-        city: {
-          slug: location.city.slug.toLowerCase(),
-          name: location.city.name,
-        },
-        city_other_text:
-          location.city.slug === "other" ? location.city_other_text || "" : "",
-      },
+      location: normalizedLocation,
       ...groups,
     });
 
     // fire-and-forget: log suggested areas when city is "other"
-    if (location?.city?.slug === "other" && location?.city_other_text) {
-      const raw = String(location.city_other_text).trim();
+    if (
+      normalizedLocation?.city?.slug === "other" &&
+      normalizedLocation?.city_other_text
+    ) {
+      const raw = String(normalizedLocation.city_other_text).trim();
       const cleaned = raw
         .replace(/\s+/g, " ")
         .replace(/^[,\.\-_/\\]+|[,\.\-_/\\]+$/g, "");
       if (cleaned.length >= 2) {
         SuggestedArea.updateOne(
           {
-            governorateSlug: location.governorate.slug.toLowerCase(),
+            governorateSlug: normalizedLocation.governorate.slug,
             name: cleaned.toLowerCase(),
           },
           {
             $setOnInsert: {
-              governorateName: location.governorate.name,
+              governorateName: normalizedLocation.governorate.name,
               displayName: cleaned,
               source: "listing",
             },
@@ -255,25 +345,48 @@ export const updateListing = async (req, res, next) => {
         payload.negotiable === true || payload.negotiable === "true";
     }
 
+    // Contact updates (optional)
+    if (
+      payload?.contact?.phone !== undefined ||
+      payload?.phone !== undefined ||
+      payload?.contact?.whatsapp !== undefined
+    ) {
+      const rawPhoneUpdate =
+        payload?.contact?.phone !== undefined
+          ? payload.contact.phone
+          : payload?.phone;
+
+      if (rawPhoneUpdate !== undefined) {
+        if (!PHONE_EG_RE.test(String(rawPhoneUpdate || ""))) {
+          return next(errorHandler(400, "Valid phone number is required"));
+        }
+      }
+
+      const nextContact = {
+        phone:
+          rawPhoneUpdate !== undefined
+            ? normalizeEgPhone(rawPhoneUpdate)
+            : listing?.contact?.phone,
+        whatsapp:
+          typeof payload?.contact?.whatsapp !== "undefined"
+            ? Boolean(payload.contact.whatsapp)
+            : listing?.contact?.whatsapp ?? true,
+      };
+      payload.contact = nextContact;
+
+      // Clean any legacy flat field to avoid schema pollution
+      if (payload.phone !== undefined) delete payload.phone;
+    }
+
     // if location provided, validate + compose address
     if (payload.location) {
       const locErr = requireLocation(payload.location);
       if (locErr) return next(errorHandler(400, locErr));
-      payload.address = composeAddressDisplay(payload.location);
-      payload.location = {
-        governorate: {
-          slug: payload.location.governorate.slug.toLowerCase(),
-          name: payload.location.governorate.name,
-        },
-        city: {
-          slug: payload.location.city.slug.toLowerCase(),
-          name: payload.location.city.name,
-        },
-        city_other_text:
-          payload.location.city.slug === "other"
-            ? payload.location.city_other_text || ""
-            : "",
-      };
+      const normalizedLocation = await normalizeLocationPayload(
+        payload.location
+      );
+      payload.address = composeAddressDisplay(normalizedLocation);
+      payload.location = normalizedLocation;
     }
 
     // if category provided, rebuild groups accordingly
@@ -350,6 +463,8 @@ export const getListings = async (req, res, next) => {
       filter["location.governorate.slug"] = String(req.query.gov).toLowerCase();
     if (req.query.city)
       filter["location.city.slug"] = String(req.query.city).toLowerCase();
+    if (req.query.area)
+      filter["location.area.slug"] = String(req.query.area).toLowerCase();
 
     // price range
     const min = req.query.min != null ? Number(req.query.min) : undefined;

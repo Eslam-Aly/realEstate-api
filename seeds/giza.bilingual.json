@@ -1,0 +1,2111 @@
+[
+  {
+    "name": "Giza",
+    "nameAr": "الجيزة",
+    "slug": "giza",
+    "sort": 1,
+    "cities": [
+      {
+        "name": "6th of October",
+        "nameAr": "6 أكتوبر",
+        "areas": [
+          {
+            "name": "10th District",
+            "nameAr": "الحي العاشر",
+            "slug": "10th-district"
+          },
+          {
+            "name": "11th District",
+            "nameAr": "الحي الحادي عشر",
+            "slug": "11th-district"
+          },
+          {
+            "name": "12th District",
+            "nameAr": "الحي الثاني عشر",
+            "slug": "12th-district"
+          },
+          {
+            "name": "1st District",
+            "nameAr": "الحي الاول",
+            "slug": "1st-district"
+          },
+          {
+            "name": "2nd District",
+            "nameAr": "الحي الثاني",
+            "slug": "2nd-district"
+          },
+          {
+            "name": "3rd District",
+            "nameAr": "الحي الثالث",
+            "slug": "3rd-district"
+          },
+          {
+            "name": "4th District",
+            "nameAr": "الحي الرابع",
+            "slug": "4th-district"
+          },
+          {
+            "name": "5th District",
+            "nameAr": "الحي الخامس",
+            "slug": "5th-district"
+          },
+          {
+            "name": "6th District",
+            "nameAr": "الحي السادس",
+            "slug": "6th-district"
+          },
+          {
+            "name": "7th District",
+            "nameAr": "الحي السابع",
+            "slug": "7th-district"
+          },
+          {
+            "name": "8th District",
+            "nameAr": "الحي الثامن",
+            "slug": "8th-district"
+          },
+          {
+            "name": "9th District",
+            "nameAr": "الحي التاسع",
+            "slug": "9th-district"
+          },
+          {
+            "name": "ABHA Compound",
+            "nameAr": "كومباوند أبهى",
+            "slug": "abha-compound"
+          },
+          { "name": "AQMAR", "nameAr": "اقمار", "slug": "aqmar" },
+          {
+            "name": "Aeon Compound",
+            "nameAr": "كومباوند ايون",
+            "slug": "aeon-compound"
+          },
+          {
+            "name": "Al Bashayer District",
+            "nameAr": "حي البشاير",
+            "slug": "al-bashayer-district"
+          },
+          { "name": "Al Bostan", "nameAr": "البستان", "slug": "al-bostan" },
+          { "name": "Al Montazah", "nameAr": "المنتزه", "slug": "al-montazah" },
+          {
+            "name": "Al Motamayez District",
+            "nameAr": "الحي المتميز",
+            "slug": "al-motamayez-district"
+          },
+          { "name": "Al Nada", "nameAr": "الندي", "slug": "al-nada" },
+          { "name": "Al Narges", "nameAr": "النرجس", "slug": "al-narges" },
+          {
+            "name": "Al Nasayem Compound",
+            "nameAr": "كومباوند النسايم",
+            "slug": "al-nasayem-compound"
+          },
+          {
+            "name": "Al Rabwa Compound",
+            "nameAr": "كومباوند الربوة",
+            "slug": "al-rabwa-compound"
+          },
+          { "name": "Al Safwa", "nameAr": "الصفوة", "slug": "al-safwa" },
+          {
+            "name": "Al Solaimaneyah Golf City Compound",
+            "nameAr": "كومباوند السليمانية - جولف سيتي",
+            "slug": "al-solaimaneyah-golf-city-compound"
+          },
+          {
+            "name": "Al Wahat Road",
+            "nameAr": "طريق الواحات",
+            "slug": "al-wahat-road"
+          },
+          {
+            "name": "Al Worood Compound",
+            "nameAr": "كومباوند الورود",
+            "slug": "al-worood-compound"
+          },
+          {
+            "name": "Al Yasmine Greenland Compound",
+            "nameAr": "كومباوند الياسمين جرين لاند",
+            "slug": "al-yasmine-greenland-compound"
+          },
+          {
+            "name": "Alrayat Residence",
+            "nameAr": "الرايات ريزيدنس",
+            "slug": "alrayat-residence"
+          },
+          {
+            "name": "Arc Business Park",
+            "nameAr": "ای ار سي",
+            "slug": "arc-business-park"
+          },
+          {
+            "name": "Ashgar City Compound",
+            "nameAr": "كومباوند أشجار سيتي",
+            "slug": "ashgar-city-compound"
+          },
+          {
+            "name": "Azalea Compound",
+            "nameAr": "كومباوند ازاليا",
+            "slug": "azalea-compound"
+          },
+          {
+            "name": "Badya Palm Hills Compound",
+            "nameAr": "كومباوند بادية بالم هيلز",
+            "slug": "badya-palm-hills-compound"
+          },
+          {
+            "name": "Bait Al Watan Al Takmely",
+            "nameAr": "بيت الوطن التكميلي",
+            "slug": "bait-al-watan-al-takmely"
+          },
+          {
+            "name": "Bamboo Palm Hills Compound",
+            "nameAr": "كومباوند بامبو بالم هيلز",
+            "slug": "bamboo-palm-hills-compound"
+          },
+          { "name": "Bayti", "nameAr": "بيتي", "slug": "bayti" },
+          {
+            "name": "Beit Al Watan",
+            "nameAr": "بيت الوطن",
+            "slug": "beit-al-watan"
+          },
+          {
+            "name": "Beit Al Watan El Asasy",
+            "nameAr": "بيت الوطن الأساسي",
+            "slug": "beit-al-watan-el-asasy"
+          },
+          { "name": "Belong", "nameAr": "بيلونج", "slug": "belong" },
+          {
+            "name": "Beta Residence",
+            "nameAr": "بیتا ريزيدنس",
+            "slug": "beta-residence"
+          },
+          { "name": "Boulevard", "nameAr": "البوليفارد", "slug": "boulevard" },
+          {
+            "name": "Brix Compound",
+            "nameAr": "کومباوند بريكس",
+            "slug": "brix-compound"
+          },
+          {
+            "name": "Cairo Alexandria Desert Road",
+            "nameAr": "طريق مصر اسكندرية الصحراوي",
+            "slug": "cairo-alexandria-desert-road"
+          },
+          {
+            "name": "Cairo Gate Compound",
+            "nameAr": "كومباوند كايرو جيت",
+            "slug": "cairo-gate-compound"
+          },
+          {
+            "name": "Cairo University Compound",
+            "nameAr": "كومباوند جامعة القاهرة",
+            "slug": "cairo-university-compound"
+          },
+          {
+            "name": "Capital Towers",
+            "nameAr": "كابيتال تاورز",
+            "slug": "capital-towers"
+          },
+          {
+            "name": "Carnell Park",
+            "nameAr": "کارنيل بارك",
+            "slug": "carnell-park"
+          },
+          {
+            "name": "Casa Di Mario Compound",
+            "nameAr": "كومباوند کاسا دي ماريو",
+            "slug": "casa-di-mario-compound"
+          },
+          {
+            "name": "City View Compound",
+            "nameAr": "كومباوند سيتي فيو",
+            "slug": "city-view-compound"
+          },
+          {
+            "name": "Club Hills Residence",
+            "nameAr": "كلوب هيلز ريزيدنس",
+            "slug": "club-hills-residence"
+          },
+          {
+            "name": "Creek Park Compound",
+            "nameAr": "كومباوند كريك بارك",
+            "slug": "creek-park-compound"
+          },
+          {
+            "name": "Crown central",
+            "nameAr": "کراون سينترال",
+            "slug": "crown-central"
+          },
+          {
+            "name": "Dar Misr Compound",
+            "nameAr": "کومباوند دار مصر",
+            "slug": "dar-misr-compound"
+          },
+          {
+            "name": "Dara Gardens Compound",
+            "nameAr": "کومباوند داره جاردنز",
+            "slug": "dara-gardens-compound"
+          },
+          {
+            "name": "Degla Palms Compound",
+            "nameAr": "كومباوند دجله بالمز",
+            "slug": "degla-palms-compound"
+          },
+          { "name": "Diar 1", "nameAr": "ديار 1", "slug": "diar-1" },
+          {
+            "name": "Diar El Tameer 2",
+            "nameAr": "ديار التعمير",
+            "slug": "diar-el-tameer-2"
+          },
+          {
+            "name": "Diar plaza",
+            "nameAr": "ديار بلازا",
+            "slug": "diar-plaza"
+          },
+          { "name": "Dirra City", "nameAr": "ديرة سيتي", "slug": "dirra-city" },
+          {
+            "name": "Downtown Mall",
+            "nameAr": "مول داون تاون",
+            "slug": "downtown-mall"
+          },
+          {
+            "name": "Dreamland Compound",
+            "nameAr": "کومباوند دريم لاند",
+            "slug": "dreamland-compound"
+          },
+          {
+            "name": "EL Patio 6 Compound",
+            "nameAr": "كومباوند الباتيو 6",
+            "slug": "el-patio-6-compound"
+          },
+          {
+            "name": "El Ashgar District Compound",
+            "nameAr": "كومباوند حي الأشجار",
+            "slug": "el-ashgar-district-compound"
+          },
+          {
+            "name": "El Fardous Compound",
+            "nameAr": "كومباوند الفردوس",
+            "slug": "el-fardous-compound"
+          },
+          {
+            "name": "El Hosary Square",
+            "nameAr": "میدان الحصري",
+            "slug": "el-hosary-square"
+          },
+          {
+            "name": "El Karma 3 Compound",
+            "nameAr": "كومباوند الكارما 3",
+            "slug": "el-karma-3-compound"
+          },
+          { "name": "El Motaheda", "nameAr": "المتحدة", "slug": "el-motaheda" },
+          {
+            "name": "El Ofok El Gadid Compound",
+            "nameAr": "كومباوند الأفق الجديد",
+            "slug": "el-ofok-el-gadid-compound"
+          },
+          {
+            "name": "El Reef El Orouby Compound",
+            "nameAr": "كومباوند الريف الاوربي",
+            "slug": "el-reef-el-orouby-compound"
+          },
+          { "name": "El Shorouk", "nameAr": "الشروق", "slug": "el-shorouk" },
+          { "name": "Elm Tree", "nameAr": "إيلم تري", "slug": "elm-tree" },
+          {
+            "name": "Engineers Oasis Compound",
+            "nameAr": "واحة المهندسين",
+            "slug": "engineers-oasis-compound"
+          },
+          {
+            "name": "Eshraga Compound",
+            "nameAr": "كومباوند اشراقة",
+            "slug": "eshraga-compound"
+          },
+          {
+            "name": "Family Land",
+            "nameAr": "فاميلي لاند",
+            "slug": "family-land"
+          },
+          {
+            "name": "First Heights",
+            "nameAr": "فرست هايتس",
+            "slug": "first-heights"
+          },
+          {
+            "name": "Ganob El Ahyaa",
+            "nameAr": "جنوب الأحياء",
+            "slug": "ganob-el-ahyaa"
+          },
+          {
+            "name": "Garana Compound",
+            "nameAr": "كومباوند جرانة",
+            "slug": "garana-compound"
+          },
+          {
+            "name": "Garden City",
+            "nameAr": "جاردن سيتي",
+            "slug": "garden-city"
+          },
+          {
+            "name": "Garden Hills Compound",
+            "nameAr": "کومباوند جاردن هيلز",
+            "slug": "garden-hills-compound"
+          },
+          {
+            "name": "Garden Lakes",
+            "nameAr": "جاردن ليكس",
+            "slug": "garden-lakes"
+          },
+          {
+            "name": "Gardenia Al Shams",
+            "nameAr": "جاردينيا الشمس",
+            "slug": "gardenia-al-shams"
+          },
+          {
+            "name": "Gardenia Park 1",
+            "nameAr": "جاردينيا بارك 1",
+            "slug": "gardenia-park-1"
+          },
+          {
+            "name": "Gladios Garden Compound",
+            "nameAr": "كومباوند جلاديوس جاردن",
+            "slug": "gladios-garden-compound"
+          },
+          {
+            "name": "Golden Ribbon",
+            "nameAr": "الشريط الذهبي",
+            "slug": "golden-ribbon"
+          },
+          {
+            "name": "Grand City",
+            "nameAr": "جراند سيتي",
+            "slug": "grand-city"
+          },
+          {
+            "name": "Grand Heights Compound",
+            "nameAr": "کومباوند جراند هايتس",
+            "slug": "grand-heights-compound"
+          },
+          {
+            "name": "Green 4 Compound",
+            "nameAr": "كومباوند جرين 4",
+            "slug": "green-4-compound"
+          },
+          {
+            "name": "Green 5 Compound",
+            "nameAr": "كومباوند جرين 5",
+            "slug": "green-5-compound"
+          },
+          { "name": "Green 6", "nameAr": "جرين 6", "slug": "green-6" },
+          {
+            "name": "Green Belt",
+            "nameAr": "الحزام الاخضر",
+            "slug": "green-belt"
+          },
+          { "name": "Green City", "nameAr": "جرين سيتي", "slug": "green-city" },
+          {
+            "name": "Green Heights Compound",
+            "nameAr": "كومباوند جرين هيلز",
+            "slug": "green-heights-compound"
+          },
+          {
+            "name": "Green Hills",
+            "nameAr": "جرين هيلز",
+            "slug": "green-hills"
+          },
+          {
+            "name": "Green Valley",
+            "nameAr": "جرين فالي",
+            "slug": "green-valley"
+          },
+          {
+            "name": "Green Yard Compound",
+            "nameAr": "كومباوند جرين يارد",
+            "slug": "green-yard-compound"
+          },
+          {
+            "name": "Greenland Compound",
+            "nameAr": "كومباوند جرين لاند",
+            "slug": "greenland-compound"
+          },
+          {
+            "name": "Gül Residence",
+            "nameAr": "جول ريزيدنس",
+            "slug": "gul-residence"
+          },
+          {
+            "name": "Hadaba Compound",
+            "nameAr": "كومباوند الهضبة",
+            "slug": "hadaba-compound"
+          },
+          { "name": "Hale Town", "nameAr": "هال تاون", "slug": "hale-town" },
+          {
+            "name": "Haram City Compound",
+            "nameAr": "کومباوند هرم سيتي",
+            "slug": "haram-city-compound"
+          },
+          { "name": "Haram Life", "nameAr": "هرم لايف", "slug": "haram-life" },
+          {
+            "name": "Hayah Residence",
+            "nameAr": "حياة ريزيدنس",
+            "slug": "hayah-residence"
+          },
+          { "name": "High Town", "nameAr": "هاي تاون", "slug": "high-town" },
+          {
+            "name": "Hyde Park Compound",
+            "nameAr": "کومباوند هايد بارك",
+            "slug": "hyde-park-compound"
+          },
+          {
+            "name": "Industrial Area",
+            "nameAr": "المنطقة الصناعية",
+            "slug": "industrial-area"
+          },
+          { "name": "Infinity", "nameAr": "انفينتي", "slug": "infinity" },
+          {
+            "name": "Ivory Hill Compound",
+            "nameAr": "کومباوند ایفورى هيل",
+            "slug": "ivory-hill-compound"
+          },
+          { "name": "Janna", "nameAr": "جنة", "slug": "janna" },
+          { "name": "Jasmine", "nameAr": "الياسمين", "slug": "jasmine" },
+          { "name": "Jazebeya", "nameAr": "جاذبية", "slug": "jazebeya" },
+          {
+            "name": "Jedar Compound",
+            "nameAr": "كومباوند جدار",
+            "slug": "jedar-compound"
+          },
+          {
+            "name": "Joulz Compound",
+            "nameAr": "كومباوند جولز",
+            "slug": "joulz-compound"
+          },
+          {
+            "name": "Joya Compound",
+            "nameAr": "كومباوند جويا",
+            "slug": "joya-compound"
+          },
+          {
+            "name": "Juhaynah Square",
+            "nameAr": "میدان جهينة",
+            "slug": "juhaynah-square"
+          },
+          { "name": "Kayan", "nameAr": "كيان", "slug": "kayan" },
+          {
+            "name": "Kazan Plaza",
+            "nameAr": "كازان بلازا",
+            "slug": "kazan-plaza"
+          },
+          {
+            "name": "Keeva Compound",
+            "nameAr": "كومباوند كيفا",
+            "slug": "keeva-compound"
+          },
+          {
+            "name": "Kings range Compound",
+            "nameAr": "كومباوند کینجز رينج",
+            "slug": "kings-range-compound"
+          },
+          { "name": "Kingsway", "nameAr": "كينجز واي", "slug": "kingsway" },
+          {
+            "name": "Kite Residence",
+            "nameAr": "کایت ريزيدنس",
+            "slug": "kite-residence"
+          },
+          { "name": "La Gora", "nameAr": "لاجورا", "slug": "la-gora" },
+          { "name": "La Vida", "nameAr": "لا فيدا", "slug": "la-vida" },
+          {
+            "name": "Ladera Compound",
+            "nameAr": "کومباوند لاديرا",
+            "slug": "ladera-compound"
+          },
+          { "name": "Lake Dream", "nameAr": "ليك دريم", "slug": "lake-dream" },
+          {
+            "name": "Lavande Compound",
+            "nameAr": "كومباوند لافند",
+            "slug": "lavande-compound"
+          },
+          {
+            "name": "Le Jardin Compound",
+            "nameAr": "كومباوند لو جاردان",
+            "slug": "le-jardin-compound"
+          },
+          {
+            "name": "Mehwar Plaza Mall",
+            "nameAr": "مول محور بلازا",
+            "slug": "mehwar-plaza-mall"
+          },
+          {
+            "name": "Mena Garden City Compound",
+            "nameAr": "کومباوند مینا جاردن سيتي",
+            "slug": "mena-garden-city-compound"
+          },
+          {
+            "name": "Moon Hillls Compound",
+            "nameAr": "كومباوند مون هيلز",
+            "slug": "moon-hillls-compound"
+          },
+          {
+            "name": "Mountain View - Giza Plateau Compound",
+            "nameAr": "كومباوند ماونتن فيو - جيزة بلاتوه",
+            "slug": "mountain-view-giza-plateau-compound"
+          },
+          {
+            "name": "Life Point Compound",
+            "nameAr": "كومباوند لايف بوينت",
+            "slug": "life-point-compound"
+          },
+          {
+            "name": "Mall Spade Plaza",
+            "nameAr": "مول سبيد بلازا",
+            "slug": "mall-spade-plaza"
+          },
+          {
+            "name": "Mall West Gate",
+            "nameAr": "مول ويست جيت",
+            "slug": "mall-west-gate"
+          },
+          {
+            "name": "Mall of Arabia",
+            "nameAr": "مول العرب",
+            "slug": "mall-of-arabia"
+          },
+          {
+            "name": "Mashareq Compound",
+            "nameAr": "كومباوند مشارق",
+            "slug": "mashareq-compound"
+          },
+          {
+            "name": "Media Elite City",
+            "nameAr": "صفوة الاعلاميين",
+            "slug": "media-elite-city"
+          },
+          {
+            "name": "Media Heights",
+            "nameAr": "ميديا هايتس",
+            "slug": "media-heights"
+          },
+          { "name": "Mega Mall", "nameAr": "مول ميجا", "slug": "mega-mall" },
+          {
+            "name": "Mountain View - October Park Compound",
+            "nameAr": "كومباوند ماونتن فيو - اكتوبر بارك",
+            "slug": "mountain-view-october-park-compound"
+          },
+          {
+            "name": "Mountain View 4",
+            "nameAr": "ماونتن فيو 4",
+            "slug": "mountain-view-4"
+          },
+          {
+            "name": "Mountain View Chillout Park Compound",
+            "nameAr": "كومباوند ماونتن فيو تشيل اوت بارك",
+            "slug": "mountain-view-chillout-park-compound"
+          },
+          {
+            "name": "Mountain View iCity Compound",
+            "nameAr": "كومباوند ماونتن فيو اي سيتي",
+            "slug": "mountain-view-icity-compound"
+          },
+          {
+            "name": "Murooj Compound",
+            "nameAr": "كومباوند مروج",
+            "slug": "murooj-compound"
+          },
+          {
+            "name": "New Giza Compound",
+            "nameAr": "كومباوند نيو جيزه",
+            "slug": "new-giza-compound"
+          },
+          {
+            "name": "New October",
+            "nameAr": "أكتوبر الجديدة",
+            "slug": "new-october"
+          },
+          {
+            "name": "Nile Valley Gardens",
+            "nameAr": "وادي النيل جاردنز",
+            "slug": "nile-valley-gardens"
+          },
+          {
+            "name": "Northern Expansions",
+            "nameAr": "التوسعات الشمالية",
+            "slug": "northern-expansions"
+          },
+          {
+            "name": "Nyoum October Compound",
+            "nameAr": "كومباوند نیوم اكتوبر",
+            "slug": "nyoum-october-compound"
+          },
+          {
+            "name": "Nyoum Pyramids",
+            "nameAr": "نيوم بيراميدز",
+            "slug": "nyoum-pyramids"
+          },
+          {
+            "name": "O West Compound",
+            "nameAr": "كومباوند او ويست",
+            "slug": "o-west-compound"
+          },
+          {
+            "name": "October Hills 2 Compound",
+            "nameAr": "كمبوند اکتوبر هيلز 2",
+            "slug": "october-hills-2-compound"
+          },
+          {
+            "name": "October Plaza Sodic Compound",
+            "nameAr": "كومباوند اکتوبر بلازا سوديك",
+            "slug": "october-plaza-sodic-compound"
+          },
+          {
+            "name": "PX Palm Hills",
+            "nameAr": "بي اكس بالم هيلز",
+            "slug": "px-palm-hills"
+          },
+          { "name": "Palm Hills", "nameAr": "بالم هيلز", "slug": "palm-hills" },
+          {
+            "name": "Palm Parks Compound",
+            "nameAr": "كومباوند بالم باركس",
+            "slug": "palm-parks-compound"
+          },
+          {
+            "name": "Palm Springs Compound",
+            "nameAr": "كومباوند بالم سبرينج",
+            "slug": "palm-springs-compound"
+          },
+          { "name": "Palm Villa", "nameAr": "بالم فيلا", "slug": "palm-villa" },
+          {
+            "name": "Palm hills golf extension Compound",
+            "nameAr": "كومباوند بالم هيلز جولف اكستنشن",
+            "slug": "palm-hills-golf-extension-compound"
+          },
+          {
+            "name": "Palm hills golf views Compound",
+            "nameAr": "كومباوند بالم هيلز جولف فيوز",
+            "slug": "palm-hills-golf-views-compound"
+          },
+          { "name": "Park West", "nameAr": "بارك ويست", "slug": "park-west" },
+          {
+            "name": "Pearl Pyramids",
+            "nameAr": "بیرل بيراميدز",
+            "slug": "pearl-pyramids"
+          },
+          {
+            "name": "Plaza Vida Mall",
+            "nameAr": "مول بلازا فيدا",
+            "slug": "plaza-vida-mall"
+          },
+          {
+            "name": "Porto October Compound",
+            "nameAr": "کومباوند بورتو اكتوبر",
+            "slug": "porto-october-compound"
+          },
+          {
+            "name": "Princess Compound",
+            "nameAr": "کومباوند برنسيس",
+            "slug": "princess-compound"
+          },
+          {
+            "name": "Promenade Residence Compound",
+            "nameAr": "کومباوند برومیناد ريزيدنس",
+            "slug": "promenade-residence-compound"
+          },
+          {
+            "name": "Pyramids Heights Compound",
+            "nameAr": "کومباوند بیرامیدز هايتس",
+            "slug": "pyramids-heights-compound"
+          },
+          {
+            "name": "Pyramids Hills Compound",
+            "nameAr": "کومباوند بيراميدز هيلز",
+            "slug": "pyramids-hills-compound"
+          },
+          {
+            "name": "Pyramids Wales Compound",
+            "nameAr": "کومباوند بيراميدز ويلز",
+            "slug": "pyramids-wales-compound"
+          },
+          {
+            "name": "Pyramids Walk Compound",
+            "nameAr": "کومباوند بيراميدز ووك",
+            "slug": "pyramids-walk-compound"
+          },
+          {
+            "name": "Quattro Compound",
+            "nameAr": "كومباوند كواترو",
+            "slug": "quattro-compound"
+          },
+          { "name": "Rawda", "nameAr": "الروضة", "slug": "rawda" },
+          { "name": "Ray West", "nameAr": "راي ويست", "slug": "ray-west" },
+          { "name": "Rayhana", "nameAr": "ريحانة", "slug": "rayhana" },
+          {
+            "name": "Rayos Compound",
+            "nameAr": "كومباوند ريوس",
+            "slug": "rayos-compound"
+          },
+          {
+            "name": "Reem Residence Compound",
+            "nameAr": "كومباوند ریم ريزيدنس",
+            "slug": "reem-residence-compound"
+          },
+          { "name": "Roudy", "nameAr": "رودي", "slug": "roudy" },
+          {
+            "name": "Royal Valley",
+            "nameAr": "رويال فالي",
+            "slug": "royal-valley"
+          },
+          { "name": "Ruya City", "nameAr": "رؤيه سيتي", "slug": "ruya-city" },
+          { "name": "Sakan Masr", "nameAr": "سكن مصر", "slug": "sakan-masr" },
+          {
+            "name": "Sakan Masr - Downtown",
+            "nameAr": "سكن مصر الداون تاون",
+            "slug": "sakan-masr-downtown"
+          },
+          {
+            "name": "Silva Deira",
+            "nameAr": "سيلفا ديار",
+            "slug": "silva-deira"
+          },
+          {
+            "name": "Smart Village",
+            "nameAr": "القرية الذكية",
+            "slug": "smart-village"
+          },
+          {
+            "name": "Soleya Compound",
+            "nameAr": "كومباوند سولايا",
+            "slug": "soleya-compound"
+          },
+          { "name": "Space mall", "nameAr": "سبيس مول", "slug": "space-mall" },
+          { "name": "Syaheia 1", "nameAr": "السياحية 1", "slug": "syaheia-1" },
+          { "name": "Syaheia 2", "nameAr": "السياحية 2", "slug": "syaheia-2" },
+          { "name": "Syaheia 3", "nameAr": "السياحية 3", "slug": "syaheia-3" },
+          { "name": "Syaheia 4", "nameAr": "السياحية 4", "slug": "syaheia-4" },
+          { "name": "Syaheia 6", "nameAr": "السياحية 6", "slug": "syaheia-6" },
+          { "name": "Syaheia A", "nameAr": "السياحية أ", "slug": "syaheia-a" },
+          { "name": "Syaheia B", "nameAr": "السياحية ب", "slug": "syaheia-b" },
+          {
+            "name": "Tala Compound",
+            "nameAr": "كومباوند تالة",
+            "slug": "tala-compound"
+          },
+          {
+            "name": "Tawny Compound",
+            "nameAr": "كومباوند تاونی",
+            "slug": "tawny-compound"
+          },
+          {
+            "name": "The Axis Compound",
+            "nameAr": "كومباوند ذا اكسيس",
+            "slug": "the-axis-compound"
+          },
+          {
+            "name": "The Crown Compound",
+            "nameAr": "كومباوند ذا كراون",
+            "slug": "the-crown-compound"
+          },
+          { "name": "The Lane", "nameAr": "ذا لين", "slug": "the-lane" },
+          {
+            "name": "Tiara Residence Compound",
+            "nameAr": "کومباوند تیارا ريزيندس",
+            "slug": "tiara-residence-compound"
+          },
+          {
+            "name": "Tiba Gardens Compound",
+            "nameAr": "كومباوند طيبة جاردنز",
+            "slug": "tiba-gardens-compound"
+          },
+          {
+            "name": "Trillium Compound",
+            "nameAr": "كومباوند تريليوم",
+            "slug": "trillium-compound"
+          },
+          { "name": "Uptown", "nameAr": "اب تاون", "slug": "uptown" },
+          {
+            "name": "Upville Compound",
+            "nameAr": "كومباوند اب فيل",
+            "slug": "upville-compound"
+          },
+          { "name": "Venia", "nameAr": "فينيا", "slug": "venia" },
+          { "name": "Villagio", "nameAr": "فيلاجيو", "slug": "villagio" },
+          { "name": "Villaria", "nameAr": "فيلاريا", "slug": "villaria" },
+          { "name": "W Gate", "nameAr": "وى جيت", "slug": "w-gate" },
+          {
+            "name": "Wadi Al Nile Heights",
+            "nameAr": "وادي النيل هايتس",
+            "slug": "wadi-al-nile-heights"
+          },
+          {
+            "name": "Wadi EL-Nakhil Compound",
+            "nameAr": "كومباوند وادي النخيل",
+            "slug": "wadi-el-nakhil-compound"
+          },
+          {
+            "name": "Wadi El Nil",
+            "nameAr": "وادي النيل",
+            "slug": "wadi-el-nil"
+          },
+          {
+            "name": "Wahet El Nasr",
+            "nameAr": "واحة النصر",
+            "slug": "wahet-el-nasr"
+          },
+          { "name": "West Clay", "nameAr": "ويست كلاي", "slug": "west-clay" },
+          { "name": "West Days", "nameAr": "ویست دايز", "slug": "west-days" },
+          {
+            "name": "West Gate Compound",
+            "nameAr": "كومباوند ويست جيت",
+            "slug": "west-gate-compound"
+          },
+          { "name": "West Hills", "nameAr": "ويست هيلز", "slug": "west-hills" },
+          { "name": "West Mark", "nameAr": "ویست مارك", "slug": "west-mark" },
+          { "name": "West Park", "nameAr": "ویست بارك", "slug": "west-park" },
+          {
+            "name": "West Point Mall",
+            "nameAr": "مول ویست بوينت",
+            "slug": "west-point-mall"
+          },
+          { "name": "West Somid", "nameAr": "غرب سوميد", "slug": "west-somid" },
+          {
+            "name": "Woodville Compound",
+            "nameAr": "كومباوند وود فيل",
+            "slug": "woodville-compound"
+          },
+          { "name": "Zat", "nameAr": "ذات", "slug": "zat" },
+          { "name": "Zeraeyin", "nameAr": "الزراعيين", "slug": "zeraeyin" },
+          { "name": "kawn mall", "nameAr": "مول كون", "slug": "kawn-mall" },
+          {
+            "name": "la villa city",
+            "nameAr": "لا فيلا سيتي",
+            "slug": "la-villa-city"
+          }
+        ]
+      },
+      {
+        "name": "Sheikh Zayed",
+        "nameAr": "الشيخ زايد",
+        "areas": [
+          {
+            "name": "10th District",
+            "nameAr": "الحي العاشر",
+            "slug": "10th-district"
+          },
+          {
+            "name": "11th District",
+            "nameAr": "الحي الحادي عشر",
+            "slug": "11th-district"
+          },
+          {
+            "name": "12th District",
+            "nameAr": "الحي الثاني عشر",
+            "slug": "12th-district"
+          },
+          {
+            "name": "13th District",
+            "nameAr": "الحي الثالث عشر",
+            "slug": "13th-district"
+          },
+          {
+            "name": "14th District",
+            "nameAr": "الحي الرابع عشر",
+            "slug": "14th-district"
+          },
+          {
+            "name": "15th District",
+            "nameAr": "الحي الخامس عشر",
+            "slug": "15th-district"
+          },
+          {
+            "name": "16th District",
+            "nameAr": "الحي السادس عشر",
+            "slug": "16th-district"
+          },
+          {
+            "name": "1st District",
+            "nameAr": "الحي الاول",
+            "slug": "1st-district"
+          },
+          {
+            "name": "2nd District",
+            "nameAr": "الحي الثاني",
+            "slug": "2nd-district"
+          },
+          {
+            "name": "3rd District",
+            "nameAr": "الحي الثالث",
+            "slug": "3rd-district"
+          },
+          {
+            "name": "4th District",
+            "nameAr": "الحي الرابع",
+            "slug": "4th-district"
+          },
+          {
+            "name": "5th District",
+            "nameAr": "الحي الخامس",
+            "slug": "5th-district"
+          },
+          {
+            "name": "6th District",
+            "nameAr": "الحي السادس",
+            "slug": "6th-district"
+          },
+          {
+            "name": "7th District",
+            "nameAr": "الحي السابع",
+            "slug": "7th-district"
+          },
+          {
+            "name": "8th District",
+            "nameAr": "الحي الثامن",
+            "slug": "8th-district"
+          },
+          {
+            "name": "9th District",
+            "nameAr": "الحي التاسع",
+            "slug": "9th-district"
+          },
+          { "name": "A Plaza", "nameAr": "أ بلازا", "slug": "a-plaza" },
+          { "name": "Abaq", "nameAr": "أباق", "slug": "abaq" },
+          {
+            "name": "Ad_Vida Compound",
+            "nameAr": "كومباوند ادفيدا",
+            "slug": "ad-vida-compound"
+          },
+          { "name": "Aeon", "nameAr": "ايون", "slug": "aeon" },
+          { "name": "Agora Mall", "nameAr": "اجورا مول", "slug": "agora-mall" },
+          {
+            "name": "Al Feda Gardens",
+            "nameAr": "الفداء جارنز",
+            "slug": "al-feda-gardens"
+          },
+          { "name": "Al Joman", "nameAr": "الجومان", "slug": "al-joman" },
+          {
+            "name": "Al Mostathmir El Saghir",
+            "nameAr": "المستثمر الصغير",
+            "slug": "al-mostathmir-el-saghir"
+          },
+          { "name": "Al Rabwa", "nameAr": "الربوة", "slug": "al-rabwa" },
+          {
+            "name": "Al Solaimaneyah Gardens",
+            "nameAr": "حدائق السليمانية",
+            "slug": "al-solaimaneyah-gardens"
+          },
+          {
+            "name": "Al Solaimaneyah Golf City",
+            "nameAr": "السليمانية - جولف سيتي",
+            "slug": "al-solaimaneyah-golf-city"
+          },
+          { "name": "Al Yasmine", "nameAr": "الياسمين", "slug": "al-yasmine" },
+          {
+            "name": "Allara Compound",
+            "nameAr": "کومباوند ألارا",
+            "slug": "allara-compound"
+          },
+          { "name": "Allegria", "nameAr": "اليجريا", "slug": "allegria" },
+          {
+            "name": "Allegria Residence",
+            "nameAr": "اليجريا ريزيدنس",
+            "slug": "allegria-residence"
+          },
+          {
+            "name": "Alma Compound",
+            "nameAr": "كومباوند الماء",
+            "slug": "alma-compound"
+          },
+          {
+            "name": "Arkan Palm 205",
+            "nameAr": "اركان بالم 205",
+            "slug": "arkan-palm-205"
+          },
+          {
+            "name": "Arkan Plaza",
+            "nameAr": "أركان بلازا",
+            "slug": "arkan-plaza"
+          },
+          {
+            "name": "Atrio Compound",
+            "nameAr": "کومباوند اتريو",
+            "slug": "atrio-compound"
+          },
+          { "name": "Aura", "nameAr": "اورا", "slug": "aura" },
+          { "name": "Bahja", "nameAr": "بهجة", "slug": "bahja" },
+          {
+            "name": "Bamboo Palm Hills",
+            "nameAr": "بامبو بالم هيلز",
+            "slug": "bamboo-palm-hills"
+          },
+          {
+            "name": "Beit Al Watan",
+            "nameAr": "بيت الوطن",
+            "slug": "beit-al-watan"
+          },
+          {
+            "name": "Bel Air - Sodic Compound",
+            "nameAr": "كومباوند بیل اير",
+            "slug": "bel-air-sodic-compound"
+          },
+          {
+            "name": "Belle Vie Compound",
+            "nameAr": "كومباوند بيل في",
+            "slug": "belle-vie-compound"
+          },
+          {
+            "name": "Belle Ville",
+            "nameAr": "زايد بيل فيل",
+            "slug": "belle-ville"
+          },
+          { "name": "Belva", "nameAr": "بيلفا", "slug": "belva" },
+          {
+            "name": "Beverly Hills Compound",
+            "nameAr": "کومباوند بیفرلى هيلز",
+            "slug": "beverly-hills-compound"
+          },
+          {
+            "name": "Bianca Compound",
+            "nameAr": "کومباوند بيانكا",
+            "slug": "bianca-compound"
+          },
+          { "name": "Bliss Gate", "nameAr": "بلس جيت", "slug": "bliss-gate" },
+          {
+            "name": "Blume Compound",
+            "nameAr": "كومباوند بلوم",
+            "slug": "blume-compound"
+          },
+          { "name": "CIV West", "nameAr": "سي اي في ويست", "slug": "civ-west" },
+          { "name": "Cairo Gate", "nameAr": "كايرو جيت", "slug": "cairo-gate" },
+          { "name": "Calma", "nameAr": "كالما", "slug": "calma" },
+          {
+            "name": "Capital Business Park",
+            "nameAr": "کابیتال بیزنس بارك",
+            "slug": "capital-business-park"
+          },
+          {
+            "name": "Casa Compound",
+            "nameAr": "کومباوند كازا",
+            "slug": "casa-compound"
+          },
+          {
+            "name": "Catalya Compound",
+            "nameAr": "كومباوند کاتاليا",
+            "slug": "catalya-compound"
+          },
+          {
+            "name": "Centrada Hub",
+            "nameAr": "سنترادا هاب",
+            "slug": "centrada-hub"
+          },
+          {
+            "name": "Central Avenue",
+            "nameAr": "سنترال افينيو",
+            "slug": "central-avenue"
+          },
+          {
+            "name": "Centro Mall",
+            "nameAr": "سنترو مول",
+            "slug": "centro-mall"
+          },
+          {
+            "name": "Cleopatra Square Compound",
+            "nameAr": "كومباوند كليوباترا سكوير",
+            "slug": "cleopatra-square-compound"
+          },
+          {
+            "name": "Continental Gardens Compound",
+            "nameAr": "كومباوند حدائق الكونتنتال",
+            "slug": "continental-gardens-compound"
+          },
+          {
+            "name": "Continental Residence Compound",
+            "nameAr": "کومباوند کونتیننتال ریزیدنس",
+            "slug": "continental-residence-compound"
+          },
+          { "name": "Dahya", "nameAr": "ضاحيه الشيخ زايد", "slug": "dahya" },
+          { "name": "Dar Misr", "nameAr": "دار مصر", "slug": "dar-misr" },
+          {
+            "name": "De Joya Compound",
+            "nameAr": "کومباوند دی جويا",
+            "slug": "de-joya-compound"
+          },
+          { "name": "Dejoya", "nameAr": "ديجويا", "slug": "dejoya" },
+          { "name": "Efid", "nameAr": "ايفيد", "slug": "efid" },
+          {
+            "name": "El Karma 2 Compound",
+            "nameAr": "كومباوند الكارما 2",
+            "slug": "el-karma-2-compound"
+          },
+          {
+            "name": "El Karma 4 Compound",
+            "nameAr": "كومباوند الكارما 4",
+            "slug": "el-karma-4-compound"
+          },
+          {
+            "name": "El Karma Compound",
+            "nameAr": "كومباوند الكارما",
+            "slug": "el-karma-compound"
+          },
+          {
+            "name": "El Karnak Compound",
+            "nameAr": "كومباوند الكرنك",
+            "slug": "el-karnak-compound"
+          },
+          {
+            "name": "El Khamayel Compound",
+            "nameAr": "كومباوند الخمائل",
+            "slug": "el-khamayel-compound"
+          },
+          {
+            "name": "El Patio Heights",
+            "nameAr": "الباتيو هايتس",
+            "slug": "el-patio-heights"
+          },
+          {
+            "name": "El Patio Vera Compound",
+            "nameAr": "كومباوند الباتيو فيرا",
+            "slug": "el-patio-vera-compound"
+          },
+          {
+            "name": "El Patio Zahraa Compound",
+            "nameAr": "كومباوند الباتيو زهراء الشيخ زايد",
+            "slug": "el-patio-zahraa-compound"
+          },
+          {
+            "name": "Elevations Compound",
+            "nameAr": "كومباوند اليفيشنز",
+            "slug": "elevations-compound"
+          },
+          {
+            "name": "Elite West",
+            "nameAr": "ایلیت ویست",
+            "slug": "elite-west"
+          },
+          {
+            "name": "Elora Compound",
+            "nameAr": "کومباوند ايلورا",
+            "slug": "elora-compound"
+          },
+          { "name": "Elysium", "nameAr": "اليسيوم", "slug": "elysium" },
+          {
+            "name": "Etapa Compound",
+            "nameAr": "کومباوند ايتابا",
+            "slug": "etapa-compound"
+          },
+          {
+            "name": "Ever West Compound",
+            "nameAr": "کومباوند ایفر وست",
+            "slug": "ever-west-compound"
+          },
+          {
+            "name": "Forty West - Sodic Compound",
+            "nameAr": "كومباوند فورتی ويست",
+            "slug": "forty-west-sodic-compound"
+          },
+          { "name": "G West", "nameAr": "جي ويست", "slug": "g-west" },
+          {
+            "name": "Gardenia Park 2",
+            "nameAr": "جاردنيا بارك 2",
+            "slug": "gardenia-park-2"
+          },
+          {
+            "name": "Gems Compound",
+            "nameAr": "كومباوند جيمس",
+            "slug": "gems-compound"
+          },
+          {
+            "name": "Genista Compound",
+            "nameAr": "كومباوند جينيستا",
+            "slug": "genista-compound"
+          },
+          { "name": "Genova", "nameAr": "جينوفا", "slug": "genova" },
+          {
+            "name": "Giselle Compound",
+            "nameAr": "كومباوند جيزيل",
+            "slug": "giselle-compound"
+          },
+          {
+            "name": "Green 3 Compound",
+            "nameAr": "كومباوند جرين 3",
+            "slug": "green-3-compound"
+          },
+          {
+            "name": "Green 4 Compound",
+            "nameAr": "كومباوند جرين 4",
+            "slug": "green-4-compound"
+          },
+          {
+            "name": "Green Plaza 1",
+            "nameAr": "جرين بلازا 1",
+            "slug": "green-plaza-1"
+          },
+          {
+            "name": "Green Residence",
+            "nameAr": "جرین ریزیدنس",
+            "slug": "green-residence"
+          },
+          {
+            "name": "Green Revolution Compound",
+            "nameAr": "كومباوند الثورة الخضراء",
+            "slug": "green-revolution-compound"
+          },
+          {
+            "name": "Green Ville Compound",
+            "nameAr": "كومباوند جرين فيل",
+            "slug": "green-ville-compound"
+          },
+          {
+            "name": "Greens Compound",
+            "nameAr": "كومباوند جرينز",
+            "slug": "greens-compound"
+          },
+          {
+            "name": "Guezira 1 Compound",
+            "nameAr": "كومباوند جزيرة 1",
+            "slug": "guezira-1-compound"
+          },
+          {
+            "name": "Hadayek Al Mohandessin Compound",
+            "nameAr": "كومباوند حدائق المهندسين",
+            "slug": "hadayek-al-mohandessin-compound"
+          },
+          {
+            "name": "Hills of One Compound",
+            "nameAr": "كومباوند هیلز اوف وان",
+            "slug": "hills-of-one-compound"
+          },
+          { "name": "IRA", "nameAr": "إيرا", "slug": "ira" },
+          {
+            "name": "Isola Villas",
+            "nameAr": "ایزولا فيلا",
+            "slug": "isola-villas"
+          },
+          {
+            "name": "Ivoire Compound",
+            "nameAr": "كومباوند ايفوري",
+            "slug": "ivoire-compound"
+          },
+          { "name": "Ivy", "nameAr": "ايفى", "slug": "ivy" },
+          { "name": "Janna 1", "nameAr": "جنة 1", "slug": "janna-1" },
+          { "name": "Janna 2", "nameAr": "جنة 2", "slug": "janna-2" },
+          { "name": "Janna 4", "nameAr": "جنة 4", "slug": "janna-4" },
+          {
+            "name": "Jasper Compound",
+            "nameAr": "كومباوند جاسبر",
+            "slug": "jasper-compound"
+          },
+          {
+            "name": "Jeera Compound",
+            "nameAr": "كومباوند جيرة",
+            "slug": "jeera-compound"
+          },
+          {
+            "name": "Jewar Compound",
+            "nameAr": "كومباوند جوار",
+            "slug": "jewar-compound"
+          },
+          { "name": "Jirian", "nameAr": "جريان", "slug": "jirian" },
+          {
+            "name": "Jubail Compound",
+            "nameAr": "كومباوند جبيل",
+            "slug": "jubail-compound"
+          },
+          {
+            "name": "Kanarya Compound",
+            "nameAr": "كومباوند کناريا",
+            "slug": "kanarya-compound"
+          },
+          {
+            "name": "Karma Gates Compound",
+            "nameAr": "كومباوند كارما جيتس",
+            "slug": "karma-gates-compound"
+          },
+          {
+            "name": "Karma Kay Compound",
+            "nameAr": "كومباوند کارما كاي",
+            "slug": "karma-kay-compound"
+          },
+          {
+            "name": "Karma Residence Compound",
+            "nameAr": "كومباوند کارما ريزيدنس",
+            "slug": "karma-residence-compound"
+          },
+          {
+            "name": "Karmell Compound",
+            "nameAr": "کومباوند کارميل",
+            "slug": "karmell-compound"
+          },
+          {
+            "name": "Key Of Greens",
+            "nameAr": "كي أوف جرينز",
+            "slug": "key-of-greens"
+          },
+          { "name": "La Colina", "nameAr": "لا كولينا", "slug": "la-colina" },
+          {
+            "name": "La Maison Compound",
+            "nameAr": "كومباوند لاميزون",
+            "slug": "la-maison-compound"
+          },
+          {
+            "name": "Lac Ville Compound",
+            "nameAr": "كومباوند لاك فيل",
+            "slug": "lac-ville-compound"
+          },
+          {
+            "name": "Lake West 4",
+            "nameAr": "ليك ويست 4",
+            "slug": "lake-west-4"
+          },
+          {
+            "name": "Lake West Compound",
+            "nameAr": "كومباوند ليك ويست",
+            "slug": "lake-west-compound"
+          },
+          {
+            "name": "Leaves Compound",
+            "nameAr": "كومباوند ليفز",
+            "slug": "leaves-compound"
+          },
+          {
+            "name": "Legenda Compound",
+            "nameAr": "كومباوند لیجندا",
+            "slug": "legenda-compound"
+          },
+          {
+            "name": "Levels By Dunes Compound",
+            "nameAr": "كومباوند ليفيلز باي ديونز",
+            "slug": "levels-by-dunes-compound"
+          },
+          { "name": "Lo Zada", "nameAr": "لو زادا", "slug": "lo-zada" },
+          { "name": "Lugar", "nameAr": "لوجار", "slug": "lugar" },
+          {
+            "name": "MOON HILLS 4 Compound",
+            "nameAr": "كومباوند مون هیلز 4",
+            "slug": "moon-hills-4-compound"
+          },
+          { "name": "Majorelle", "nameAr": "ماجوريل", "slug": "majorelle" },
+          { "name": "Mall 101", "nameAr": "مول 101", "slug": "mall-101" },
+          {
+            "name": "Mall Allora hub",
+            "nameAr": "مول ألورا هاب",
+            "slug": "mall-allora-hub"
+          },
+          {
+            "name": "Mall Five Fifty Five",
+            "nameAr": "مول فايف فيفتي فايف",
+            "slug": "mall-five-fifty-five"
+          },
+          {
+            "name": "Mall Juno Plaza",
+            "nameAr": "مول جونو بلازا",
+            "slug": "mall-juno-plaza"
+          },
+          {
+            "name": "Mar Ville New Zayed",
+            "nameAr": "مارفيل نيو زايد",
+            "slug": "mar-ville-new-zayed"
+          },
+          {
+            "name": "Marrakesh Shourra Compound",
+            "nameAr": "كومباوند مراکش شورى",
+            "slug": "marrakesh-shourra-compound"
+          },
+          {
+            "name": "Meadows Park Compound",
+            "nameAr": "کومباوند میدوز بارك",
+            "slug": "meadows-park-compound"
+          },
+          { "name": "Menorca", "nameAr": "مینوركا", "slug": "menorca" },
+          { "name": "Meray 2", "nameAr": "ميراي 2", "slug": "meray-2" },
+          {
+            "name": "Midgard Residence Compound",
+            "nameAr": "کومباوند مید جارد ریزیدنس",
+            "slug": "midgard-residence-compound"
+          },
+          { "name": "Miura", "nameAr": "میورا", "slug": "miura" },
+          {
+            "name": "Montania Compound",
+            "nameAr": "کومباوند مونتانيا",
+            "slug": "montania-compound"
+          },
+          {
+            "name": "Moon Land Compound",
+            "nameAr": "كومباوند مون لاند",
+            "slug": "moon-land-compound"
+          },
+          {
+            "name": "Naia West Compound",
+            "nameAr": "كومباوند نايا ويست",
+            "slug": "naia-west-compound"
+          },
+          { "name": "New Park", "nameAr": "نیو بارك", "slug": "new-park" },
+          {
+            "name": "New Sphinx City",
+            "nameAr": "مدينة سفنكس الجديدة",
+            "slug": "new-sphinx-city"
+          },
+          {
+            "name": "New Zayed",
+            "nameAr": "زايد الجديدة",
+            "slug": "new-zayed"
+          },
+          { "name": "Nmq", "nameAr": "نمق", "slug": "nmq" },
+          { "name": "Novella", "nameAr": "نوفيلا", "slug": "novella" },
+          {
+            "name": "Noya West Compound",
+            "nameAr": "كومباوند نويا ويست",
+            "slug": "noya-west-compound"
+          },
+          { "name": "ONe33", "nameAr": "وان 33", "slug": "one33" },
+          {
+            "name": "One 16 Compound",
+            "nameAr": "كومباوند وان 16",
+            "slug": "one-16-compound"
+          },
+          { "name": "Ons", "nameAr": "أنس", "slug": "ons" },
+          {
+            "name": "Opera City Compound",
+            "nameAr": "كومباوند اوبرا سيتي",
+            "slug": "opera-city-compound"
+          },
+          { "name": "Ori", "nameAr": "أوري", "slug": "ori" },
+          {
+            "name": "Ourika Compound",
+            "nameAr": "كومباوند اوريكا",
+            "slug": "ourika-compound"
+          },
+          {
+            "name": "PALM GATE Compound",
+            "nameAr": "كومباوند بالم جيت",
+            "slug": "palm-gate-compound"
+          },
+          {
+            "name": "Palm Valley Compound",
+            "nameAr": "كومباوند بالم فالي",
+            "slug": "palm-valley-compound"
+          },
+          {
+            "name": "Park Street",
+            "nameAr": "بارك ستريت",
+            "slug": "park-street"
+          },
+          {
+            "name": "Park Valley Compound",
+            "nameAr": "كومباوند بارك فالي",
+            "slug": "park-valley-compound"
+          },
+          {
+            "name": "Parkdale New Zayed Compound",
+            "nameAr": "كومباوند بارك ديل زايد الجديدة",
+            "slug": "parkdale-new-zayed-compound"
+          },
+          { "name": "Prive", "nameAr": "بريف", "slug": "prive" },
+          {
+            "name": "Pyramids Walk",
+            "nameAr": "بيراميدز ووك",
+            "slug": "pyramids-walk"
+          },
+          { "name": "Q Hills", "nameAr": "كيو هيلز", "slug": "q-hills" },
+          { "name": "Qomra", "nameAr": "قمره", "slug": "qomra" },
+          { "name": "Rafts", "nameAr": "رافتس", "slug": "rafts" },
+          {
+            "name": "Rawdat Zayed Compound",
+            "nameAr": "كومباوند روضة زايد",
+            "slug": "rawdat-zayed-compound"
+          },
+          {
+            "name": "Reeva New Zayed Compound",
+            "nameAr": "كومباوند ريفا زايد الجديدة",
+            "slug": "reeva-new-zayed-compound"
+          },
+          { "name": "Rewaya", "nameAr": "رواية", "slug": "rewaya" },
+          {
+            "name": "Rich Mont Compound",
+            "nameAr": "كومباوند ريتش مونت",
+            "slug": "rich-mont-compound"
+          },
+          { "name": "Ridge", "nameAr": "ريدج", "slug": "ridge" },
+          { "name": "Ritzy Mall", "nameAr": "ريتزي مول", "slug": "ritzy-mall" },
+          {
+            "name": "River Park Compound",
+            "nameAr": "كومباوند ریفر بارك",
+            "slug": "river-park-compound"
+          },
+          {
+            "name": "Rivers Compound",
+            "nameAr": "كومباوند ريفرز",
+            "slug": "rivers-compound"
+          },
+          {
+            "name": "Rose Ville New Zayed Compound",
+            "nameAr": "کومباوند روز فيل زايد الجديدة",
+            "slug": "rose-ville-new-zayed-compound"
+          },
+          { "name": "Rovan", "nameAr": "روفان", "slug": "rovan" },
+          { "name": "Rowaq", "nameAr": "رواق", "slug": "rowaq" },
+          {
+            "name": "Royal City Compound",
+            "nameAr": "كومباوند رويال سيتي",
+            "slug": "royal-city-compound"
+          },
+          {
+            "name": "Royal Meadows Compound",
+            "nameAr": "كومباوند رویال میدوز",
+            "slug": "royal-meadows-compound"
+          },
+          {
+            "name": "Royal Lake New Zayed Compound",
+            "nameAr": "كومباوند رويال ليك زايد الجديدة",
+            "slug": "royal-lake-new-zayed-compound"
+          },
+          { "name": "SIAM Mall", "nameAr": "مول سيام", "slug": "siam-mall" },
+          { "name": "Sama Zayed", "nameAr": "سما زايد", "slug": "sama-zayed" },
+          {
+            "name": "Selena 2 Compound",
+            "nameAr": "كومباوند سيلينا 2",
+            "slug": "selena-2-compound"
+          },
+          {
+            "name": "Selena Compound",
+            "nameAr": "كومباوند سيلينا",
+            "slug": "selena-compound"
+          },
+          {
+            "name": "Silva Compound",
+            "nameAr": "كومباوند سيلفا",
+            "slug": "silva-compound"
+          },
+          {
+            "name": "Silver Gate Mall",
+            "nameAr": "سيلفر جيت مول",
+            "slug": "silver-gate-mall"
+          },
+          { "name": "Sitio", "nameAr": "سيتيو", "slug": "sitio" },
+          {
+            "name": "Six West Compound",
+            "nameAr": "كومباوند 6 ويست",
+            "slug": "six-west-compound"
+          },
+          { "name": "Sky Ramp", "nameAr": "سکای رامب", "slug": "sky-ramp" },
+          { "name": "Skywalk", "nameAr": "سكاي ووك", "slug": "skywalk" },
+          {
+            "name": "Sodic Westown Compound",
+            "nameAr": "كومباوند ویست تاون سوديك",
+            "slug": "sodic-westown-compound"
+          },
+          { "name": "Solana", "nameAr": "سولانا", "slug": "solana" },
+          {
+            "name": "Solimar Green 2",
+            "nameAr": "سوليمار جرين 2",
+            "slug": "solimar-green-2"
+          },
+          {
+            "name": "Solimar Green 3",
+            "nameAr": "سوليمار جرين 3",
+            "slug": "solimar-green-3"
+          },
+          { "name": "Somow", "nameAr": "سمو", "slug": "somow" },
+          {
+            "name": "Sukoon Compound",
+            "nameAr": "كومباوند سكون",
+            "slug": "sukoon-compound"
+          },
+          { "name": "Summit", "nameAr": "ساميت", "slug": "summit" },
+          { "name": "Sun Square", "nameAr": "صن سكوير", "slug": "sun-square" },
+          {
+            "name": "Swan Lake West",
+            "nameAr": "سوان ليك ويست",
+            "slug": "swan-lake-west"
+          },
+          {
+            "name": "T Square Mall",
+            "nameAr": "تي سكوير مول",
+            "slug": "t-square-mall"
+          },
+          { "name": "T-Pearl", "nameAr": "تي بيرل", "slug": "t-pearl" },
+          {
+            "name": "THE 8 Compound",
+            "nameAr": "كومباوند ذا 8",
+            "slug": "the-8-compound"
+          },
+          { "name": "THRU", "nameAr": "ثرو", "slug": "thru" },
+          { "name": "Tara", "nameAr": "تارا", "slug": "tara" },
+          {
+            "name": "Telal Al Jazeera Compound",
+            "nameAr": "كومباوند تلال الجزيرة",
+            "slug": "telal-al-jazeera-compound"
+          },
+          { "name": "Terrace", "nameAr": "تراس", "slug": "terrace" },
+          {
+            "name": "The Address",
+            "nameAr": "ذا ادريس",
+            "slug": "the-address"
+          },
+          {
+            "name": "The Core Compound",
+            "nameAr": "كومباوند ذا كور",
+            "slug": "the-core-compound"
+          },
+          {
+            "name": "The Courtyard",
+            "nameAr": "ذا كورت يارد",
+            "slug": "the-courtyard"
+          },
+          {
+            "name": "The Courtyards Compound",
+            "nameAr": "كومباوند ذا كورت ياردز",
+            "slug": "the-courtyards-compound"
+          },
+          {
+            "name": "The Estates Compound",
+            "nameAr": "كومباوند ذا استيتس",
+            "slug": "the-estates-compound"
+          },
+          {
+            "name": "The Gate Plaza Mall",
+            "nameAr": "مول ذا جيت بلازا",
+            "slug": "the-gate-plaza-mall"
+          },
+          { "name": "The Harv", "nameAr": "ذا هارف", "slug": "the-harv" },
+          {
+            "name": "The Polygon",
+            "nameAr": "ذا بوليجون",
+            "slug": "the-polygon"
+          },
+          {
+            "name": "The Strip - Sodic Compound",
+            "nameAr": "كومباوند ذا ستريب",
+            "slug": "the-strip-sodic-compound"
+          },
+          {
+            "name": "The Strip II - Sodic Compound",
+            "nameAr": "كومباوند ذا ستريب 2",
+            "slug": "the-strip-ii-sodic-compound"
+          },
+          {
+            "name": "The Yard Compound",
+            "nameAr": "كومباوند ذا يارد",
+            "slug": "the-yard-compound"
+          },
+          { "name": "The portal", "nameAr": "ذا بورتال", "slug": "the-portal" },
+          {
+            "name": "Tiamo City",
+            "nameAr": "تيامو سيتي",
+            "slug": "tiamo-city"
+          },
+          { "name": "Toya", "nameAr": "تويا", "slug": "toya" },
+          {
+            "name": "Trivium Zayed",
+            "nameAr": "تريفيوم زايد",
+            "slug": "trivium-zayed"
+          },
+          { "name": "Upove", "nameAr": "أبوق", "slug": "upove" },
+          { "name": "V West", "nameAr": "في ويست", "slug": "v-west" },
+          {
+            "name": "VYE Sodic Compound",
+            "nameAr": "كومباوند فاي سوديك",
+            "slug": "vye-sodic-compound"
+          },
+          {
+            "name": "Vaha New Zayed Compound",
+            "nameAr": "كومباوند فاها زايد الجديدة",
+            "slug": "vaha-new-zayed-compound"
+          },
+          { "name": "Valea", "nameAr": "فاليا", "slug": "valea" },
+          { "name": "Via", "nameAr": "فيا", "slug": "via" },
+          {
+            "name": "Village West Compound",
+            "nameAr": "كومباوند فيلدج ويست",
+            "slug": "village-west-compound"
+          },
+          {
+            "name": "Walk of Cairo",
+            "nameAr": "واك اوف كايرو",
+            "slug": "walk-of-cairo"
+          },
+          {
+            "name": "Waslet Dahshur",
+            "nameAr": "وصلة دهشور",
+            "slug": "waslet-dahshur"
+          },
+          {
+            "name": "West Dunes Compound",
+            "nameAr": "كومباوند ویست دیونز",
+            "slug": "west-dunes-compound"
+          },
+          { "name": "Westview", "nameAr": "ويست فيو", "slug": "westview" },
+          {
+            "name": "White Eagle",
+            "nameAr": "وايت ايجيل",
+            "slug": "white-eagle"
+          },
+          { "name": "Yamour", "nameAr": "يامور", "slug": "yamour" },
+          {
+            "name": "ZED West Compound",
+            "nameAr": "كومباوند زد ویست",
+            "slug": "zed-west-compound"
+          },
+          {
+            "name": "Zayard Compound",
+            "nameAr": "زايارد",
+            "slug": "zayard-compound"
+          },
+          {
+            "name": "Zayed 2000 Compound",
+            "nameAr": "كومباوند زايد 2000",
+            "slug": "zayed-2000-compound"
+          },
+          {
+            "name": "Zayed Dunes Compound",
+            "nameAr": "کومباوند زايد ديونز",
+            "slug": "zayed-dunes-compound"
+          },
+          {
+            "name": "Zayed Gardens Villas",
+            "nameAr": "فيلات حدائق زايد",
+            "slug": "zayed-gardens-villas"
+          },
+          {
+            "name": "Zayed Greens Compound",
+            "nameAr": "كومباوند زاید جرينز",
+            "slug": "zayed-greens-compound"
+          },
+          {
+            "name": "Zayed Heights",
+            "nameAr": "زايد هايتس",
+            "slug": "zayed-heights"
+          },
+          {
+            "name": "Zayed Regency Compound",
+            "nameAr": "كومباوند زاید ریجینسى",
+            "slug": "zayed-regency-compound"
+          },
+          { "name": "Zed Towers", "nameAr": "أبراج زيد", "slug": "zed-towers" },
+          { "name": "Kargo Mall", "nameAr": "کارجو مول", "slug": "kargo-mall" },
+          {
+            "name": "La Castle 1 Compound",
+            "nameAr": "كومباوند لا كاسيل 1",
+            "slug": "la-castle-1-compound"
+          },
+          {
+            "name": "La Castle 2 Compound",
+            "nameAr": "كومباوند لا كاسيل 2",
+            "slug": "la-castle-2-compound"
+          },
+          {
+            "name": "La Castle 3 Compound",
+            "nameAr": "كومباوند لا كاسيل 3",
+            "slug": "la-castle-3-compound"
+          },
+          {
+            "name": "La Castle 4 Compound",
+            "nameAr": "كومباوند لا كاسيل 4",
+            "slug": "la-castle-4-compound"
+          }
+        ]
+      },
+      {
+        "name": "Hadayek October",
+        "nameAr": "حدائق اكتوبر",
+        "areas": [
+          {
+            "name": "2020 Compound",
+            "nameAr": "2020 کمبوند",
+            "slug": "2020-compound"
+          },
+          {
+            "name": "Agyad Garden City",
+            "nameAr": "أجياد جاردن سيتي",
+            "slug": "agyad-garden-city"
+          },
+          { "name": "Al Lotus", "nameAr": "اللوتس", "slug": "al-lotus" },
+          {
+            "name": "Alico City",
+            "nameAr": "أليكو سیتی",
+            "slug": "alico-city"
+          },
+          {
+            "name": "Astoria Park",
+            "nameAr": "أستوريا بارك",
+            "slug": "astoria-park"
+          },
+          {
+            "name": "Baet El Masria",
+            "nameAr": "بيت المصريه",
+            "slug": "baet-el-masria"
+          },
+          { "name": "Bedaya", "nameAr": "بداية", "slug": "bedaya" },
+          { "name": "Bedaya 2", "nameAr": "بداية 2", "slug": "bedaya-2" },
+          {
+            "name": "Beta Gardens",
+            "nameAr": "بیتا جاردنز",
+            "slug": "beta-gardens"
+          },
+          {
+            "name": "Beta Greens",
+            "nameAr": "بيتا جرينز",
+            "slug": "beta-greens"
+          },
+          { "name": "Calma", "nameAr": "كالما", "slug": "calma" },
+          {
+            "name": "Comex Gardens",
+            "nameAr": "كومكس جاردنز",
+            "slug": "comex-gardens"
+          },
+          {
+            "name": "Connect 4 Plaza",
+            "nameAr": "كونكت 4 بلازا",
+            "slug": "connect-4-plaza"
+          },
+          { "name": "Copen Gate", "nameAr": "كوبن جيت", "slug": "copen-gate" },
+          {
+            "name": "Degla Gardens",
+            "nameAr": "دجله جاردنز",
+            "slug": "degla-gardens"
+          },
+          { "name": "Eco West", "nameAr": "ایکو ویست", "slug": "eco-west" },
+          { "name": "El Fayrouz", "nameAr": "الفيروز", "slug": "el-fayrouz" },
+          { "name": "Evergreen", "nameAr": "إيفرجرين", "slug": "evergreen" },
+          { "name": "Isola", "nameAr": "ایزولا", "slug": "isola" },
+          {
+            "name": "Italian Square",
+            "nameAr": "الحي الايطالي",
+            "slug": "italian-square"
+          },
+          {
+            "name": "Ixora Compound",
+            "nameAr": "كومباوند اکسورا",
+            "slug": "ixora-compound"
+          },
+          { "name": "Karma", "nameAr": "کارما", "slug": "karma" },
+          { "name": "Kenz", "nameAr": "کنز", "slug": "kenz" },
+          {
+            "name": "La Verte City Compound",
+            "nameAr": "كومباوند لافيرت سيتي",
+            "slug": "la-verte-city-compound"
+          },
+          { "name": "Lakefront", "nameAr": "ليك فرونت", "slug": "lakefront" },
+          {
+            "name": "Life Garden Compound",
+            "nameAr": "كومباوند لايف جاردن",
+            "slug": "life-garden-compound"
+          },
+          {
+            "name": "Makany Mall",
+            "nameAr": "مول مکانی",
+            "slug": "makany-mall"
+          },
+          { "name": "Malaga", "nameAr": "ملجا", "slug": "malaga" },
+          {
+            "name": "Operetta Greens",
+            "nameAr": "اوبريت جرينز",
+            "slug": "operetta-greens"
+          },
+          { "name": "Palm View", "nameAr": "بالم فيو", "slug": "palm-view" },
+          {
+            "name": "Paradise Compound",
+            "nameAr": "كومباوند باراديس",
+            "slug": "paradise-compound"
+          },
+          {
+            "name": "Rehab October City",
+            "nameAr": "رحاب أكتوبر سيتي",
+            "slug": "rehab-october-city"
+          },
+          { "name": "Rock Eden", "nameAr": "روك إيدين", "slug": "rock-eden" },
+          { "name": "Rosebud", "nameAr": "روز بد", "slug": "rosebud" },
+          { "name": "Sedra", "nameAr": "سدره", "slug": "sedra" },
+          {
+            "name": "Spanish District",
+            "nameAr": "الحي الأسبانی",
+            "slug": "spanish-district"
+          },
+          {
+            "name": "Sun Capital",
+            "nameAr": "صن كابيتال",
+            "slug": "sun-capital"
+          },
+          { "name": "Town View", "nameAr": "تاون فيو", "slug": "town-view" },
+          { "name": "Utopia", "nameAr": "يوتوبيا سيتی", "slug": "utopia" },
+          {
+            "name": "Valley Towers",
+            "nameAr": "فالی تاورز",
+            "slug": "valley-towers"
+          },
+          {
+            "name": "Vida Residence",
+            "nameAr": "فيدا ريزيدنس",
+            "slug": "vida-residence"
+          },
+          {
+            "name": "Wahet El Ryhan",
+            "nameAr": "الريحان",
+            "slug": "wahet-el-ryhan"
+          }
+        ]
+      },
+      {
+        "name": "Abu Rawash",
+        "nameAr": "أبو رواش",
+        "areas": []
+      },
+      {
+        "name": "Agouza",
+        "nameAr": "العجوزة",
+        "areas": []
+      },
+      {
+        "name": "Ard El Lewa",
+        "nameAr": "أرض اللواء",
+        "areas": []
+      },
+      {
+        "name": "Badrasheen",
+        "nameAr": "البدرشين",
+        "areas": []
+      },
+      {
+        "name": "Baragil",
+        "nameAr": "البراجيل",
+        "areas": []
+      },
+      {
+        "name": "Bashtil",
+        "nameAr": "بشتيل",
+        "areas": []
+      },
+      {
+        "name": "Boulaq Dakrour",
+        "nameAr": "بولاق الدكرور",
+        "areas": []
+      },
+      {
+        "name": "Dahab Island",
+        "nameAr": "جزيرة الدهب",
+        "areas": []
+      },
+      {
+        "name": "Dahshour",
+        "nameAr": "دهشور",
+        "areas": []
+      },
+      {
+        "name": "Dokki",
+        "nameAr": "الدقى",
+        "areas": [
+          {
+            "name": "Mina City Central",
+            "nameAr": "مينا سيتي سنترال",
+            "slug": "mina-city-central"
+          }
+        ]
+      },
+      {
+        "name": "Faisal",
+        "nameAr": "فيصل",
+        "areas": []
+      },
+      {
+        "name": "Giza District",
+        "nameAr": "حى الجيزة",
+        "areas": [
+          {
+            "name": "Cairo University",
+            "nameAr": "جامعة القاهرة",
+            "slug": "cairo-university"
+          }
+        ]
+      },
+      {
+        "name": "Hadayek El Ahram",
+        "nameAr": "حدائق الاهرام",
+        "areas": []
+      },
+      {
+        "name": "Haram",
+        "nameAr": "الهرم",
+        "areas": []
+      },
+      {
+        "name": "Hawamdeya",
+        "nameAr": "الحوامدية",
+        "areas": []
+      },
+      {
+        "name": "Imbaba",
+        "nameAr": "إمبابة",
+        "areas": [
+          {
+            "name": "Yasmeen Gardens",
+            "nameAr": "الياسمين جاردنز",
+            "slug": "yasmeen-gardens"
+          }
+        ]
+      },
+      {
+        "name": "Kerdasa",
+        "nameAr": "كرداسة",
+        "areas": []
+      },
+      {
+        "name": "Kit Kat",
+        "nameAr": "الكيت كات",
+        "areas": []
+      },
+      {
+        "name": "Mansouria",
+        "nameAr": "المنصورية",
+        "areas": []
+      },
+      {
+        "name": "Mariouteya",
+        "nameAr": "مريوطية",
+        "areas": []
+      },
+      {
+        "name": "Manial Shiha",
+        "nameAr": "منيل شيحة",
+        "areas": []
+      },
+      {
+        "name": "Mansoura Center",
+        "nameAr": "مركز الجيزة",
+        "areas": []
+      },
+      {
+        "name": "Monib",
+        "nameAr": "المنيب",
+        "areas": []
+      },
+      {
+        "name": "Nahya",
+        "nameAr": "ناهيا",
+        "areas": []
+      },
+      {
+        "name": "Osim",
+        "nameAr": "أوسيم",
+        "areas": []
+      },
+      {
+        "name": "Saft El Laban",
+        "nameAr": "صفط اللبن",
+        "areas": []
+      },
+      {
+        "name": "Saf",
+        "nameAr": "الصف",
+        "areas": []
+      },
+      {
+        "name": "Tersa",
+        "nameAr": "ترسا",
+        "areas": []
+      },
+      {
+        "name": "Warraq",
+        "nameAr": "الوراق",
+        "areas": []
+      },
+      {
+        "name": "Ayyat",
+        "nameAr": "العياط",
+        "areas": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,2744 @@
+[
+  {
+    "name": "Sohag",
+    "nameAr": "سوهاج",
+    "slug": "sohag",
+    "sort": 13,
+    "cities": [
+      { "name": "Akhmim", "nameAr": "أخميم", "slug": "akhmim" },
+      { "name": "Alasirat", "nameAr": "العسيرات", "slug": "alasirat" },
+      { "name": "Baliana", "nameAr": "البلينا", "slug": "baliana" },
+      { "name": "Girga", "nameAr": "جرجا", "slug": "girga" },
+      { "name": "Maragha", "nameAr": "المراغة", "slug": "maragha" },
+      {
+        "name": "Markaz Dar El Salam",
+        "nameAr": "مركز دار السلام",
+        "slug": "markaz-dar-el-salam"
+      },
+      {
+        "name": "Markaz Juhaynah",
+        "nameAr": "مركز جهينة",
+        "slug": "markaz-juhaynah"
+      },
+      {
+        "name": "Markaz Sohag",
+        "nameAr": "مركز سوهاج",
+        "slug": "markaz-sohag"
+      },
+      { "name": "Monsha'a", "nameAr": "المنشاة", "slug": "monsha-a" },
+      { "name": "New Sohag", "nameAr": "سوهاج الجديدة", "slug": "new-sohag" },
+      { "name": "Sakaltah", "nameAr": "ساقلتة", "slug": "sakaltah" },
+      { "name": "Tahta", "nameAr": "طهطا", "slug": "tahta" },
+      { "name": "Tama", "nameAr": "طما", "slug": "tama" }
+    ]
+  },
+  {
+    "name": "Qena",
+    "nameAr": "قنا",
+    "slug": "qena",
+    "sort": 26,
+    "cities": [
+      { "name": "Abu Tisht", "nameAr": "أبو تشت", "slug": "abu-tisht" },
+      { "name": "Wakf", "nameAr": "الوقف", "slug": "wakf" },
+      { "name": "Dishna", "nameAr": "دشنا", "slug": "dishna" },
+      { "name": "Farshout", "nameAr": "فرشوط", "slug": "farshout" },
+      { "name": "Keft", "nameAr": "قفط", "slug": "keft" },
+      { "name": "Quos", "nameAr": "قوص", "slug": "quos" },
+      { "name": "Qena City", "nameAr": "مدينة قنا", "slug": "qena-city" },
+      { "name": "Nag Hammadi", "nameAr": "نجع حمادي", "slug": "nag-hammadi" },
+      { "name": "Nakada", "nameAr": "نقادة", "slug": "nakada" }
+    ]
+  },
+  {
+    "name": "Suez",
+    "nameAr": "السويس",
+    "slug": "suez",
+    "sort": 25,
+    "cities": [
+      {
+        "name": "Ain Sukhna",
+        "nameAr": "العين السخنة",
+        "slug": "ain-sukhna",
+        "areas": [
+          {
+            "name": "Al Galala City",
+            "nameAr": "مدينة الجلالة",
+            "slug": "al-galala-city"
+          },
+          { "name": "Al Hayah", "nameAr": "الحياة", "slug": "al-hayah" },
+          { "name": "Al Hegaz", "nameAr": "الحجاز", "slug": "al-hegaz" },
+          { "name": "Almanal", "nameAr": "المنال", "slug": "almanal" },
+          {
+            "name": "Amexco Paradise",
+            "nameAr": "امكسيكو باراديس",
+            "slug": "amexco-paradise"
+          },
+          { "name": "Amigo", "nameAr": "اميجو", "slug": "amigo" },
+          { "name": "Areej", "nameAr": "اريج", "slug": "areej" },
+          {
+            "name": "Aroma Residence",
+            "nameAr": "أروما ريزيدينس",
+            "slug": "aroma-residence"
+          },
+          { "name": "Azha", "nameAr": "ازها", "slug": "azha" },
+          { "name": "BOHO", "nameAr": "بوهو", "slug": "boho" },
+          { "name": "Baymount", "nameAr": "باي ماونت", "slug": "baymount" },
+          { "name": "Bella East", "nameAr": "بیلا ایست", "slug": "bella-east" },
+          {
+            "name": "Bella Romance",
+            "nameAr": "بیلا رومانس",
+            "slug": "bella-romance"
+          },
+          {
+            "name": "Bella Vento",
+            "nameAr": "بيلا فينتو",
+            "slug": "bella-vento"
+          },
+          {
+            "name": "Bella Vista",
+            "nameAr": "بيلا فيستا",
+            "slug": "bella-vista"
+          },
+          { "name": "Bellagio", "nameAr": "بلاجيو", "slug": "bellagio" },
+          {
+            "name": "Blue Bay Asia",
+            "nameAr": "بلو باي اسيا",
+            "slug": "blue-bay-asia"
+          },
+          { "name": "Blue Blue", "nameAr": "بلو بلو", "slug": "blue-blue" },
+          { "name": "Blue Hub Mall", "nameAr": "بلو هب", "slug": "blue-hub" },
+          {
+            "name": "Blumar El Dome",
+            "nameAr": "بلومار الدوم",
+            "slug": "blumar-el-dome"
+          },
+          {
+            "name": "Blumar Sokhna",
+            "nameAr": "بلومار السخنة",
+            "slug": "blumar-sokhna"
+          },
+          {
+            "name": "Canary Beach",
+            "nameAr": "كناري بيتش",
+            "slug": "canary-beach"
+          },
+          { "name": "Cancun", "nameAr": "كانكون", "slug": "cancun" },
+          { "name": "Caribbean", "nameAr": "کاربیان", "slug": "caribbean" },
+          { "name": "Carnelia", "nameAr": "کارناليا", "slug": "carnelia" },
+          { "name": "Cavo", "nameAr": "كافو", "slug": "cavo" },
+          {
+            "name": "Coral Sea Beach",
+            "nameAr": "كورال سي بيتش",
+            "slug": "coral-sea-beach"
+          },
+          {
+            "name": "Coronado Marina",
+            "nameAr": "كورونادو مارينا",
+            "slug": "coronado-marina"
+          },
+          {
+            "name": "Creative Jet Beach",
+            "nameAr": "كرييتف جيت بيتش",
+            "slug": "creative-jet-beach"
+          },
+          {
+            "name": "Dolphin Beach",
+            "nameAr": "دولفين بيتش",
+            "slug": "dolphin-beach"
+          },
+          {
+            "name": "EL WADI EL Ain Sokhna",
+            "nameAr": "الوادي - العين السخنة",
+            "slug": "el-wadi-ain-sokhna"
+          },
+          { "name": "Ein Bay", "nameAr": "عين باي", "slug": "ein-bay" },
+          { "name": "Ein Hills", "nameAr": "عين هيلز", "slug": "ein-hills" },
+          { "name": "Empire", "nameAr": "امباير", "slug": "empire" },
+          {
+            "name": "Fanar De Luna",
+            "nameAr": "فنار دي لونا",
+            "slug": "fanar-de-luna"
+          },
+          { "name": "G-Bay", "nameAr": "جي باي", "slug": "g-bay" },
+          {
+            "name": "Golden Coast",
+            "nameAr": "جولدن كوست",
+            "slug": "golden-coast"
+          },
+          {
+            "name": "Hanging Gardens Porto Sokhna",
+            "nameAr": "هانجينج جاردنز بورتو السخنة",
+            "slug": "hanging-gardens-porto-sokhna"
+          },
+          {
+            "name": "Heaven Beach",
+            "nameAr": "هيفن بيتش",
+            "slug": "heaven-beach"
+          },
+          {
+            "name": "IBIZA Chillout",
+            "nameAr": "ابيزا تشيل اوت",
+            "slug": "ibiza-chillout"
+          },
+          {
+            "name": "IL Monte Galala",
+            "nameAr": "المونت جلالة",
+            "slug": "il-monte-galala"
+          },
+          { "name": "Jebal", "nameAr": "جبال", "slug": "jebal" },
+          { "name": "Jura", "nameAr": "جورا", "slug": "jura" },
+          { "name": "Kai", "nameAr": "كاي", "slug": "kai" },
+          {
+            "name": "La Vista Gardens",
+            "nameAr": "لافيستا جاردنز",
+            "slug": "la-vista-gardens"
+          },
+          {
+            "name": "La Vista Ray",
+            "nameAr": "لافیستا راى",
+            "slug": "la-vista-ray"
+          },
+          {
+            "name": "Laguna Bay",
+            "nameAr": "لاجونا باي",
+            "slug": "laguna-bay"
+          },
+          { "name": "Lasirena", "nameAr": "لاسيرينا", "slug": "lasirena" },
+          { "name": "Majada", "nameAr": "ماجادا", "slug": "majada" },
+          { "name": "Malibu", "nameAr": "ماليبو", "slug": "malibu" },
+          {
+            "name": "Marina Wadi Degla",
+            "nameAr": "مارينا وادي دجلة",
+            "slug": "marina-wadi-degla"
+          },
+          {
+            "name": "Mountain View Sokhna",
+            "nameAr": "ماونتن فيو السخنة",
+            "slug": "mountain-view-sokhna"
+          },
+          { "name": "Murano", "nameAr": "مورانو", "slug": "murano" },
+          {
+            "name": "Porto Sokhna",
+            "nameAr": "بورتو السخنة",
+            "slug": "porto-sokhna"
+          },
+          {
+            "name": "Stella Di Mare",
+            "nameAr": "ستيلا دي ماري",
+            "slug": "stella-di-mare"
+          },
+          {
+            "name": "Telal Sokhna",
+            "nameAr": "تلال السخنة",
+            "slug": "telal-sokhna"
+          },
+          { "name": "The Groove", "nameAr": "ذا جروف", "slug": "the-groove" },
+          {
+            "name": "Tulip Residence",
+            "nameAr": "توليب ريزيدنس",
+            "slug": "tulip-residence"
+          },
+          {
+            "name": "Viva Sokhna",
+            "nameAr": "فيفا السخنة",
+            "slug": "viva-sokhna"
+          },
+          {
+            "name": "Waterfront Porto Sokhna",
+            "nameAr": "واترفرونت بورتو السخنة",
+            "slug": "waterfront-porto-sokhna"
+          }
+        ]
+      },
+      { "name": "Arbaeen", "nameAr": "حي الأربعين", "slug": "arbaeen" },
+      { "name": "Attaka", "nameAr": "حي عتاقة", "slug": "attaka" },
+      {
+        "name": "Faisal District",
+        "nameAr": "حي فيصل",
+        "slug": "faisal-district"
+      },
+      { "name": "Ganayen", "nameAr": "حي الجناين", "slug": "ganayen" },
+      {
+        "name": "Suez District",
+        "nameAr": "حي السويس",
+        "slug": "suez-district"
+      }
+    ]
+  },
+  {
+    "name": "Alexandria",
+    "nameAr": "الإسكندرية",
+    "slug": "alexandria",
+    "sort": 2,
+    "cities": [
+      {
+        "name": "Agami",
+        "nameAr": "عجمي",
+        "slug": "agami",
+        "areas": [
+          { "name": "Al Bitash", "nameAr": "البيطاش", "slug": "al-bitash" },
+          {
+            "name": "Al Hanouvel",
+            "nameAr": "الهانوفيل",
+            "slug": "al-hanouvel"
+          },
+          { "name": "Alex West", "nameAr": "اليكس ويست", "slug": "alex-west" },
+          {
+            "name": "El Zahraa Village",
+            "nameAr": "قرية الزهراء",
+            "slug": "el-zahraa-village"
+          },
+          { "name": "Kilo 21", "nameAr": "الكيلو 21", "slug": "kilo-21" }
+        ]
+      },
+      {
+        "name": "Abu Qir",
+        "nameAr": "أبو قير",
+        "slug": "abu-qir",
+        "areas": []
+      },
+      {
+        "name": "Abu Talat",
+        "nameAr": "أبو تلات",
+        "slug": "abu-talat",
+        "areas": []
+      },
+      {
+        "name": "Al Hadrah",
+        "nameAr": "الحضرة",
+        "slug": "al-hadrah",
+        "areas": []
+      },
+      {
+        "name": "Al Ibrahimiyyah",
+        "nameAr": "الإبراهيمية",
+        "slug": "al-ibrahimiyyah",
+        "areas": []
+      },
+      {
+        "name": "Amreya",
+        "nameAr": "العامرية",
+        "slug": "amreya",
+        "areas": [
+          {
+            "name": "Palm Hills Alexandria",
+            "nameAr": "بالم هيلز الاسكندريه",
+            "slug": "palm-hills-alexandria"
+          }
+        ]
+      },
+      {
+        "name": "Borg El Arab",
+        "nameAr": "برج العرب",
+        "slug": "borg-el-arab",
+        "areas": [
+          { "name": "Dar Misr", "nameAr": "دار مصر", "slug": "dar-misr" },
+          {
+            "name": "Safwa Dream",
+            "nameAr": "صفوة دريم",
+            "slug": "safwa-dream"
+          },
+          { "name": "Lake Side", "nameAr": "ليك سايد", "slug": "lake-side" }
+        ]
+      },
+      {
+        "name": "Bahary & Anfoushy",
+        "nameAr": "بحرى والأنفوشي",
+        "slug": "bahary-anfoushy",
+        "areas": []
+      },
+      {
+        "name": "Atareen",
+        "nameAr": "العطارين",
+        "slug": "atareen",
+        "areas": []
+      },
+      { "name": "Asafra", "nameAr": "العصافرة", "slug": "asafra", "areas": [] },
+      { "name": "Bakous", "nameAr": "باكوس", "slug": "bakous", "areas": [] },
+      { "name": "Bolkly", "nameAr": "بولكلي", "slug": "bolkly", "areas": [] },
+      {
+        "name": "Camp Caesar",
+        "nameAr": "كامب شيزار",
+        "slug": "camp-caesar",
+        "areas": []
+      },
+      {
+        "name": "Cleopatra",
+        "nameAr": "كليوباترا",
+        "slug": "cleopatra",
+        "areas": []
+      },
+      {
+        "name": "Dekheila",
+        "nameAr": "الدخيلة",
+        "slug": "dekheila",
+        "areas": []
+      },
+      {
+        "name": "Dhahria",
+        "nameAr": "الظاهرية",
+        "slug": "dhahria",
+        "areas": []
+      },
+      {
+        "name": "Salehia",
+        "nameAr": "الصالحية",
+        "slug": "salehia",
+        "areas": []
+      },
+      { "name": "El Max", "nameAr": "المكس", "slug": "el-max", "areas": [] },
+      { "name": "Fleming", "nameAr": "فلمنج", "slug": "fleming", "areas": [] },
+      {
+        "name": "Gianaclis",
+        "nameAr": "جناكليس",
+        "slug": "gianaclis",
+        "areas": []
+      },
+      { "name": "Glim", "nameAr": "جليم", "slug": "glim", "areas": [] },
+      { "name": "Gomrok", "nameAr": "الجمرك", "slug": "gomrok", "areas": [] },
+      {
+        "name": "Kabbary",
+        "nameAr": "القباري",
+        "slug": "kabbary",
+        "areas": []
+      },
+      {
+        "name": "Kafr Abdo",
+        "nameAr": "كفر عبدو",
+        "slug": "kafr-abdo",
+        "areas": []
+      },
+      { "name": "Karmous", "nameAr": "كرموز", "slug": "karmous", "areas": [] },
+      {
+        "name": "King Mariout",
+        "nameAr": "كينج مريوط",
+        "slug": "king-mariout",
+        "areas": []
+      },
+      {
+        "name": "Koum al-Dikka",
+        "nameAr": "كوم الدكة",
+        "slug": "koum-al-dikka",
+        "areas": []
+      },
+      { "name": "Labban", "nameAr": "اللبان", "slug": "labban", "areas": [] },
+      { "name": "Laurent", "nameAr": "لوران", "slug": "laurent", "areas": [] },
+      {
+        "name": "Maamoura",
+        "nameAr": "المعمورة",
+        "slug": "maamoura",
+        "areas": []
+      },
+      {
+        "name": "Mandara",
+        "nameAr": "المندرة",
+        "slug": "mandara",
+        "areas": []
+      },
+      {
+        "name": "Manshiyya",
+        "nameAr": "المنشية",
+        "slug": "manshiyya",
+        "areas": []
+      },
+      { "name": "Miami", "nameAr": "ميامي", "slug": "miami", "areas": [] },
+      {
+        "name": "Mina El Basal",
+        "nameAr": "مينا البصل",
+        "slug": "mina-el-basal",
+        "areas": []
+      },
+      {
+        "name": "Moharam Bik",
+        "nameAr": "محرم بيك",
+        "slug": "moharam-bik",
+        "areas": [{ "name": "Sawari", "nameAr": "صواري", "slug": "sawari" }]
+      },
+      {
+        "name": "Montazah",
+        "nameAr": "المنتزه",
+        "slug": "montazah",
+        "areas": []
+      },
+      { "name": "Nakheel", "nameAr": "النخيل", "slug": "nakheel", "areas": [] },
+      {
+        "name": "Raml Station",
+        "nameAr": "محطة الرمل",
+        "slug": "raml-station",
+        "areas": [
+          {
+            "name": "Latin District",
+            "nameAr": "الحي اللاتيني",
+            "slug": "latin-district"
+          }
+        ]
+      },
+      {
+        "name": "Ras El Tin",
+        "nameAr": "رأس التين",
+        "slug": "ras-el-tin",
+        "areas": []
+      },
+      { "name": "Roushdy", "nameAr": "رشدي", "slug": "roushdy", "areas": [] },
+      {
+        "name": "Saba Pasha",
+        "nameAr": "سابا باشا",
+        "slug": "saba-pasha",
+        "areas": []
+      },
+      {
+        "name": "San Stefano",
+        "nameAr": "سان ستيفانو",
+        "slug": "san-stefano",
+        "areas": []
+      },
+      { "name": "Schutz", "nameAr": "شدس", "slug": "schutz", "areas": [] },
+      { "name": "Seyouf", "nameAr": "السيوف", "slug": "seyouf", "areas": [] },
+      { "name": "Shatby", "nameAr": "شاطبي", "slug": "shatby", "areas": [] },
+      {
+        "name": "Sidi Beshr",
+        "nameAr": "سيدي بشر",
+        "slug": "sidi-beshr",
+        "areas": []
+      },
+      {
+        "name": "Sidi Gaber",
+        "nameAr": "سيدي جابر",
+        "slug": "sidi-gaber",
+        "areas": [
+          {
+            "name": "Moustafa Kamel",
+            "nameAr": "مصطفى كامل",
+            "slug": "moustafa-kamel"
+          },
+          {
+            "name": "Pharma City Compound",
+            "nameAr": "كومباوند الصيادلة",
+            "slug": "pharma-city-compound"
+          }
+        ]
+      },
+      {
+        "name": "Smouha",
+        "nameAr": "سموحة",
+        "slug": "smouha",
+        "areas": [
+          {
+            "name": "Alex Start",
+            "nameAr": "اليكس ستارت",
+            "slug": "alex-start"
+          },
+          {
+            "name": "Antoniadis City",
+            "nameAr": "مدينة أنطونيادس",
+            "slug": "antoniadis-city"
+          },
+          {
+            "name": "Fayrouzit Smouha",
+            "nameAr": "فيروزة سموحه",
+            "slug": "fayrouzit-smouha"
+          },
+          {
+            "name": "Festival City",
+            "nameAr": "فستيفال سيتي",
+            "slug": "festival-city"
+          },
+          { "name": "Grand View", "nameAr": "جراند فيو", "slug": "grand-view" },
+          {
+            "name": "Grand Ville",
+            "nameAr": "جراند فيل",
+            "slug": "grand-ville"
+          },
+          { "name": "Jacaranda", "nameAr": "جاكرندا", "slug": "jacaranda" },
+          { "name": "Murooj", "nameAr": "مروج", "slug": "murooj" },
+          {
+            "name": "Orouba Skyline",
+            "nameAr": "عروبة سكاي لاين",
+            "slug": "orouba-skyline"
+          },
+          {
+            "name": "Terrace Smouha",
+            "nameAr": "تراس سموحة",
+            "slug": "terrace-smouha"
+          },
+          { "name": "The One", "nameAr": "ذا وان", "slug": "the-one" },
+          { "name": "Valore", "nameAr": "فالوري", "slug": "valore" },
+          {
+            "name": "Valore Antoniades",
+            "nameAr": "فالوري انطونيادس",
+            "slug": "valore-antoniades"
+          }
+        ]
+      },
+      {
+        "name": "Sporting",
+        "nameAr": "سبورتنج",
+        "slug": "sporting",
+        "areas": []
+      },
+      { "name": "Stanley", "nameAr": "ستانلي", "slug": "stanley", "areas": [] },
+      {
+        "name": "Victoria",
+        "nameAr": "فيكتوريا",
+        "slug": "victoria",
+        "areas": []
+      },
+      {
+        "name": "Waboor Elmayah",
+        "nameAr": "وابور المياة",
+        "slug": "waboor-elmayah",
+        "areas": []
+      },
+      {
+        "name": "Wardian",
+        "nameAr": "الورديان",
+        "slug": "wardian",
+        "areas": []
+      },
+      { "name": "Zezenia", "nameAr": "زيزينيا", "slug": "zezenia", "areas": [] }
+    ]
+  },
+  {
+    "name": "Asyut",
+    "nameAr": "أسيوط",
+    "slug": "asyut",
+    "sort": 24,
+    "cities": [
+      { "name": "Abnub", "nameAr": "أبنوب", "slug": "abnub", "areas": [] },
+      {
+        "name": "Abu Teeg",
+        "nameAr": "أبو تيج",
+        "slug": "abu-teeg",
+        "areas": []
+      },
+      {
+        "name": "Asyut City",
+        "nameAr": "مدينة أسيوط",
+        "slug": "asyut-city",
+        "areas": []
+      },
+      { "name": "Badari", "nameAr": "البداري", "slug": "badari", "areas": [] },
+      { "name": "Dairut", "nameAr": "ديروط", "slug": "dairut", "areas": [] },
+      { "name": "Fateh", "nameAr": "الفتح", "slug": "fateh", "areas": [] },
+      {
+        "name": "Ghanayem",
+        "nameAr": "الغنايم",
+        "slug": "ghanayem",
+        "areas": []
+      },
+      {
+        "name": "Manfalut",
+        "nameAr": "منفلوط",
+        "slug": "manfalut",
+        "areas": []
+      },
+      {
+        "name": "New Asyut",
+        "nameAr": "أسيوط الجديدة",
+        "slug": "new-asyut",
+        "areas": [{ "name": "Asayla", "nameAr": "أصايلة", "slug": "asayla" }]
+      },
+      {
+        "name": "New Tiba",
+        "nameAr": "طيبة الجديدة",
+        "slug": "new-tiba",
+        "areas": []
+      },
+      { "name": "Qusiya", "nameAr": "القوصيه", "slug": "qusiya", "areas": [] },
+      {
+        "name": "Sahel Selim",
+        "nameAr": "ساحل سليم",
+        "slug": "sahel-selim",
+        "areas": []
+      },
+      { "name": "Sedfa", "nameAr": "صدفا", "slug": "sedfa", "areas": [] }
+    ]
+  },
+  {
+    "name": "Beheira",
+    "nameAr": "البحيرة",
+    "slug": "beheira",
+    "sort": 23,
+    "cities": [
+      {
+        "name": "Abu Homs",
+        "nameAr": "أبو حمص",
+        "slug": "abu-homs",
+        "areas": []
+      },
+      {
+        "name": "Abu al-Matamer",
+        "nameAr": "أبو المطامير",
+        "slug": "abu-al-matamer",
+        "areas": []
+      },
+      {
+        "name": "Damanhour",
+        "nameAr": "دمنهور",
+        "slug": "damanhour",
+        "areas": []
+      },
+      {
+        "name": "Delengat",
+        "nameAr": "الدلنجات",
+        "slug": "delengat",
+        "areas": []
+      },
+      { "name": "Edko", "nameAr": "إدكو", "slug": "edko", "areas": [] },
+      {
+        "name": "Etay al-Barud",
+        "nameAr": "ايتاي البارود",
+        "slug": "etay-al-barud",
+        "areas": []
+      },
+      {
+        "name": "Hosh Essa",
+        "nameAr": "حوش عيسى",
+        "slug": "hosh-essa",
+        "areas": []
+      },
+      {
+        "name": "Kafr al-Dawwar",
+        "nameAr": "كفر الدوار",
+        "slug": "kafr-al-dawwar",
+        "areas": []
+      },
+      {
+        "name": "Kom Hamadah",
+        "nameAr": "كوم حمادة",
+        "slug": "kom-hamadah",
+        "areas": []
+      },
+      {
+        "name": "Mahmoudiyah",
+        "nameAr": "المحمودية",
+        "slug": "mahmoudiyah",
+        "areas": []
+      },
+      {
+        "name": "Markaz Badr",
+        "nameAr": "مركز بدر",
+        "slug": "markaz-badr",
+        "areas": []
+      },
+      {
+        "name": "Nubariyah",
+        "nameAr": "النوبارية",
+        "slug": "nubariyah",
+        "areas": []
+      },
+      {
+        "name": "New Nubariyah",
+        "nameAr": "النوبارية الجديدة",
+        "slug": "new-nubariyah",
+        "areas": []
+      },
+      {
+        "name": "Rahmaniya",
+        "nameAr": "الرحمانية",
+        "slug": "rahmaniya",
+        "areas": []
+      },
+      { "name": "Rashid", "nameAr": "رشيد", "slug": "rashid", "areas": [] },
+      {
+        "name": "Shubrakhit",
+        "nameAr": "شبراخيت",
+        "slug": "shubrakhit",
+        "areas": []
+      },
+      {
+        "name": "Wadi al-Natrun",
+        "nameAr": "وادي النطرون",
+        "slug": "wadi-al-natrun",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Beni Suef",
+    "nameAr": "بني سويف",
+    "slug": "beni-suef",
+    "sort": 22,
+    "cities": [
+      {
+        "name": "Al Feshn",
+        "nameAr": "الفشن",
+        "slug": "al-feshn",
+        "areas": []
+      },
+      {
+        "name": "Al Wasty",
+        "nameAr": "الواسطى",
+        "slug": "al-wasty",
+        "areas": []
+      },
+      { "name": "Beba", "nameAr": "ببا", "slug": "beba", "areas": [] },
+      {
+        "name": "Beni Suef City",
+        "nameAr": "مدينة بني سويف",
+        "slug": "beni-suef-city",
+        "areas": []
+      },
+      {
+        "name": "Ehnasia",
+        "nameAr": "إهناسيا",
+        "slug": "ehnasia",
+        "areas": []
+      },
+      { "name": "Nasser", "nameAr": "ناصر", "slug": "nasser", "areas": [] },
+      {
+        "name": "New Beni Suef",
+        "nameAr": "بني سويف الجديدة",
+        "slug": "new-beni-suef",
+        "areas": []
+      },
+      { "name": "Samasta", "nameAr": "سمسطا", "slug": "samasta", "areas": [] }
+    ]
+  },
+  {
+    "name": "Dakahlia",
+    "nameAr": "الدقهلية",
+    "slug": "dakahlia",
+    "sort": 21,
+    "cities": [
+      { "name": "Aga", "nameAr": "أجا", "slug": "aga", "areas": [] },
+      { "name": "Akhtab", "nameAr": "أخطاب", "slug": "akhtab", "areas": [] },
+      {
+        "name": "Bani Ubayd",
+        "nameAr": "بني عبيد",
+        "slug": "bani-ubayd",
+        "areas": []
+      },
+      { "name": "Belqas", "nameAr": "بلقاس", "slug": "belqas", "areas": [] },
+      {
+        "name": "Dikirnis",
+        "nameAr": "دكرنس",
+        "slug": "dikirnis",
+        "areas": []
+      },
+      {
+        "name": "El Kordy",
+        "nameAr": "الكردي",
+        "slug": "el-kordy",
+        "areas": []
+      },
+      { "name": "Gamasa", "nameAr": "جمصة", "slug": "gamasa", "areas": [] },
+      {
+        "name": "Mansura",
+        "nameAr": "المنصورة",
+        "slug": "mansura",
+        "areas": []
+      },
+      {
+        "name": "New Mansoura",
+        "nameAr": "المنصورة الجديدة",
+        "slug": "new-mansoura",
+        "areas": [
+          { "name": "Sakan Masr", "nameAr": "سكن مصر", "slug": "sakan-masr" },
+          { "name": "Seabelle", "nameAr": "سيبيل", "slug": "seabelle" },
+          { "name": "The Pearl", "nameAr": "ذا بيريل", "slug": "the-pearl" },
+          { "name": "Zahya", "nameAr": "زاهية", "slug": "zahya" }
+        ]
+      },
+      {
+        "name": "Manzala",
+        "nameAr": "المنزلة",
+        "slug": "manzala",
+        "areas": []
+      },
+      {
+        "name": "Markaz El Gamaleya",
+        "nameAr": "مركز الجمالية",
+        "slug": "markaz-el-gamaleya",
+        "areas": []
+      },
+      {
+        "name": "Markaz El Matareya",
+        "nameAr": "مركز المطرية",
+        "slug": "markaz-el-matareya",
+        "areas": []
+      },
+      {
+        "name": "Minat al-Nasr",
+        "nameAr": "منية النصر",
+        "slug": "minat-al-nasr",
+        "areas": []
+      },
+      {
+        "name": "Mit Ghamr",
+        "nameAr": "ميت غمر",
+        "slug": "mit-ghamr",
+        "areas": []
+      },
+      {
+        "name": "Mit Salsil",
+        "nameAr": "ميت سلسيل",
+        "slug": "mit-salsil",
+        "areas": []
+      },
+      { "name": "Nabaruh", "nameAr": "نبروه", "slug": "nabaruh", "areas": [] },
+      { "name": "Shirbin", "nameAr": "شربين", "slug": "shirbin", "areas": [] },
+      {
+        "name": "Sinbillawain",
+        "nameAr": "السنبلاوين",
+        "slug": "sinbillawain",
+        "areas": []
+      },
+      { "name": "Talkha", "nameAr": "طلخا", "slug": "talkha", "areas": [] },
+      {
+        "name": "Tama al-Amdeed",
+        "nameAr": "تمى الامديد",
+        "slug": "tama-al-amdeed",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Damietta",
+    "nameAr": "دمياط",
+    "slug": "damietta",
+    "sort": 20,
+    "cities": [
+      {
+        "name": "Damietta City",
+        "nameAr": "مدينة دمياط",
+        "slug": "damietta-city",
+        "areas": []
+      },
+      {
+        "name": "Ezbet al-Burj",
+        "nameAr": "عزبة البرج",
+        "slug": "ezbet-al-burj",
+        "areas": []
+      },
+      {
+        "name": "Fareskour",
+        "nameAr": "فارسكور",
+        "slug": "fareskour",
+        "areas": []
+      },
+      {
+        "name": "Kafr Saad",
+        "nameAr": "كفر سعد",
+        "slug": "kafr-saad",
+        "areas": []
+      },
+      {
+        "name": "Kafr al-Bateekh",
+        "nameAr": "كفر البطيخ",
+        "slug": "kafr-al-bateekh",
+        "areas": []
+      },
+      {
+        "name": "Markaz El Rodah",
+        "nameAr": "مركز الروضة",
+        "slug": "markaz-el-rodah",
+        "areas": []
+      },
+      {
+        "name": "Mit Abughalb",
+        "nameAr": "ميت أبو غالب",
+        "slug": "mit-abughalb",
+        "areas": []
+      },
+      {
+        "name": "New Damietta",
+        "nameAr": "دمياط الجديدة",
+        "slug": "new-damietta",
+        "areas": [
+          {
+            "name": "Beit Al Watan",
+            "nameAr": "بيت الوطن",
+            "slug": "beit-al-watan"
+          },
+          { "name": "Dar Misr", "nameAr": "دار مصر", "slug": "dar-misr" },
+          {
+            "name": "Ethmar Compound",
+            "nameAr": "إثمار",
+            "slug": "ethmar-compound"
+          },
+          { "name": "Janna", "nameAr": "جنة", "slug": "janna" }
+        ]
+      },
+      {
+        "name": "Ras al-Bar",
+        "nameAr": "رأس البر",
+        "slug": "ras-al-bar",
+        "areas": []
+      },
+      { "name": "Saro", "nameAr": "السرو", "slug": "saro", "areas": [] },
+      { "name": "Zarqa", "nameAr": "الزرقا", "slug": "zarqa", "areas": [] }
+    ]
+  },
+  {
+    "name": "Fayoum",
+    "nameAr": "الفيوم",
+    "slug": "fayoum",
+    "sort": 19,
+    "cities": [
+      { "name": "Atsa", "nameAr": "أطسا", "slug": "atsa", "areas": [] },
+      {
+        "name": "Fayoum City",
+        "nameAr": "مدينة الفيوم",
+        "slug": "fayoum-city",
+        "areas": []
+      },
+      { "name": "Ibshway", "nameAr": "إبشواي", "slug": "ibshway", "areas": [] },
+      {
+        "name": "New Fayoum",
+        "nameAr": "الفيوم الجديدة",
+        "slug": "new-fayoum",
+        "areas": []
+      },
+      {
+        "name": "Sinnuras",
+        "nameAr": "سنورس",
+        "slug": "sinnuras",
+        "areas": []
+      },
+      { "name": "Tamiya", "nameAr": "طامية", "slug": "tamiya", "areas": [] },
+      {
+        "name": "Yusuf al-Sadiq",
+        "nameAr": "يوسف الصديق",
+        "slug": "yusuf-al-sadiq",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Gharbia",
+    "nameAr": "الغربية",
+    "slug": "gharbia",
+    "sort": 18,
+    "cities": [
+      { "name": "Basyoun", "nameAr": "بسيون", "slug": "basyoun", "areas": [] },
+      {
+        "name": "Kafr al-Zayat",
+        "nameAr": "كفر الزيات",
+        "slug": "kafr-al-zayat",
+        "areas": []
+      },
+      {
+        "name": "Mahalla al-Kobra",
+        "nameAr": "المحلة الكبرى",
+        "slug": "mahalla-al-kobra",
+        "areas": []
+      },
+      { "name": "Qutour", "nameAr": "قطور", "slug": "qutour", "areas": [] },
+      {
+        "name": "Samanoud",
+        "nameAr": "سمنود",
+        "slug": "samanoud",
+        "areas": []
+      },
+      { "name": "Santa", "nameAr": "السنطة", "slug": "santa", "areas": [] },
+      { "name": "Tanta", "nameAr": "طنطا", "slug": "tanta", "areas": [] },
+      { "name": "Zefta", "nameAr": "زفتى", "slug": "zefta", "areas": [] }
+    ]
+  },
+  {
+    "name": "Ismailia",
+    "nameAr": "الإسماعيلية",
+    "slug": "ismailia",
+    "sort": 17,
+    "cities": [
+      {
+        "name": "Abu Swear",
+        "nameAr": "أبوصوير",
+        "slug": "abu-swear",
+        "areas": []
+      },
+      { "name": "Fayed", "nameAr": "فايد", "slug": "fayed", "areas": [] },
+      {
+        "name": "Gandola Village",
+        "nameAr": "قرية الجندول",
+        "slug": "gandola-village",
+        "areas": []
+      },
+      {
+        "name": "Ismailia City",
+        "nameAr": "مدينة الإسماعيلية",
+        "slug": "ismailia-city",
+        "areas": []
+      },
+      {
+        "name": "Kantara East",
+        "nameAr": "القنطرة شرق",
+        "slug": "kantara-east",
+        "areas": []
+      },
+      {
+        "name": "Kantara West",
+        "nameAr": "القنطرة غرب",
+        "slug": "kantara-west",
+        "areas": []
+      },
+      {
+        "name": "Qassaseen",
+        "nameAr": "القصاصين",
+        "slug": "qassaseen",
+        "areas": []
+      },
+      {
+        "name": "Tal al-Kebeer",
+        "nameAr": "التل الكبير",
+        "slug": "tal-al-kebeer",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Kafr El-Sheikh",
+    "nameAr": "كفر الشيخ",
+    "slug": "kafr-el-sheikh",
+    "sort": 16,
+    "cities": [
+      { "name": "Baltim", "nameAr": "بلطيم", "slug": "baltim", "areas": [] },
+      { "name": "Bella", "nameAr": "بيلا", "slug": "bella", "areas": [] },
+      { "name": "Brolos", "nameAr": "البرلس", "slug": "brolos", "areas": [] },
+      { "name": "Desouk", "nameAr": "دسوق", "slug": "desouk", "areas": [] },
+      { "name": "Fouh", "nameAr": "فوه", "slug": "fouh", "areas": [] },
+      { "name": "Hamoul", "nameAr": "الحامول", "slug": "hamoul", "areas": [] },
+      {
+        "name": "Kafr al-Sheikh City",
+        "nameAr": "مدينة كفر الشيخ",
+        "slug": "kafr-al-sheikh-city",
+        "areas": []
+      },
+      { "name": "Motobas", "nameAr": "مطوبس", "slug": "motobas", "areas": [] },
+      { "name": "Qaleen", "nameAr": "قلين", "slug": "qaleen", "areas": [] },
+      { "name": "Riyadh", "nameAr": "الرياض", "slug": "riyadh", "areas": [] },
+      {
+        "name": "Sidi Salem",
+        "nameAr": "سيدي سالم",
+        "slug": "sidi-salem",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Luxor",
+    "nameAr": "الأقصر",
+    "slug": "luxor",
+    "sort": 8,
+    "cities": [
+      { "name": "Armant", "nameAr": "أرمنت", "slug": "armant", "areas": [] },
+      {
+        "name": "Bayadeya",
+        "nameAr": "البياضية",
+        "slug": "bayadeya",
+        "areas": []
+      },
+      { "name": "Isna", "nameAr": "إسنا", "slug": "isna", "areas": [] },
+      {
+        "name": "Luxor City",
+        "nameAr": "مدينة الأقصر",
+        "slug": "luxor-city",
+        "areas": []
+      },
+      { "name": "Qurna", "nameAr": "القرنة", "slug": "qurna", "areas": [] },
+      { "name": "Tod", "nameAr": "الطود", "slug": "tod", "areas": [] },
+      { "name": "Zinnia", "nameAr": "الزينية", "slug": "zinnia", "areas": [] }
+    ]
+  },
+  {
+    "name": "Minya",
+    "nameAr": "المنيا",
+    "slug": "minya",
+    "sort": 14,
+    "cities": [
+      {
+        "name": "Abu Qurqas",
+        "nameAr": "أبو قرقاص",
+        "slug": "abu-qurqas",
+        "areas": []
+      },
+      { "name": "Adwa", "nameAr": "العدوة", "slug": "adwa", "areas": [] },
+      {
+        "name": "Beni Mazar",
+        "nameAr": "بني مزار",
+        "slug": "beni-mazar",
+        "areas": []
+      },
+      {
+        "name": "Deir Mawas",
+        "nameAr": "دير مواس",
+        "slug": "deir-mawas",
+        "areas": []
+      },
+      {
+        "name": "Maghagha",
+        "nameAr": "مغاغة",
+        "slug": "maghagha",
+        "areas": []
+      },
+      { "name": "Malawi", "nameAr": "ملوي", "slug": "malawi", "areas": [] },
+      { "name": "Matay", "nameAr": "مطاي", "slug": "matay", "areas": [] },
+      {
+        "name": "Minya City",
+        "nameAr": "مدينة المنيا",
+        "slug": "minya-city",
+        "areas": []
+      },
+      {
+        "name": "New Minya",
+        "nameAr": "المنيا الجديدة",
+        "slug": "new-minya",
+        "areas": []
+      },
+      { "name": "Reve", "nameAr": "ريف", "slug": "reve", "areas": [] },
+      { "name": "Samalut", "nameAr": "سمالوط", "slug": "samalut", "areas": [] }
+    ]
+  },
+  {
+    "name": "Monufia",
+    "nameAr": "المنوفية",
+    "slug": "monufia",
+    "sort": 15,
+    "cities": [
+      { "name": "Ashmon", "nameAr": "أشمون", "slug": "ashmon", "areas": [] },
+      { "name": "Bagour", "nameAr": "الباجور", "slug": "bagour", "areas": [] },
+      {
+        "name": "Berket al-Sabaa",
+        "nameAr": "بركة السبع",
+        "slug": "berket-al-sabaa",
+        "areas": []
+      },
+      { "name": "Menouf", "nameAr": "منوف", "slug": "menouf", "areas": [] },
+      { "name": "Quesna", "nameAr": "قويسنا", "slug": "quesna", "areas": [] },
+      {
+        "name": "Sadat",
+        "nameAr": "السادات",
+        "slug": "sadat",
+        "areas": [
+          {
+            "name": "Beit Al Watan",
+            "nameAr": "بيت الوطن",
+            "slug": "beit-al-watan"
+          }
+        ]
+      },
+      {
+        "name": "Sers al-Lyan",
+        "nameAr": "سرس الليان",
+        "slug": "sers-al-lyan",
+        "areas": []
+      },
+      {
+        "name": "Shebin al-Koum",
+        "nameAr": "شبين الكوم",
+        "slug": "shebin-al-koum",
+        "areas": []
+      },
+      {
+        "name": "Shohadaa",
+        "nameAr": "الشهداء",
+        "slug": "shohadaa",
+        "areas": []
+      },
+      { "name": "Tala", "nameAr": "تلا", "slug": "tala", "areas": [] }
+    ]
+  },
+  {
+    "name": "New Valley",
+    "nameAr": "الوادي الجديد",
+    "slug": "new-valley",
+    "sort": 12,
+    "cities": [
+      { "name": "Balat", "nameAr": "بلاط", "slug": "balat", "areas": [] },
+      { "name": "Dakhla", "nameAr": "الداخلة", "slug": "dakhla", "areas": [] },
+      {
+        "name": "Farafra",
+        "nameAr": "الفرافرة",
+        "slug": "farafra",
+        "areas": []
+      },
+      { "name": "Kharga", "nameAr": "الخارجة", "slug": "kharga", "areas": [] },
+      { "name": "Mut", "nameAr": "مدينة موط", "slug": "mut", "areas": [] },
+      { "name": "Paris", "nameAr": "باريس", "slug": "paris", "areas": [] }
+    ]
+  },
+  {
+    "name": "Port Said",
+    "nameAr": "بورسعيد",
+    "slug": "port-said",
+    "sort": 11,
+    "cities": [
+      {
+        "name": "Arab District",
+        "nameAr": "حي العرب",
+        "slug": "arab-district",
+        "areas": []
+      },
+      {
+        "name": "Dawahy District",
+        "nameAr": "حي الضواحي",
+        "slug": "dawahy-district",
+        "areas": []
+      },
+      {
+        "name": "Ganoub District",
+        "nameAr": "حي الجنوب",
+        "slug": "ganoub-district",
+        "areas": []
+      },
+      {
+        "name": "Manakh District",
+        "nameAr": "حي المناخ",
+        "slug": "manakh-district",
+        "areas": []
+      },
+      {
+        "name": "Port Fouad",
+        "nameAr": "مدينة بورفؤاد",
+        "slug": "port-fouad",
+        "areas": []
+      },
+      {
+        "name": "Sharq District",
+        "nameAr": "حي الشرق",
+        "slug": "sharq-district",
+        "areas": [{ "name": "Eclat", "nameAr": "ايكلا", "slug": "eclat" }]
+      },
+      {
+        "name": "Zohour District",
+        "nameAr": "حي الزهور",
+        "slug": "zohour-district",
+        "areas": [
+          { "name": "Porto Said", "nameAr": "بورتو سعيد", "slug": "porto-said" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Qalyubia",
+    "nameAr": "القليوبية",
+    "slug": "qalyubia",
+    "sort": 4,
+    "cities": [
+      { "name": "Bahtim", "nameAr": "بهتيم", "slug": "bahtim", "areas": [] },
+      {
+        "name": "Banha",
+        "nameAr": "بنها",
+        "slug": "banha",
+        "areas": [
+          {
+            "name": "Sky City Banha",
+            "nameAr": "سكاي سيتى بنها",
+            "slug": "sky-city-banha"
+          }
+        ]
+      },
+      {
+        "name": "Kafr Shukr",
+        "nameAr": "كفر شكر",
+        "slug": "kafr-shukr",
+        "areas": []
+      },
+      { "name": "Khanka", "nameAr": "الخانكة", "slug": "khanka", "areas": [] },
+      { "name": "Khosous", "nameAr": "الخصوص", "slug": "khosous", "areas": [] },
+      {
+        "name": "Musturad",
+        "nameAr": "مسطرد",
+        "slug": "musturad",
+        "areas": []
+      },
+      { "name": "Qaha", "nameAr": "قها", "slug": "qaha", "areas": [] },
+      { "name": "Qalyub", "nameAr": "قليوب", "slug": "qalyub", "areas": [] },
+      {
+        "name": "Qanater al-Khairia",
+        "nameAr": "القناطر الخيرية",
+        "slug": "qanater-al-khairia",
+        "areas": []
+      },
+      {
+        "name": "Shebin al-Qanater",
+        "nameAr": "شبين القناطر",
+        "slug": "shebin-al-qanater",
+        "areas": []
+      },
+      {
+        "name": "Shubra al-Khaimah",
+        "nameAr": "شبرا الخيمة",
+        "slug": "shubra-al-khaimah",
+        "areas": []
+      },
+      { "name": "Tookh", "nameAr": "طوخ", "slug": "tookh", "areas": [] }
+    ]
+  },
+  {
+    "name": "Sharqia",
+    "nameAr": "الشرقية",
+    "slug": "sharqia",
+    "sort": 10,
+    "cities": [
+      {
+        "name": "10th of Ramadan",
+        "nameAr": "العاشر من رمضان",
+        "slug": "10th-of-ramadan",
+        "areas": [
+          { "name": "Dar Misr", "nameAr": "دار مصر", "slug": "dar-misr" },
+          {
+            "name": "Hadayek Al Mohandessin",
+            "nameAr": "حدائق المهندسين",
+            "slug": "hadayek-al-mohandessin"
+          }
+        ]
+      },
+      {
+        "name": "Abu Hammad",
+        "nameAr": "أبو حماد",
+        "slug": "abu-hammad",
+        "areas": []
+      },
+      {
+        "name": "Abu Kabir",
+        "nameAr": "أبو كبير",
+        "slug": "abu-kabir",
+        "areas": []
+      },
+      {
+        "name": "Alqnayat",
+        "nameAr": "القنايات",
+        "slug": "alqnayat",
+        "areas": []
+      },
+      {
+        "name": "Awlad Saqr",
+        "nameAr": "أولاد صقر",
+        "slug": "awlad-saqr",
+        "areas": []
+      },
+      { "name": "Bilbeis", "nameAr": "بلبيس", "slug": "bilbeis", "areas": [] },
+      {
+        "name": "Deyerb Negm",
+        "nameAr": "ديرب نجم",
+        "slug": "deyerb-negm",
+        "areas": []
+      },
+      { "name": "Faqous", "nameAr": "فاقوس", "slug": "faqous", "areas": [] },
+      { "name": "Hihya", "nameAr": "ههيا", "slug": "hihya", "areas": [] },
+      {
+        "name": "Husseiniya",
+        "nameAr": "الحسينية",
+        "slug": "husseiniya",
+        "areas": []
+      },
+      {
+        "name": "Ibrahemyah",
+        "nameAr": "الإبراهيمية",
+        "slug": "ibrahemyah",
+        "areas": []
+      },
+      {
+        "name": "Kafr Saqr",
+        "nameAr": "كفر صقر",
+        "slug": "kafr-saqr",
+        "areas": []
+      },
+      {
+        "name": "Mashtool al-Souk",
+        "nameAr": "مشتول السوق",
+        "slug": "mashtool-al-souk",
+        "areas": []
+      },
+      {
+        "name": "Minya al-Qamh",
+        "nameAr": "منيا القمح",
+        "slug": "minya-al-qamh",
+        "areas": []
+      },
+      {
+        "name": "New Salhia",
+        "nameAr": "الصالحية الجديدة",
+        "slug": "new-salhia",
+        "areas": []
+      },
+      { "name": "Qareen", "nameAr": "القرين", "slug": "qareen", "areas": [] },
+      {
+        "name": "Zagazig",
+        "nameAr": "الزقازيق",
+        "slug": "zagazig",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "South Sinai",
+    "nameAr": "جنوب سيناء",
+    "slug": "south-sinai",
+    "sort": 7,
+    "cities": [
+      {
+        "name": "Abu Rudeis",
+        "nameAr": "أبو رديس",
+        "slug": "abu-rudeis",
+        "areas": []
+      },
+      {
+        "name": "Abu Zenimah",
+        "nameAr": "أبو زنيمة",
+        "slug": "abu-zenimah",
+        "areas": []
+      },
+      {
+        "name": "Dahab",
+        "nameAr": "دهب",
+        "slug": "dahab",
+        "areas": [{ "name": "Nadira", "nameAr": "ناديرا", "slug": "nadira" }]
+      },
+      { "name": "Nuweiba", "nameAr": "نويبع", "slug": "nuweiba", "areas": [] },
+      {
+        "name": "Ras Sedr",
+        "nameAr": "راس سدر",
+        "slug": "ras-sedr",
+        "areas": [
+          { "name": "Bayside", "nameAr": "باي سايد", "slug": "bayside" },
+          {
+            "name": "Blue Lagoon",
+            "nameAr": "بلو لاجون",
+            "slug": "blue-lagoon"
+          },
+          {
+            "name": "Diamond Resort",
+            "nameAr": "دايموند ريزورت",
+            "slug": "diamond-resort"
+          },
+          {
+            "name": "Elite Ras Sedr",
+            "nameAr": "إيليت رأس السدر",
+            "slug": "elite-ras-sedr"
+          },
+          {
+            "name": "Fantasia Ras Sedr",
+            "nameAr": "فانتازيا رأس سدر",
+            "slug": "fantasia-ras-sedr"
+          },
+          {
+            "name": "Golden Beach Ras Sedr",
+            "nameAr": "جولدن بيتش رأس سدر",
+            "slug": "golden-beach-ras-sedr"
+          },
+          {
+            "name": "Grand Beach",
+            "nameAr": "جراند بيتش",
+            "slug": "grand-beach"
+          },
+          {
+            "name": "Greek Island",
+            "nameAr": "جريك ايلاند",
+            "slug": "greek-island"
+          },
+          { "name": "Jazzy Bay", "nameAr": "جازي باي", "slug": "jazzy-bay" },
+          {
+            "name": "La Hacienda Ras Sedr",
+            "nameAr": "لاهاسيندا رأس سدر",
+            "slug": "la-hacienda-ras-sedr"
+          },
+          { "name": "La Playa", "nameAr": "لابلايا", "slug": "la-playa" },
+          {
+            "name": "La Sirena Ras Sedr",
+            "nameAr": "الاسيرينا رأس سدر",
+            "slug": "la-sirena-ras-sedr"
+          },
+          { "name": "La Vento", "nameAr": "لا فينتو", "slug": "la-vento" },
+          { "name": "La Vie", "nameAr": "لافي", "slug": "la-vie" },
+          {
+            "name": "Lasirena Bay",
+            "nameAr": "لاسيرينا عيون موسى",
+            "slug": "lasirena-bay"
+          },
+          {
+            "name": "Matarma Bay",
+            "nameAr": "ماطر ما باي",
+            "slug": "matarma-bay"
+          },
+          {
+            "name": "Matarma Beach",
+            "nameAr": "مطارمة بيتش",
+            "slug": "matarma-beach"
+          },
+          {
+            "name": "Mousa Coast",
+            "nameAr": "موسى كوست",
+            "slug": "mousa-coast"
+          },
+          {
+            "name": "Nozha Beach",
+            "nameAr": "نزهه بيتش",
+            "slug": "nozha-beach"
+          },
+          { "name": "Palm Beach", "nameAr": "بالم بيتش", "slug": "palm-beach" },
+          {
+            "name": "Paradise Ras Sedr",
+            "nameAr": "باراديس رأس سدر",
+            "slug": "paradise-ras-sedr"
+          },
+          {
+            "name": "Rivera Beach Ras Sedr",
+            "nameAr": "ريفيرا بيتش رأس سدر",
+            "slug": "rivera-beach-ras-sedr"
+          },
+          { "name": "Rosa", "nameAr": "روزا", "slug": "rosa" },
+          {
+            "name": "Santa Claus Ras Sedr",
+            "nameAr": "سانتا كلوز رأس سدر",
+            "slug": "santa-claus-ras-sedr"
+          },
+          {
+            "name": "Spring Land",
+            "nameAr": "سبرينج لاند",
+            "slug": "spring-land"
+          },
+          { "name": "Tavira", "nameAr": "تافيرا", "slug": "tavira" },
+          { "name": "White Bay", "nameAr": "وايت باي", "slug": "white-bay" },
+          { "name": "Zain Bay", "nameAr": "زين باي", "slug": "zain-bay" }
+        ]
+      },
+      {
+        "name": "Sharm al-Sheikh",
+        "nameAr": "شرم الشيخ",
+        "slug": "sharm-al-sheikh",
+        "areas": []
+      },
+      {
+        "name": "St. Catherine",
+        "nameAr": "سانت كاترين",
+        "slug": "st-catherine",
+        "areas": []
+      },
+      { "name": "Taba", "nameAr": "طابا", "slug": "taba", "areas": [] },
+      {
+        "name": "Tor Sinai",
+        "nameAr": "طور سيناء",
+        "slug": "tor-sinai",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "North Sinai",
+    "nameAr": "شمال سيناء",
+    "slug": "north-sinai",
+    "sort": 6,
+    "cities": [
+      {
+        "name": "Al-Arish",
+        "nameAr": "العريش",
+        "slug": "al-arish",
+        "areas": []
+      },
+      {
+        "name": "Rafah",
+        "nameAr": "رفح",
+        "slug": "rafah",
+        "areas": []
+      },
+      {
+        "name": "Sheikh Zuweid",
+        "nameAr": "الشيخ زويد",
+        "slug": "sheikh-zuweid",
+        "areas": []
+      },
+      {
+        "name": "Bir El Abd",
+        "nameAr": "بئر العبد",
+        "slug": "bir-el-abd",
+        "areas": []
+      },
+      { "name": "Nakhl", "nameAr": "نخل", "slug": "nakhl", "areas": [] },
+      {
+        "name": "El hasnah",
+        "nameAr": "الحسنة",
+        "slug": "el-hasnah",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Red Sea",
+    "nameAr": "البحر الأحمر",
+    "slug": "red-sea",
+    "sort": 5,
+    "cities": [
+      {
+        "name": "Gouna",
+        "nameAr": "الجونة",
+        "slug": "gouna",
+        "areas": [
+          {
+            "name": "Ancient Sands Gouna",
+            "nameAr": "انشنت ساندس الجونة",
+            "slug": "ancient-sands-gouna"
+          },
+          {
+            "name": "Bali El Gouna",
+            "nameAr": "بالي الجونة",
+            "slug": "bali-el-gouna"
+          },
+          {
+            "name": "Creek Gouna",
+            "nameAr": "كريك الجونة",
+            "slug": "creek-gouna"
+          },
+          {
+            "name": "Cyan Gouna",
+            "nameAr": "سيان الجونة",
+            "slug": "cyan-gouna"
+          },
+          {
+            "name": "Fanadir Bay",
+            "nameAr": "فنادير باي",
+            "slug": "fanadir-bay"
+          },
+          { "name": "G Cribs", "nameAr": "جي كريبس", "slug": "g-cribs" },
+          {
+            "name": "Italian Compound",
+            "nameAr": "كمبوند الايطالي",
+            "slug": "italian-compound"
+          },
+          { "name": "Joubal", "nameAr": "جوبال", "slug": "joubal" },
+          { "name": "Mangroovy", "nameAr": "مانجروفي", "slug": "mangroovy" },
+          {
+            "name": "Scarab Club",
+            "nameAr": "سكاراب كلوب",
+            "slug": "scarab-club"
+          },
+          {
+            "name": "South Golf Gouna",
+            "nameAr": "ساوت جولف الجونة",
+            "slug": "south-golf-gouna"
+          },
+          {
+            "name": "Swan Lake Gouna",
+            "nameAr": "سوان ليك الجونة",
+            "slug": "swan-lake-gouna"
+          },
+          { "name": "Tawila", "nameAr": "طويلة", "slug": "tawila" },
+          { "name": "Water Side", "nameAr": "واتر سايد", "slug": "water-side" },
+          {
+            "name": "West Golf Gouna",
+            "nameAr": "ويست جولف الجونة",
+            "slug": "west-golf-gouna"
+          }
+        ]
+      },
+      {
+        "name": "Hurghada",
+        "nameAr": "الغردقة",
+        "slug": "hurghada",
+        "areas": [
+          {
+            "name": "1st Avenue NorthSide",
+            "nameAr": "فيرست افنيو نورث سايد",
+            "slug": "1st-avenue-northside"
+          },
+          {
+            "name": "1st Avenue SouthSide",
+            "nameAr": "فيرست افنيو ساوث سايد",
+            "slug": "1st-avenue-southside"
+          },
+          {
+            "name": "Al Nour Plaza",
+            "nameAr": "النور بلازا",
+            "slug": "al-nour-plaza"
+          },
+          {
+            "name": "AlHambra Waterfalls",
+            "nameAr": "شلالات الهامبره",
+            "slug": "alhambra-waterfalls"
+          },
+          {
+            "name": "Arena Blanca",
+            "nameAr": "أرينا بلانكا",
+            "slug": "arena-blanca"
+          },
+          { "name": "Biscay", "nameAr": "بيسكاي", "slug": "biscay" },
+          {
+            "name": "Capital Dream",
+            "nameAr": "كابيتال دريمز",
+            "slug": "capital-dream"
+          },
+          {
+            "name": "Majra Resort",
+            "nameAr": "منتجع ماجرا",
+            "slug": "majra-resort"
+          },
+          {
+            "name": "Makadi Heights",
+            "nameAr": "مكادي هايتس",
+            "slug": "makadi-heights"
+          },
+          {
+            "name": "Princess Beach Resort",
+            "nameAr": "برنسيس بيتش ريزورت",
+            "slug": "princess-beach-resort"
+          },
+          {
+            "name": "Princess Resort",
+            "nameAr": "برنسيس ريزورت",
+            "slug": "princess-resort"
+          },
+          { "name": "SeVille", "nameAr": "سي قيل", "slug": "seville" },
+          {
+            "name": "West El Balad",
+            "nameAr": "وسط البلد",
+            "slug": "west-el-balad"
+          }
+        ]
+      },
+      {
+        "name": "Makadi Bay",
+        "nameAr": "مكادي باي",
+        "slug": "makadi-bay",
+        "areas": [
+          {
+            "name": "Bayou - Makadi Heights",
+            "nameAr": "بايو - مكادي هايتس",
+            "slug": "bayou-makadi-heights"
+          },
+          {
+            "name": "Cape - Makadi Heights",
+            "nameAr": "كاب - مكادي هايتس",
+            "slug": "cape-makadi-heights"
+          },
+          {
+            "name": "Ledge - Makadi Heights",
+            "nameAr": "ليدج - مكادي هايتس",
+            "slug": "ledge-makadi-heights"
+          },
+          {
+            "name": "Makadi Heights",
+            "nameAr": "مكادي هايتس",
+            "slug": "makadi-heights"
+          },
+          {
+            "name": "Sol Y Mar - Makadi Heights",
+            "nameAr": "سول لي مار - مكادي هايتس",
+            "slug": "sol-y-mar-makadi-heights"
+          },
+          {
+            "name": "Topio - Makadi Heights",
+            "nameAr": "توبيو - مكادي هايتس",
+            "slug": "topio-makadi-heights"
+          }
+        ]
+      },
+      {
+        "name": "Marsa Alam",
+        "nameAr": "مرسى علم",
+        "slug": "marsa-alam",
+        "areas": []
+      },
+      { "name": "Qusair", "nameAr": "القصير", "slug": "qusair", "areas": [] },
+      {
+        "name": "Ras Gharib",
+        "nameAr": "رأس غارب",
+        "slug": "ras-gharib",
+        "areas": []
+      },
+      {
+        "name": "Ras Soma",
+        "nameAr": "رأس سوما",
+        "slug": "ras-soma",
+        "areas": []
+      },
+      {
+        "name": "Safaga",
+        "nameAr": "سفاجا",
+        "slug": "safaga",
+        "areas": [
+          { "name": "Wadi Jebal", "nameAr": "وادي جبال", "slug": "wadi-jebal" }
+        ]
+      },
+      {
+        "name": "Sahl Hasheesh",
+        "nameAr": "سهل حشيش",
+        "slug": "sahl-hasheesh",
+        "areas": [
+          {
+            "name": "Azzurra Resort",
+            "nameAr": "ازو را ريزورت",
+            "slug": "azzurra-resort"
+          },
+          { "name": "Cala", "nameAr": "كالا", "slug": "cala" },
+          { "name": "II Bayou", "nameAr": "ال بايو", "slug": "ii-bayou" },
+          { "name": "Tawaya", "nameAr": "طوايا", "slug": "tawaya" },
+          {
+            "name": "Veranda Resort",
+            "nameAr": "فيراندا ريزورت",
+            "slug": "veranda-resort"
+          },
+          { "name": "Wadi Jebal", "nameAr": "وادي جبال", "slug": "wadi-jebal" }
+        ]
+      },
+      {
+        "name": "Soma Bay",
+        "nameAr": "سوما باي",
+        "slug": "soma-bay",
+        "areas": [
+          {
+            "name": "Bay Central",
+            "nameAr": "باي سنترال",
+            "slug": "bay-central"
+          },
+          { "name": "Bay West", "nameAr": "باي ويست", "slug": "bay-west" },
+          { "name": "Blanca", "nameAr": "بلانكا", "slug": "blanca" },
+          {
+            "name": "Marina Soma Bay",
+            "nameAr": "مارينا سوما باي",
+            "slug": "marina-soma-bay"
+          },
+          { "name": "Mesca", "nameAr": "ميسكا", "slug": "mesca" },
+          { "name": "Reef Town", "nameAr": "ريف تاون", "slug": "reef-town" },
+          {
+            "name": "Soma Breeze",
+            "nameAr": "سوما بريز",
+            "slug": "soma-breeze"
+          },
+          { "name": "Soma Coves", "nameAr": "سوما كوفز", "slug": "soma-coves" },
+          { "name": "Wadi Jebal", "nameAr": "وادي جبال", "slug": "wadi-jebal" }
+        ]
+      },
+      {
+        "name": "Halayeb & Shalateen",
+        "nameAr": "حلايب وشلاتين",
+        "slug": "halayeb-shalateen",
+        "areas": []
+      }
+    ]
+  },
+  {
+    "name": "Matruh",
+    "nameAr": "مطروح",
+    "slug": "matruh",
+    "sort": 3,
+    "cities": [
+      {
+        "name": "Marsa Matrouh",
+        "nameAr": "مرسى مطروح",
+        "slug": "marsa-matrouh",
+        "areas": [
+          { "name": "Ageeba", "nameAr": "عجيبة", "slug": "ageeba" },
+          { "name": "Al Nouran", "nameAr": "النوران", "slug": "al-nouran" },
+          {
+            "name": "Alam Al-Rum",
+            "nameAr": "علم الروم",
+            "slug": "alam-al-rum"
+          },
+          {
+            "name": "Alexandria St.",
+            "nameAr": "شارع اسكندرية",
+            "slug": "alexandria-st"
+          },
+          { "name": "Alkawthar", "nameAr": "الكوثر", "slug": "alkawthar" },
+          { "name": "Bahya", "nameAr": "باهيا", "slug": "bahya" },
+          { "name": "Blue Beach", "nameAr": "بلو بيتش", "slug": "blue-beach" },
+          { "name": "Blue Sea", "nameAr": "بلو سي", "slug": "blue-sea" },
+          { "name": "Caesar Bay", "nameAr": "سيزر باي", "slug": "caesar-bay" },
+          {
+            "name": "Continental Coast",
+            "nameAr": "كونتنينينتال كوست",
+            "slug": "continental-coast"
+          },
+          {
+            "name": "Costa De Luna",
+            "nameAr": "كوستا دي لونا",
+            "slug": "costa-de-luna"
+          },
+          { "name": "Etap", "nameAr": "ايتاب", "slug": "etap" },
+          {
+            "name": "Grand Beausite",
+            "nameAr": "جراند بوسايت",
+            "slug": "grand-beausite"
+          },
+          { "name": "Hekma Bay", "nameAr": "حكمه باي", "slug": "hekma-bay" },
+          {
+            "name": "Jaz Almaza Beach",
+            "nameAr": "جاز الماظة بيتش",
+            "slug": "jaz-almaza-beach"
+          },
+          {
+            "name": "Laspero Matrouh",
+            "nameAr": "لاسبيرو",
+            "slug": "laspero-matrouh"
+          },
+          {
+            "name": "Long Island",
+            "nameAr": "لونج ايلاند",
+            "slug": "long-island"
+          },
+          { "name": "Maryland", "nameAr": "الميريلاند", "slug": "maryland" },
+          {
+            "name": "Media Village",
+            "nameAr": "الاعلاميين",
+            "slug": "media-village"
+          },
+          {
+            "name": "Mera Bay Resort",
+            "nameAr": "ميرا باي ريزورت",
+            "slug": "mera-bay-resort"
+          },
+          { "name": "O Bay", "nameAr": "اوباي", "slug": "o-bay" },
+          {
+            "name": "Palma Plaja",
+            "nameAr": "بالم بلاجا",
+            "slug": "palma-plaja"
+          },
+          {
+            "name": "Porto Matrouh",
+            "nameAr": "بورتو مطروح",
+            "slug": "porto-matrouh"
+          },
+          { "name": "Sama Beach", "nameAr": "سما بيتش", "slug": "sama-beach" },
+          {
+            "name": "Sea And See",
+            "nameAr": "سي اند سي",
+            "slug": "sea-and-see"
+          },
+          { "name": "Verona", "nameAr": "فيرونا", "slug": "verona" }
+        ]
+      },
+      { "name": "Salloum", "nameAr": "السلوم", "slug": "salloum", "areas": [] },
+      { "name": "Siwa", "nameAr": "سيوة", "slug": "siwa", "areas": [] },
+      { "name": "Nagela", "nameAr": "النجيلة", "slug": "nagela", "areas": [] },
+      { "name": "Barany", "nameAr": "براني", "slug": "barany", "areas": [] },
+      {
+        "name": "North Coast",
+        "nameAr": "الساحل الشمالي",
+        "slug": "north-coast",
+        "areas": [
+          { "name": "Aghadir", "nameAr": "أغادير", "slug": "aghadir" },
+          {
+            "name": "Air Force",
+            "nameAr": "القوات الجوية",
+            "slug": "air-force"
+          },
+          { "name": "Aida Beach", "nameAr": "عايدة", "slug": "aida-beach" },
+          {
+            "name": "Ain Shams University",
+            "nameAr": "جامعة عين شمس",
+            "slug": "ain-shams-university"
+          },
+          { "name": "Al Lotus", "nameAr": "اللوتس", "slug": "al-lotus" },
+          {
+            "name": "Al Maamourah El Gadida",
+            "nameAr": "المعمورة الجديدة",
+            "slug": "al-maamourah-el-gadida"
+          },
+          { "name": "Al Rowad", "nameAr": "الرواد", "slug": "al-rowad" },
+          {
+            "name": "Al Sarab (El Mirage Beach)",
+            "nameAr": "السراب شاطئ الميراج",
+            "slug": "al-sarab-el-mirage-beach"
+          },
+          { "name": "Al Shorouk", "nameAr": "الشروق", "slug": "al-shorouk" },
+          { "name": "Alamein", "nameAr": "العلمين", "slug": "alamein" },
+          {
+            "name": "Alamein Towers",
+            "nameAr": "أبراج العلمين",
+            "slug": "alamein-towers"
+          },
+          {
+            "name": "Almaza Bay",
+            "nameAr": "ألماظة باي",
+            "slug": "almaza-bay"
+          },
+          { "name": "Amoun", "nameAr": "أمون", "slug": "amoun" },
+          { "name": "Aqua View", "nameAr": "أكوا فيو", "slug": "aqua-view" },
+          { "name": "Ariba", "nameAr": "اريبا", "slug": "ariba" },
+          {
+            "name": "Assiut University",
+            "nameAr": "جامعة أسيوط",
+            "slug": "assiut-university"
+          },
+          { "name": "Atic", "nameAr": "اتيك", "slug": "atic" },
+          {
+            "name": "Azzar Islands",
+            "nameAr": "ازار ايلاند",
+            "slug": "azzar-islands"
+          },
+          { "name": "Badr", "nameAr": "بدر", "slug": "badr" },
+          { "name": "Banks", "nameAr": "البنوك", "slug": "banks" },
+          { "name": "BatterSea", "nameAr": "باترسي", "slug": "battersea" },
+          {
+            "name": "Bella Marina",
+            "nameAr": "بيلا مارينا",
+            "slug": "bella-marina"
+          },
+          { "name": "Bella Mera", "nameAr": "بيلا ميرا", "slug": "bella-mera" },
+          {
+            "name": "Bella Vista",
+            "nameAr": "بيلا فيستا",
+            "slug": "bella-vista"
+          },
+          { "name": "Blue Bay", "nameAr": "بلو باي", "slug": "blue-bay" },
+          {
+            "name": "Blue Valley",
+            "nameAr": "بلو فالي",
+            "slug": "blue-valley"
+          },
+          {
+            "name": "Bleu Ciel Marina",
+            "nameAr": "بلو سيال مارينا",
+            "slug": "bleu-ciel-marina"
+          },
+          { "name": "Boset", "nameAr": "بوسيت", "slug": "boset" },
+          { "name": "Caribiano", "nameAr": "كاربيانو", "slug": "caribiano" },
+          {
+            "name": "Casabianca",
+            "nameAr": "كازابيانكا",
+            "slug": "casabianca"
+          },
+          { "name": "Cassia", "nameAr": "كاسيا", "slug": "cassia" },
+          { "name": "Carthage", "nameAr": "قرطاج", "slug": "carthage" },
+          { "name": "Cascadia", "nameAr": "كاسكاديا", "slug": "cascadia" },
+          {
+            "name": "Cecilia Lagoons",
+            "nameAr": "سيسيليا لاجونز",
+            "slug": "cecilia-lagoons"
+          },
+          {
+            "name": "Chocolate Coast",
+            "nameAr": "شوكليت كوست",
+            "slug": "chocolate-coast"
+          },
+          { "name": "City View", "nameAr": "سيتي فيو", "slug": "city-view" },
+          {
+            "name": "Citystars AlSahel",
+            "nameAr": "سيتي ستارز الساحل",
+            "slug": "citystars-alsahel"
+          },
+          {
+            "name": "Coast Heights",
+            "nameAr": "كوست هايتس",
+            "slug": "coast-heights"
+          },
+          {
+            "name": "Commercial Diplomats",
+            "nameAr": "الدبلوماسيين التجاريين",
+            "slug": "commercial-diplomats"
+          },
+          {
+            "name": "Coral Hills",
+            "nameAr": "كورال هيلز",
+            "slug": "coral-hills"
+          },
+          { "name": "Coronado", "nameAr": "كورونادو", "slug": "coronado" },
+          {
+            "name": "Costa Del Sol",
+            "nameAr": "كوستا دل سول ريزورت",
+            "slug": "costa-del-sol"
+          },
+          { "name": "D-Bay", "nameAr": "دي باي", "slug": "d-bay" },
+          { "name": "Dabaa", "nameAr": "الضبعة", "slug": "dabaa" },
+          { "name": "Dalia", "nameAr": "داليا", "slug": "dalia" },
+          {
+            "name": "Diana Beach",
+            "nameAr": "ديانا بيتش",
+            "slug": "diana-beach"
+          },
+          { "name": "Diplo 1", "nameAr": "الدبلوماسيين 1", "slug": "diplo-1" },
+          { "name": "Diplo 2", "nameAr": "الدبلوماسيين 2", "slug": "diplo-2" },
+          {
+            "name": "Diplo Mountain View",
+            "nameAr": "الدبلوماسيين ماونتان فيو",
+            "slug": "diplo-mountain-view"
+          },
+          {
+            "name": "Diplomatic Village North Coast",
+            "nameAr": "قرية الدبلوماسيين الساحل الشمالي",
+            "slug": "diplomatic-village"
+          },
+          {
+            "name": "Dimora North Coast",
+            "nameAr": "ديمورا الساحل الشمالي",
+            "slug": "dimora-north-coast"
+          },
+          { "name": "Dose", "nameAr": "دوس", "slug": "dose" },
+          { "name": "Dyar", "nameAr": "ديار", "slug": "dyar" },
+          { "name": "EKO", "nameAr": "ايكو", "slug": "eko" },
+          { "name": "El Ahlam", "nameAr": "الأحلام", "slug": "el-ahlam" },
+          { "name": "El Atebaa", "nameAr": "الأطباء", "slug": "el-atebaa" },
+          { "name": "El Ballah", "nameAr": "البلاح", "slug": "el-ballah" },
+          { "name": "El Fayrouz", "nameAr": "الفيروز", "slug": "el-fayrouz" },
+          { "name": "El Gawhara", "nameAr": "الجوهرة", "slug": "el-gawhara" },
+          { "name": "El Karawan", "nameAr": "الكروان", "slug": "el-karawan" },
+          { "name": "El Maadi", "nameAr": "المعادى", "slug": "el-maadi" },
+          { "name": "El Marwa", "nameAr": "المروة", "slug": "el-marwa" },
+          { "name": "El Morgan", "nameAr": "المرجان", "slug": "el-morgan" },
+          { "name": "El Rawan", "nameAr": "الروان", "slug": "el-rawan" },
+          { "name": "El Rawda", "nameAr": "الروضة", "slug": "el-rawda" },
+          { "name": "El Safa", "nameAr": "الصفاء", "slug": "el-safa" },
+          {
+            "name": "El Sahafeyeen",
+            "nameAr": "الصحفيين",
+            "slug": "el-sahafeyeen"
+          },
+          { "name": "El Sarayat", "nameAr": "السرايات", "slug": "el-sarayat" },
+          { "name": "El Tayaran", "nameAr": "الطيران", "slug": "el-tayaran" },
+          { "name": "El Zohour", "nameAr": "الزهور", "slug": "el-zohour" },
+          {
+            "name": "ELO Resort",
+            "nameAr": "منتجع إيلو",
+            "slug": "elo-resort"
+          },
+          {
+            "name": "Emirates Heights",
+            "nameAr": "إمارتس هايتس",
+            "slug": "emirates-heights"
+          },
+          {
+            "name": "Fakhr El Behar",
+            "nameAr": "فخر البحار",
+            "slug": "fakhr-el-behar"
+          },
+          { "name": "Farah", "nameAr": "فرح", "slug": "farah" },
+          { "name": "Fouka Bay", "nameAr": "فوكا باي", "slug": "fouka-bay" },
+          {
+            "name": "Gamaet El Dewal El Arabeya",
+            "nameAr": "جامعة الدول العربية",
+            "slug": "gamaet-el-dewal-el-arabeya"
+          },
+          { "name": "Gates", "nameAr": "جيتس", "slug": "gates" },
+          {
+            "name": "Ghazala Bay",
+            "nameAr": "خليج غزالة",
+            "slug": "ghazala-bay"
+          },
+          {
+            "name": "Ghazala Valley",
+            "nameAr": "غزالة فالي",
+            "slug": "ghazala-valley"
+          },
+          { "name": "Glee", "nameAr": "جلى", "slug": "glee" },
+          {
+            "name": "Golden Beach North Coast",
+            "nameAr": "جولدن بيتش الساحل",
+            "slug": "golden-beach-north-coast"
+          },
+          {
+            "name": "Granada Beach",
+            "nameAr": "غرناطة",
+            "slug": "granada-beach"
+          },
+          {
+            "name": "Grand Hills",
+            "nameAr": "جراند هيلز",
+            "slug": "grand-hills"
+          },
+          {
+            "name": "Green Beach",
+            "nameAr": "جرين بيتش",
+            "slug": "green-beach"
+          },
+          {
+            "name": "Green Leaves",
+            "nameAr": "جرين ليفز",
+            "slug": "green-leaves"
+          },
+          {
+            "name": "Hacienda Heneish",
+            "nameAr": "هاسيندا حنيش",
+            "slug": "hacienda-heneish"
+          },
+          {
+            "name": "Hacienda Red",
+            "nameAr": "هاسيندا ريد",
+            "slug": "hacienda-red"
+          },
+          {
+            "name": "Hacienda Waters",
+            "nameAr": "هاسيندا وترز",
+            "slug": "hacienda-waters"
+          },
+          { "name": "Hammam", "nameAr": "الحمام", "slug": "hammam" },
+          { "name": "Heidi", "nameAr": "هايدي", "slug": "heidi" },
+          { "name": "Heliobeach", "nameAr": "هليو بيتش", "slug": "heliobeach" },
+          {
+            "name": "Horus & El Remal El Zahabeya",
+            "nameAr": "حورس والرمال الذهبية",
+            "slug": "horus-el-remal-el-zahabeya"
+          },
+          {
+            "name": "Jevera Bay",
+            "nameAr": "جيڤيرا باي",
+            "slug": "jevera-bay"
+          },
+          {
+            "name": "Katameya Coast",
+            "nameAr": "قطامية كوست",
+            "slug": "katameya-coast"
+          },
+          {
+            "name": "Kerir Gardens",
+            "nameAr": "كرير جاردنز",
+            "slug": "kerir-gardens"
+          },
+          {
+            "name": "Krair Lagoon",
+            "nameAr": "كرير لاجون",
+            "slug": "krair-lagoon"
+          },
+          {
+            "name": "Kreir Paradise",
+            "nameAr": "كرير براديز",
+            "slug": "kreir-paradise"
+          },
+          { "name": "La Jolie", "nameAr": "لاجولي", "slug": "la-jolie" },
+          { "name": "La Vallee", "nameAr": "لا فالي", "slug": "la-vallee" },
+          {
+            "name": "La Vista Bay East",
+            "nameAr": "لا فيستا باي إيست",
+            "slug": "la-vista-bay-east"
+          },
+          {
+            "name": "La Vista Bay North Coast",
+            "nameAr": "لافيستا الساحل",
+            "slug": "la-vista-bay-north-coast"
+          },
+          { "name": "La Vita", "nameAr": "لافيتا", "slug": "la-vita" },
+          {
+            "name": "Lagoon Arco",
+            "nameAr": "لاجون اركو",
+            "slug": "lagoon-arco"
+          },
+          { "name": "Lamera", "nameAr": "لاميرا", "slug": "lamera" },
+          {
+            "name": "Lasirena North Coast",
+            "nameAr": "لاسيرينا الساحل",
+            "slug": "lasirena-north-coast"
+          },
+          {
+            "name": "Layana Residence",
+            "nameAr": "ليانا ريزيدنس",
+            "slug": "layana-residence"
+          },
+          {
+            "name": "Latin District",
+            "nameAr": "الحي اللاتيني",
+            "slug": "latin-district"
+          },
+          { "name": "L'Hiver", "nameAr": "ليڤير", "slug": "lhiver" },
+          {
+            "name": "London North Coast",
+            "nameAr": "لندن الساحل الشمالي",
+            "slug": "london-north-coast"
+          },
+          { "name": "Long Beach", "nameAr": "لونج بيتش", "slug": "long-beach" },
+          { "name": "Lotus", "nameAr": "لوتس", "slug": "lotus" },
+          { "name": "Marakia", "nameAr": "مراقيا", "slug": "marakia" },
+          {
+            "name": "Marakia Gardens",
+            "nameAr": "مراقيا جاردنز",
+            "slug": "marakia-gardens"
+          },
+          { "name": "Marbella", "nameAr": "ماربيلا", "slug": "marbella" },
+          {
+            "name": "Marhaba Beach",
+            "nameAr": "مرحبا بيتش",
+            "slug": "marhaba-beach"
+          },
+          { "name": "Marina 1", "nameAr": "مارينا 1", "slug": "marina-1" },
+          { "name": "Marina 2", "nameAr": "مارينا 2", "slug": "marina-2" },
+          { "name": "Marina 3", "nameAr": "مارينا 3", "slug": "marina-3" },
+          { "name": "Marina 4", "nameAr": "مارينا 4", "slug": "marina-4" },
+          { "name": "Marina 5", "nameAr": "مارينا 5", "slug": "marina-5" },
+          { "name": "Marina 6", "nameAr": "مارينا 6", "slug": "marina-6" },
+          { "name": "Marina 7", "nameAr": "مارينا 7", "slug": "marina-7" },
+          { "name": "Marina 8", "nameAr": "مارينا 8", "slug": "marina-8" },
+          {
+            "name": "Marina Flowers",
+            "nameAr": "مارينا فلاورز",
+            "slug": "marina-flowers"
+          },
+          {
+            "name": "Marina Gardens",
+            "nameAr": "مارينا جاردنز",
+            "slug": "marina-gardens"
+          },
+          {
+            "name": "Marina Sunshine",
+            "nameAr": "مارينا صن شاين",
+            "slug": "marina-sunshine"
+          },
+          {
+            "name": "Marina Valley",
+            "nameAr": "مارينا فالي",
+            "slug": "marina-valley"
+          },
+          {
+            "name": "Marina Venecia",
+            "nameAr": "مارينا فينسيا",
+            "slug": "marina-venecia"
+          },
+          {
+            "name": "Marina West",
+            "nameAr": "مارينا ويست",
+            "slug": "marina-west"
+          },
+          {
+            "name": "Marsa Baghush",
+            "nameAr": "مرسى بغوش",
+            "slug": "marsa-baghush"
+          },
+          {
+            "name": "Marseilia Beach 1",
+            "nameAr": "مرسيليا بيتش 1",
+            "slug": "marseilia-beach-1"
+          },
+          {
+            "name": "Marseilia Beach 2",
+            "nameAr": "مرسيليا بيتش 2",
+            "slug": "marseilia-beach-2"
+          },
+          {
+            "name": "Marseilia Beach 3",
+            "nameAr": "مرسيليا بيتش 3",
+            "slug": "marseilia-beach-3"
+          },
+          {
+            "name": "Marseilia Land",
+            "nameAr": "مرسيليا لاند",
+            "slug": "marseilia-land"
+          },
+          {
+            "name": "Marseilia Resort",
+            "nameAr": "مرسيليا ريزورت",
+            "slug": "marseilia-resort"
+          },
+          { "name": "Mena", "nameAr": "مينا", "slug": "mena" },
+          { "name": "Mena 2", "nameAr": "مينا 2", "slug": "mena-2" },
+          { "name": "Mena 3", "nameAr": "مينا 3", "slug": "mena-3" },
+          { "name": "Mena 4", "nameAr": "مينا 4", "slug": "mena-4" },
+          { "name": "Mena 5", "nameAr": "مينا 5", "slug": "mena-5" },
+          { "name": "Mena Club", "nameAr": "مينا كلوب", "slug": "mena-club" },
+          {
+            "name": "Miami Island",
+            "nameAr": "جزر الميامي",
+            "slug": "miami-island"
+          },
+          {
+            "name": "Mirage Resort",
+            "nameAr": "قرية ميراج",
+            "slug": "mirage-resort"
+          },
+          {
+            "name": "Misr Lel Taamir",
+            "nameAr": "مصر للتعمير",
+            "slug": "misr-lel-taamir"
+          },
+          { "name": "Mohandesin", "nameAr": "المهندسين", "slug": "mohandesin" },
+          { "name": "Montazah", "nameAr": "المنتزه", "slug": "montazah" },
+          {
+            "name": "Mountain View LVLS",
+            "nameAr": "ماونتن فيو لفلز",
+            "slug": "mountain-view-lvls"
+          },
+          {
+            "name": "Mountain View North Coast",
+            "nameAr": "ماونتن فيو الساحل",
+            "slug": "mountain-view-north-coast"
+          },
+          { "name": "Nesma", "nameAr": "نسمه", "slug": "nesma" },
+          {
+            "name": "Nevada Hills",
+            "nameAr": "نيفادا هيلز",
+            "slug": "nevada-hills"
+          },
+          {
+            "name": "New Alamein City",
+            "nameAr": "مدينة العلمين الجديدة",
+            "slug": "new-alamein-city"
+          },
+          { "name": "Nice", "nameAr": "نيس", "slug": "nice" },
+          { "name": "Nice 2", "nameAr": "نيس 2", "slug": "nice-2" },
+          { "name": "Nice 3", "nameAr": "نيس 3", "slug": "nice-3" },
+          { "name": "Nice 4", "nameAr": "نيس 4", "slug": "nice-4" },
+          { "name": "Nord", "nameAr": "نورد", "slug": "nord" },
+          { "name": "North Code", "nameAr": "نورث كود", "slug": "north-code" },
+          {
+            "name": "North Edge Towers",
+            "nameAr": "أبراج نورث إيدج",
+            "slug": "north-edge-towers"
+          },
+          {
+            "name": "Omaraa El Behar",
+            "nameAr": "أمراء البحار",
+            "slug": "omaraa-el-behar"
+          },
+          { "name": "Palm Beach", "nameAr": "بالم بيتش", "slug": "palm-beach" },
+          {
+            "name": "Palm Hills New Alamein",
+            "nameAr": "بالم هيلز العلمين الجديدة",
+            "slug": "palm-hills-new-alamein"
+          },
+          {
+            "name": "Palma Resort",
+            "nameAr": "بالما ريزورت",
+            "slug": "palma-resort"
+          },
+          {
+            "name": "Panorama Beach",
+            "nameAr": "بانوراما بيتش",
+            "slug": "panorama-beach"
+          },
+          {
+            "name": "Paradise Beach North Coast",
+            "nameAr": "باراديس بيتش الساحل",
+            "slug": "paradise-beach-north-coast"
+          },
+          {
+            "name": "Perla Marina",
+            "nameAr": "بيرلا مارينا",
+            "slug": "perla-marina"
+          },
+          {
+            "name": "Petro Beach",
+            "nameAr": "بترو بيتش",
+            "slug": "petro-beach"
+          },
+          { "name": "Piu Bella", "nameAr": "بيو بيلا", "slug": "piu-bella" },
+          {
+            "name": "Porto Golf Marina",
+            "nameAr": "بورتو جولف مارينا",
+            "slug": "porto-golf-marina"
+          },
+          {
+            "name": "Porto Marina",
+            "nameAr": "بورتو مارينا",
+            "slug": "porto-marina"
+          },
+          { "name": "Raa", "nameAr": "رع", "slug": "raa" },
+          { "name": "Ramatan", "nameAr": "رامتان", "slug": "ramatan" },
+          { "name": "Ramla", "nameAr": "رملة", "slug": "ramla" },
+          { "name": "Ramsis", "nameAr": "رمسيس", "slug": "ramsis" },
+          {
+            "name": "Ras Al Hekma",
+            "nameAr": "راس الحكمة",
+            "slug": "ras-al-hekma"
+          },
+          { "name": "Retal View", "nameAr": "ريتال فيو", "slug": "retal-view" },
+          {
+            "name": "Rhodes North Coast",
+            "nameAr": "رودس الساحل الشمالي",
+            "slug": "rhodes-north-coast"
+          },
+          { "name": "Riviera", "nameAr": "ريفييرا", "slug": "riviera" },
+          { "name": "Rosana", "nameAr": "روسانا", "slug": "rosana" },
+          { "name": "Rotondo", "nameAr": "روتوندو", "slug": "rotondo" },
+          { "name": "Row Marina", "nameAr": "رومارينا", "slug": "row-marina" },
+          {
+            "name": "Royal Beach",
+            "nameAr": "رويال بيتش",
+            "slug": "royal-beach"
+          },
+          { "name": "S Bay", "nameAr": "اس باي", "slug": "s-bay" },
+          { "name": "Saada", "nameAr": "سعادة", "slug": "saada" },
+          { "name": "Salsabil", "nameAr": "سلسبيل", "slug": "salsabil" },
+          { "name": "Seazen", "nameAr": "سيزن", "slug": "seazen" },
+          { "name": "Sedra", "nameAr": "سدرا", "slug": "sedra" },
+          {
+            "name": "Selah El-Mohadesin",
+            "nameAr": "سلاح المهندسين",
+            "slug": "selah-el-mohadesin"
+          },
+          { "name": "Sequoia", "nameAr": "سيكويا", "slug": "sequoia" },
+          { "name": "Shores", "nameAr": "شورز", "slug": "shores" },
+          {
+            "name": "Sidi Abdel Rahman",
+            "nameAr": "سيدي عبد الرحمن",
+            "slug": "sidi-abdel-rahman"
+          },
+          {
+            "name": "Sidi Heneish",
+            "nameAr": "سيدي حنيش",
+            "slug": "sidi-heneish"
+          },
+          {
+            "name": "Sidi Kirayr",
+            "nameAr": "سيدى كرير",
+            "slug": "sidi-kirayr"
+          },
+          {
+            "name": "Siela Resort",
+            "nameAr": "منتجع سيلا",
+            "slug": "siela-resort"
+          },
+          {
+            "name": "Silver Beach",
+            "nameAr": "سيلفر بيتش",
+            "slug": "silver-beach"
+          },
+          {
+            "name": "Silver Sands",
+            "nameAr": "سيلفر ساندس",
+            "slug": "silver-sands"
+          },
+          {
+            "name": "Smeralda Bay",
+            "nameAr": "سمرالدا باي",
+            "slug": "smeralda-bay"
+          },
+          { "name": "Soul", "nameAr": "سول", "slug": "soul" },
+          {
+            "name": "South Marakia",
+            "nameAr": "مراقيا الجنوبية",
+            "slug": "south-marakia"
+          },
+          { "name": "South Med", "nameAr": "ساوت ميد", "slug": "south-med" },
+          {
+            "name": "Suez Canal",
+            "nameAr": "قناة السويس",
+            "slug": "suez-canal"
+          },
+          { "name": "Swan Lake", "nameAr": "سوان ليك", "slug": "swan-lake" },
+          { "name": "Swani", "nameAr": "سواني", "slug": "swani" },
+          {
+            "name": "T-Residence",
+            "nameAr": "تي ريزيدنس",
+            "slug": "t-residence"
+          },
+          { "name": "Tahiti", "nameAr": "تاهيتي", "slug": "tahiti" },
+          { "name": "The Gate", "nameAr": "ذا جيت", "slug": "the-gate" },
+          { "name": "The Shore", "nameAr": "ذا شور", "slug": "the-shore" },
+          {
+            "name": "The Waterway",
+            "nameAr": "ذا واتر واي",
+            "slug": "the-waterway"
+          },
+          { "name": "Tiba Rose", "nameAr": "طيبة روز", "slug": "tiba-rose" },
+          { "name": "Togareyeen", "nameAr": "تجارين", "slug": "togareyeen" },
+          { "name": "Turquoise", "nameAr": "تركواز", "slug": "turquoise" },
+          { "name": "Valencia", "nameAr": "فالينسيا", "slug": "valencia" },
+          { "name": "Venus", "nameAr": "فينوس", "slug": "venus" },
+          { "name": "Verdina", "nameAr": "فيردينا", "slug": "verdina" },
+          {
+            "name": "Village Of The Artists",
+            "nameAr": "قرية الفنانين",
+            "slug": "village-of-the-artists"
+          },
+          { "name": "Virginia", "nameAr": "فرجينيا", "slug": "virginia" },
+          {
+            "name": "Virginia Style",
+            "nameAr": "فرجينيا استايل",
+            "slug": "virginia-style"
+          },
+          {
+            "name": "Virginia Plaza",
+            "nameAr": "فرجينيا بلازا",
+            "slug": "virginia-plaza"
+          },
+          {
+            "name": "Virginia Resort",
+            "nameAr": "فرجينيا ريزورت",
+            "slug": "virginia-resort"
+          },
+          {
+            "name": "Virginia Flower",
+            "nameAr": "فرجينيا فلاور",
+            "slug": "virginia-flower"
+          },
+          {
+            "name": "Virginia Life",
+            "nameAr": "فرجينيا لايف",
+            "slug": "virginia-life"
+          },
+          {
+            "name": "Vista Marina",
+            "nameAr": "فيستا مارينا",
+            "slug": "vista-marina"
+          },
+          { "name": "Wanas", "nameAr": "ونس", "slug": "wanas" },
+          {
+            "name": "Water Valley",
+            "nameAr": "ووتر فالي",
+            "slug": "water-valley"
+          },
+          { "name": "White Bay", "nameAr": "وايت باي", "slug": "white-bay" },
+          { "name": "White Sand", "nameAr": "وايت ساند", "slug": "white-sand" },
+          { "name": "Winter", "nameAr": "وينتر", "slug": "winter" },
+          {
+            "name": "Winter New Alamein",
+            "nameAr": "وينتر العلمين الجديدة",
+            "slug": "winter-new-alamein"
+          },
+          { "name": "Zomoroda", "nameAr": "زمردة", "slug": "zomoroda" },
+          {
+            "name": "Zoya Ghazala Bay",
+            "nameAr": "زويا غزالة باي",
+            "slug": "zoya-ghazala-bay"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Aswan",
+    "nameAr": "أسوان",
+    "slug": "aswan",
+    "sort": 9,
+    "cities": [
+      {
+        "name": "Aswan City",
+        "nameAr": "مدينة أسوان",
+        "slug": "aswan-city",
+        "areas": []
+      },
+      {
+        "name": "Edfu",
+        "nameAr": "إدفو",
+        "slug": "edfu",
+        "areas": []
+      },
+      {
+        "name": "Kom Ombo",
+        "nameAr": "كوم أمبو",
+        "slug": "kom-ombo",
+        "areas": []
+      },
+      {
+        "name": "Daraw",
+        "nameAr": "دراو",
+        "slug": "daraw",
+        "areas": []
+      },
+      {
+        "name": "Abu Simbel",
+        "nameAr": "أبو سمبل",
+        "slug": "abu-simbel",
+        "areas": []
+      },
+      {
+        "name": "New Aswan",
+        "nameAr": "أسوان الجديدة",
+        "slug": "new-aswan",
+        "areas": []
+      },
+      {
+        "name": "Nasr al-Nuba",
+        "nameAr": "نصر النوبة",
+        "slug": "nasr-al-nuba",
+        "areas": []
+      },
+      {
+        "name": "Kalabsha",
+        "nameAr": "كلابشة",
+        "slug": "kalabsha",
+        "areas": []
+      },
+      {
+        "name": "Ballana",
+        "nameAr": "بلانة",
+        "slug": "ballana",
+        "areas": []
+      },
+      {
+        "name": "Sebaiya",
+        "nameAr": "السباعية",
+        "slug": "sebaiya",
+        "areas": []
+      }
+    ]
+  }
+]

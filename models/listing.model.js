@@ -5,11 +5,20 @@ const locationSchema = new mongoose.Schema(
   {
     governorate: {
       slug: { type: String, required: true, lowercase: true, trim: true },
-      name: { type: String, required: true, trim: true },
+      // Optional cache of display names; primary key is slug
+      name: { type: String, trim: true },
+      nameAr: { type: String, trim: true },
     },
     city: {
       slug: { type: String, required: true, lowercase: true, trim: true },
-      name: { type: String, required: true, trim: true },
+      // Optional cache of display names; primary key is slug
+      name: { type: String, trim: true },
+      nameAr: { type: String, trim: true },
+    },
+    area: {
+      slug: { type: String, lowercase: true, trim: true },
+      name: { type: String, trim: true },
+      nameAr: { type: String, trim: true },
     },
     // Only used when city.slug === "other"
     city_other_text: { type: String, default: "" },
@@ -93,6 +102,20 @@ const listingSchema = new mongoose.Schema(
 
     negotiable: { type: Boolean, default: false },
 
+    // Contact information
+    contact: {
+      phone: {
+        type: String,
+        required: true,
+        trim: true,
+        // We store normalized E.164: +201XXXXXXXXX (11 digits after +20)
+        match: [
+          /^\+201[0-9]{9}$/,
+          "Please enter a valid Egyptian phone number in international format (+201XXXXXXXXX)",
+        ],
+      },
+      whatsapp: { type: Boolean, default: true },
+    },
     // Purpose and category drive which groups are relevant
     purpose: { type: String, required: true, enum: ["rent", "sale"] },
     category: {
@@ -143,6 +166,7 @@ const listingSchema = new mongoose.Schema(
 listingSchema.index({ purpose: 1, category: 1 });
 listingSchema.index({ "location.governorate.slug": 1 });
 listingSchema.index({ "location.city.slug": 1 });
+listingSchema.index({ "location.area.slug": 1 });
 listingSchema.index({ price: 1 });
 
 // Text index for Level 1 search (relevance ranking)
