@@ -15,22 +15,31 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-// CORS: allow local dev + deployed Vercel client
-const allowedOrigins = [
+// Allow localhost, production domain, and any Vercel preview for this project
+const allowList = new Set([
   "http://localhost:5173",
-  "https://real-estate-client-nu.vercel.app",
-];
+  "https://real-estate-client-nu.vercel.app", // <-- your stable prod domain (adjust if different)
+  // add your custom domain later, e.g. "https://app.your-domain.com"
+]);
+
+// Matches Vercel preview deployments for this project
+const vercelPreviewRe =
+  /^https:\/\/real-estate-client-[a-z0-9-]+(?:-[a-z0-9-]+)?\.vercel\.app$/;
 
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // allow REST tools or same-origin requests with no Origin header
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) return callback(null, true);
-      console.log("❌ Blocked by CORS:", origin);
-      return callback(new Error("Not allowed by CORS"));
+    origin: (origin, cb) => {
+      if (!origin) return cb(null, true); // same-origin or curl
+      if (allowList.has(origin) || vercelPreviewRe.test(origin)) {
+        return cb(null, true);
+      }
+      // IMPORTANT: do NOT throw — returning false avoids 500 on preflight
+      return cb(null, false);
     },
     credentials: true,
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    optionsSuccessStatus: 204,
   })
 );
 
