@@ -6,8 +6,9 @@ import User from "../models/user.model.js";
 const isProduction = process.env.NODE_ENV === "production";
 const baseCookieOptions = {
   httpOnly: true,
-  sameSite: isProduction ? "none" : "lax",
+  sameSite: isProduction ? "lax" : "lax",
   secure: isProduction,
+  domain: isProduction ? ".aqardot.com" : undefined,
 };
 
 /**

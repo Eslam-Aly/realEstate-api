@@ -22,6 +22,8 @@ const allowList = new Set([
   "http://localhost:5173",
   "https://real-estate-client-nu.vercel.app", // <-- your stable prod domain (adjust if different)
   // add your custom domain later, e.g. "https://app.your-domain.com"
+  "https://www.aqardot.com",
+  "https://aqardot.com",
 ]);
 
 // Matches Vercel preview deployments for this project
