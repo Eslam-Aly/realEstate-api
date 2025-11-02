@@ -3,6 +3,13 @@ import errorHandler from "../utils/error.js";
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
+const isProduction = process.env.NODE_ENV === "production";
+const baseCookieOptions = {
+  httpOnly: true,
+  sameSite: isProduction ? "none" : "lax",
+  secure: isProduction,
+};
+
 /**
  * Handles local email/password sign-up.
  * Expects { username, email, password } in the request body.
@@ -40,7 +47,7 @@ export const signin = async (req, res, next) => {
     const token = jwt.sign({ id: isValidUser._id }, process.env.JWT_SECRET);
     const { password: pass, ...userData } = isValidUser._doc;
     res
-      .cookie("access_token", token, { httpOnly: true })
+      .cookie("access_token", token, baseCookieOptions)
       .status(200)
       .json(userData);
   } catch (error) {
@@ -59,7 +66,7 @@ export const google = async (req, res, next) => {
       const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
       const { password: pass, ...rest } = user._doc;
       res
-        .cookie("access_token", token, { httpOnly: true })
+        .cookie("access_token", token, baseCookieOptions)
         .status(200)
         .json(rest);
     } else {
@@ -79,7 +86,7 @@ export const google = async (req, res, next) => {
       const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
       const { password: pass, ...rest } = newUser._doc;
       res
-        .cookie("access_token", token, { httpOnly: true })
+        .cookie("access_token", token, baseCookieOptions)
         .status(200)
         .json(rest);
     }
