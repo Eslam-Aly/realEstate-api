@@ -14,6 +14,8 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
+// Tell Express it's behind a proxy (Render) so secure cookies work
+app.set("trust proxy", 1);
 
 // Allow localhost, production domain, and any Vercel preview for this project
 const allowList = new Set([
