@@ -438,27 +438,26 @@ export const getListing = async (req, res, next) => {
  */
 export const getListings = async (req, res, next) => {
   try {
-    const limit = parseInt(req.query.limit) || 12;
+    const limit = parseInt(req.query.limit) || 100;
     const startIndex = parseInt(req.query.startIndex) || 0;
     const sort = req.query.sort || "createdAt";
     const order = (req.query.order || "desc").toLowerCase() === "desc" ? -1 : 1;
 
+    // Use ONLY `searchTerm` for free-text
+    const term = (req.query.searchTerm || "").trim();
+    const hasSearch = Boolean(term);
+
+    // -------------------- Build precise filters (old behavior) --------------------
     const filter = {};
     const andClauses = [];
 
-    // free text (Level 1: MongoDB text index)
-    const term = (req.query.searchTerm || "").trim();
-    const usingTextSearch = Boolean(term);
-    if (usingTextSearch) {
-      // Use $text to leverage the weighted text index
-      filter.$text = { $search: term };
-    }
-
     // purpose & category
-    if (req.query.purpose) filter.purpose = req.query.purpose;
-    if (req.query.category) filter.category = req.query.category;
+    if (req.query.purpose && req.query.purpose !== "all")
+      filter.purpose = req.query.purpose;
+    if (req.query.category && req.query.category !== "all")
+      filter.category = req.query.category;
 
-    // location
+    // location slugs
     if (req.query.gov)
       filter["location.governorate.slug"] = String(req.query.gov).toLowerCase();
     if (req.query.city)
@@ -475,7 +474,7 @@ export const getListings = async (req, res, next) => {
       if (max != null) filter.price.$lte = max;
     }
 
-    // residential attribute ranges
+    // residential ranges & toggles
     const minBeds =
       req.query.minBedrooms != null ? Number(req.query.minBedrooms) : undefined;
     const maxBeds =
@@ -529,25 +528,67 @@ export const getListings = async (req, res, next) => {
         ],
       });
     }
+    if (andClauses.length) filter.$and = andClauses;
 
-    if (andClauses.length) {
-      filter.$and = andClauses;
+    // -------------------- Path A: Atlas Search for free-text --------------------
+    if (hasSearch) {
+      const pipeline = [
+        {
+          $search: {
+            index: "listingsSearch",
+            text: {
+              query: term,
+              path: [
+                "title",
+                "description",
+                "location.governorate.name",
+                "location.governorate.nameAr",
+                "location.city.name",
+                "location.city.nameAr",
+                "location.area.name",
+                "location.area.nameAr",
+              ],
+              fuzzy: { maxEdits: 1 },
+            },
+          },
+        },
+        { $addFields: { score: { $meta: "searchScore" } } },
+      ];
+
+      if (Object.keys(filter).length) pipeline.push({ $match: filter });
+
+      pipeline.push(
+        { $sort: { score: -1, [sort]: order } },
+        { $skip: startIndex },
+        { $limit: limit },
+        {
+          $project: {
+            title: 1,
+            description: 1,
+            address: 1,
+            images: 1,
+            price: 1,
+            negotiable: 1,
+            purpose: 1,
+            category: 1,
+            location: 1,
+            createdAt: 1,
+            score: 1,
+          },
+        }
+      );
+
+      const results = await Listing.aggregate(pipeline);
+      return res
+        .status(200)
+        .json({ success: true, count: results.length, results });
     }
 
-    // If using text, include score and sort by relevance first, then secondary sort
-    const projection = usingTextSearch
-      ? { score: { $meta: "textScore" } }
-      : undefined;
-
-    let query = Listing.find(filter, projection);
-    if (usingTextSearch) {
-      // Relevance first, then requested sort (e.g., createdAt desc)
-      query = query.sort({ score: { $meta: "textScore" }, [sort]: order });
-    } else {
-      query = query.sort({ [sort]: order });
-    }
-
-    const listings = await query.skip(startIndex).limit(limit);
+    // -------------------- Path B: No free-text → old precise find() --------------------
+    const listings = await Listing.find(filter)
+      .sort({ [sort]: order })
+      .skip(startIndex)
+      .limit(limit);
 
     return res.status(200).json(listings);
   } catch (error) {

@@ -169,29 +169,6 @@ listingSchema.index({ "location.city.slug": 1 });
 listingSchema.index({ "location.area.slug": 1 });
 listingSchema.index({ price: 1 });
 
-// Text index for Level 1 search (relevance ranking)
-listingSchema.index(
-  {
-    title: "text",
-    description: "text",
-    address: "text",
-    "location.governorate.name": "text",
-    "location.city.name": "text",
-  },
-  {
-    name: "ListingTextIndex",
-    // Title is most important, then address/city, then description
-    weights: {
-      title: 10,
-      address: 5,
-      "location.city.name": 4,
-      "location.governorate.name": 3,
-      description: 2,
-    },
-    default_language: "english",
-  }
-);
-
 const Listing =
   mongoose.models.Listing || mongoose.model("Listing", listingSchema);
 
