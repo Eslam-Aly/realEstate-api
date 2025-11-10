@@ -11,11 +11,35 @@ router.post("/", async (req, res) => {
     host: "smtp.mail.me.com",
     port: 465,
     secure: true,
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 20000,
+    logger: true,
+    debug: true,
+    tls: {
+      servername: "smtp.mail.me.com",
+      minVersion: "TLSv1.2",
+      rejectUnauthorized: true,
+    },
     auth: {
       user: "eslam.mahmud18@icloud.com",
       pass: process.env.ICLOUD_APP_PASSWORD, // generated from Apple ID → Security → App-specific passwords
     },
   });
+
+  try {
+    await transporter.verify();
+    console.log("[SMTP] verify: connection OK");
+  } catch (vErr) {
+    console.error("[SMTP] verify failed:", vErr?.code || vErr?.message, vErr);
+    return res
+      .status(502)
+      .json({
+        success: false,
+        message: "smtp_verify_failed",
+        error: vErr?.message || String(vErr),
+      });
+  }
 
   try {
     await transporter.sendMail({
@@ -31,6 +55,8 @@ router.post("/", async (req, res) => {
     console.error(err);
     res.status(500).json({
       success: false,
+      message: "smtp_send_failed",
+      error: err?.message || "unknown_error",
     });
   }
 });
