@@ -1,64 +1,80 @@
-// server/routes/contact.js
 import express from "express";
-import nodemailer from "nodemailer";
+// If Node <18, uncomment the next line:
+// import fetch from "node-fetch";
+
 const router = express.Router();
 
 router.post("/", async (req, res) => {
-  const { name, email, subject, message } = req.body;
-
-  // iCloud SMTP settings
-  const transporter = nodemailer.createTransport({
-    host: "smtp.mail.me.com",
-    port: 465,
-    secure: true,
-    connectionTimeout: 10000,
-    greetingTimeout: 10000,
-    socketTimeout: 20000,
-    logger: true,
-    debug: true,
-    tls: {
-      servername: "smtp.mail.me.com",
-      minVersion: "TLSv1.2",
-      rejectUnauthorized: true,
-    },
-    auth: {
-      user: "eslam.mahmud18@icloud.com",
-      pass: process.env.ICLOUD_APP_PASSWORD, // generated from Apple ID → Security → App-specific passwords
-    },
-  });
-
   try {
-    await transporter.verify();
-    console.log("[SMTP] verify: connection OK");
-  } catch (vErr) {
-    console.error("[SMTP] verify failed:", vErr?.code || vErr?.message, vErr);
-    return res
-      .status(502)
-      .json({
+    if (!process.env.RESEND_API_KEY) {
+      return res
+        .status(500)
+        .json({ success: false, message: "missing_env_RESEND_API_KEY" });
+    }
+
+    const { name, email, subject, message } = req.body || {};
+    if (!name || !email || !message) {
+      return res
+        .status(400)
+        .json({ success: false, message: "missing_fields" });
+    }
+
+    // Build a simple text + HTML body
+    const subj = subject?.trim() || "New message from AqarDot contact form";
+    const text = `From: ${name} <${email}>\n\n${message}`;
+    const html = `
+      <div style="font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6">
+        <p><strong>From:</strong> ${escapeHtml(name)} &lt;${escapeHtml(
+      email
+    )}&gt;</p>
+        <p><strong>Subject:</strong> ${escapeHtml(subj)}</p>
+        <hr/>
+        <pre style="white-space:pre-wrap">${escapeHtml(message)}</pre>
+      </div>
+    `;
+
+    // Send via Resend HTTP API
+    const rsp = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "AqarDot.com <contact@aqardot.com>", // your verified domain
+        to: ["contact@aqardot.com"], // where you receive
+        reply_to: email, // reply goes to the sender
+        subject: subj,
+        text,
+        html,
+      }),
+    });
+
+    if (!rsp.ok) {
+      const errText = await rsp.text().catch(() => "");
+      return res.status(502).json({
         success: false,
-        message: "smtp_verify_failed",
-        error: vErr?.message || String(vErr),
+        message: "email_api_failed",
+        error: errText || `resend_status_${rsp.status}`,
       });
-  }
+    }
 
-  try {
-    await transporter.sendMail({
-      from: `"AqarDot.com" <contact@aqardot.com>`,
-      to: "contact@aqardot.com",
-      subject: subject || "New message from AqarDot contact form",
-      text: `From: ${name} (${email})\n\n${message}`,
-    });
-    res.status(200).json({
-      success: true,
-    });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({
+    return res.status(200).json({ success: true, message: "sent" });
+  } catch (e) {
+    return res.status(500).json({
       success: false,
-      message: "smtp_send_failed",
-      error: err?.message || "unknown_error",
+      message: "server_error",
+      error: e?.message || "unknown",
     });
   }
 });
+
+// small helper to avoid HTML injection
+function escapeHtml(s = "") {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
 
 export default router;
