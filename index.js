@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import listingsRoute from "./routes/listings.route.js";
 import locationsRoute from "./routes/locations.route.js";
 import favoriteRoute from "./routes/favorite.route.js";
+import contactRoute from "./routes/contact.route.js";
 import cors from "cors";
 
 dotenv.config();
@@ -76,6 +77,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/listings", listingsRoute);
 app.use("/api/locations", locationsRoute);
 app.use("/api/favorites", favoriteRoute);
+app.use("/api/contact", contactRoute);
 
 // Health check route
 app.get("/api/health", (_req, res) => {
