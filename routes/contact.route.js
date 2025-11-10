@@ -11,6 +11,7 @@ router.post("/", async (req, res) => {
     host: "smtp.mail.me.com",
     port: 587,
     secure: false,
+    requireTLS: true,
     auth: {
       user: "eslam.mahmud18@icloud.com",
       pass: process.env.ICLOUD_APP_PASSWORD, // generated from Apple ID → Security → App-specific passwords
