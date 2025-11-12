@@ -1,5 +1,5 @@
-import express from "express";
 import dotenv from "dotenv";
+import express from "express";
 import mongoose from "mongoose";
 import userRoute from "./routes/user.route.js";
 import authRoute from "./routes/auth.route.js";
@@ -9,7 +9,6 @@ import locationsRoute from "./routes/locations.route.js";
 import favoriteRoute from "./routes/favorite.route.js";
 import contactRoute from "./routes/contact.route.js";
 import cors from "cors";
-
 dotenv.config();
 
 const app = express();
