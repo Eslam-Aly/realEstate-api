@@ -3,6 +3,8 @@ import bcryptjs from "bcryptjs";
 import User from "../models/user.model.js";
 import errorHandler from "../utils/error.js";
 import Listing from "../models/listing.model.js";
+import Favorite from "../models/favorite.model.js";
+import { deleteStorageFilesByUrl } from "../utils/firebaseStorage.js";
 
 /**
  * Public endpoint: fetches limited public user info (username, avatar, createdAt).
@@ -67,9 +69,40 @@ export const deleteUser = async (req, res, next) => {
   if (req.user.id !== req.params.id)
     return next(errorHandler(401, "You can delete only your account!"));
   try {
-    await User.findByIdAndDelete(req.params.id);
+    const user = await User.findById(req.params.id);
+    if (!user) return next(errorHandler(404, "User not found"));
+
+    const listings = await Listing.find({ userRef: req.params.id })
+      .select("_id images")
+      .lean();
+
+    const listingIds = listings.map((listing) => listing._id);
+    const listingImages = listings.flatMap((listing) => listing.images || []);
+
+    const defaultAvatar =
+      User.schema.path("avatar")?.options?.default ||
+      "https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small_2x/default-avatar-profile-icon-of-social-media-user-vector.jpg";
+
+    const storageTargets = [
+      ...listingImages,
+      ...(user.avatar && user.avatar !== defaultAvatar ? [user.avatar] : []),
+    ];
+
+    await Promise.all([
+      Listing.deleteMany({ userRef: req.params.id }),
+      Favorite.deleteMany({ userId: req.params.id }),
+      Favorite.deleteMany({ listingId: { $in: listingIds } }),
+      User.findByIdAndDelete(req.params.id),
+    ]);
+
+    if (storageTargets.length) {
+      await deleteStorageFilesByUrl(storageTargets);
+    }
+
     res.clearCookie("access_token");
-    res.status(200).json("User has been deleted.");
+    res
+      .status(200)
+      .json({ message: "User and related data deleted successfully." });
   } catch (error) {
     next(error);
   }

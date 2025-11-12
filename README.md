@@ -66,6 +66,10 @@ Create the following files before running the project.
 MONGO=<your-mongodb-uri>
 JWT_SECRET=<random-long-string>
 DEFAULT_LISTING_IMAGE_URL=<optional-fallback-image-url>
+FIREBASE_PROJECT_ID=<firebase-project-id>
+FIREBASE_CLIENT_EMAIL=<firebase-service-account-email>
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
+FIREBASE_STORAGE_BUCKET=<firebase-storage-bucket>
 ```
 
 ### `client/.env`
