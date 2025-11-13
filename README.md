@@ -1,48 +1,42 @@
-# RealEstate Marketplace
+# AqarDot API
 
-Full-stack real-estate marketplace where visitors can browse, search, and filter listings while authenticated agents and owners can create, edit, and manage their properties. Signed-in users can favourite listings, manage their profile, and keep an up-to-date inventory.
-
----
-
-## Features
-
-- 🔐 **Authentication** – Email/password and Google OAuth with httpOnly JWT cookies.
-- 🏠 **Listing management** – Create, update, and delete listings with Firebase-hosted image galleries.
-- 🔎 **Powerful search** – Filter by purpose, category, location, pricing, amenities, and sort order.
-- ⭐ **Saved listings** – Persisted favourites per user with optimistic UI updates.
-- 📍 **Normalised locations** – Structured governorate/city data with optional suggested area capture.
-- 📱 **Responsive UI** – Modern React SPA backed by Vite, Tailwind, and Swiper sliders.
+Backend service for the AqarDot marketplace. This Express application exposes authentication, listing management, favorites, locations, and contact endpoints, and is meant to be deployed independently (e.g., on Render) with MongoDB Atlas and Firebase Storage as backing services.
 
 ---
 
-## Technology Stack
+## Key Features
 
-| Layer    | Tech                                                                        |
-| -------- | --------------------------------------------------------------------------- |
-| Frontend | React 19, Vite, React Router, Redux Toolkit + Persist, Tailwind CSS, Swiper |
-| Backend  | Node.js, Express 5, Mongoose 8, JWT, cookie-parser                          |
-| Database | MongoDB Atlas (or any MongoDB instance)                                     |
-| Storage  | Firebase Storage (for listing image uploads)                                |
+- 🔐 **Authentication & sessions** – Email/password and Google OAuth powered by JWT httpOnly cookies with optional email verification & password reset flows via Resend.
+- 🏠 **Listing CRUD** – Normalised residential/commercial schemas, phone validation, Firebase Storage cleanup, and location-aware search filters.
+- ⭐ **Favorites** – Lightweight collection per user with optimistic IDs endpoint for the client.
+- 📍 **Location normalization** – Governorate/city/area data seeded from Mongo, plus “suggested areas” capture when users type custom values.
+- ✉️ **Contact form relay** – Resend integration for website contact submissions.
 
 ---
 
-## Project Structure
+## Tech Stack
+
+| Layer        | Tech                                                                |
+| ------------ | ------------------------------------------------------------------- |
+| Runtime      | Node.js 18+, Express 5, Mongoose 8                                   |
+| Auth & Email | JWT (httpOnly cookies), bcryptjs, Google OAuth, Resend              |
+| Data         | MongoDB Atlas (listings, users, favorites, locations)               |
+| Storage      | Firebase Storage (listing images + avatar uploads)                  |
+| Tooling      | Nodemon (dev), seed scripts, modular controllers/routes/middlewares |
+
+---
+
+## Repository Layout
 
 ```
-realEstate/
-├── api/                 # Express REST API
-│   ├── controllers/     # Route handlers
-│   ├── models/          # Mongoose schemas
-│   ├── routes/          # API route definitions
-│   ├── seeds/           # Seed scripts (locations, etc.)
-│   └── utils/           # Shared helpers (auth, error handling)
-├── client/              # React single page application
-│   ├── src/
-│   │   ├── components/  # Reusable UI pieces
-│   │   ├── pages/       # Route-level pages
-│   │   ├── redux/       # Redux slices & store
-│   │   └── firebase.js  # Firebase initialisation
-├── package.json         # Root scripts and API dependencies
+realEstate-api/
+├── controllers/        # Route handlers (auth, listings, users, etc.)
+├── middlewares/        # Auth guards and shared middleware
+├── models/             # Mongoose schemas (Listing, User, Favorite, Location…)
+├── routes/             # Express routers mounted under /api/*
+├── seeds/              # Data loaders (governorates/cities)
+├── utils/              # Helpers (JWT, Firebase storage cleanup, errors)
+├── index.js            # Express bootstrap + Mongo connection
 └── README.md
 ```
 
@@ -50,102 +44,108 @@ realEstate/
 
 ## Prerequisites
 
-- Node.js 18+ and npm
-- MongoDB connection string (Atlas or local)
-- Firebase project configured for Storage uploads
+- Node.js **18 or newer** and npm
+- Hosted MongoDB instance (Atlas recommended)
+- Firebase project/service account with Storage enabled
+- Resend account (or update `contact.route.js` to your e-mail provider)
 
 ---
 
-## Environment Variables
-
-Create the following files before running the project.
-
-### `api/.env`
+## Environment Variables (`.env`)
 
 ```
-MONGO=<your-mongodb-uri>
+NODE_ENV=development
+PORT=3000
+MONGO=<mongodb+srv://...>
 JWT_SECRET=<random-long-string>
-DEFAULT_LISTING_IMAGE_URL=<optional-fallback-image-url>
+ACCESS_TOKEN_TTL=30m
+ACCESS_TOKEN_MAXAGE_MS=1800000
+CLIENT_URL=https://aqardot.com            # used for redirect after email verify/reset
+API_BASE_URL=https://api.aqardot.com      # public base URL used inside e-mails
+EMAIL_FROM="AqarDot <no-reply@aqardot.com>"
+RESEND_API_KEY=<resend-api-key>
+GOOGLE_CLIENT_ID=<google-oauth-client-id>
+DEFAULT_LISTING_IMAGE_URL=<optional-fallback-image>
+
+# Firebase Admin SDK
 FIREBASE_PROJECT_ID=<firebase-project-id>
-FIREBASE_CLIENT_EMAIL=<firebase-service-account-email>
+FIREBASE_CLIENT_EMAIL=<service-account-email>
 FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
-FIREBASE_STORAGE_BUCKET=<firebase-storage-bucket>
+FIREBASE_STORAGE_BUCKET=<project-id>.appspot.com
 ```
 
-### `client/.env`
-
-```
-VITE_FIREBASE_API_KEY=<firebase-api-key>
-VITE_FIREBASE_AUTH_DOMAIN=<firebase-auth-domain>
-VITE_FIREBASE_PROJECT_ID=<firebase-project-id>
-VITE_FIREBASE_STORAGE_BUCKET=<firebase-storage-bucket>
-VITE_FIREBASE_MESSAGING_SENDER_ID=<firebase-sender-id>
-VITE_FIREBASE_APP_ID=<firebase-app-id>
-VITE_FIREBASE_MEASUREMENT_ID=<optional-measurement-id>
-VITE_DEFAULT_LISTING_IMAGE=<optional-client-fallback-image-url>
-```
+> Never commit secrets. Use Render’s dashboard (or your platform of choice) to store them securely.
 
 ---
 
-## Getting Started
+## Local Development
 
 ```bash
-# 1. Install dependencies (API + client)
+# Install backend dependencies
 npm install
-npm install --prefix client
 
-# 2. Seed location data (optional but recommended)
+# (Optional) seed governorates/cities
 npm run seeds:locations
 
-# 3. Start the backend (Express + MongoDB)
+# Start the API with auto-reload
 npm run dev
-
-# 4. In another terminal, start the React client
-npm run dev --prefix client
 ```
 
-The API defaults to `http://localhost:3000`. Vite will start on `http://localhost:5173` (or the next available port) and proxies `/api` requests to the backend.
+The server listens on `http://localhost:3000` by default, exposes `/api/*` routes, and serves a `/api/health` endpoint for liveness checks.
 
 ---
 
-## Available Scripts
+## npm Scripts
 
-| Command                           | Description                                       |
-| --------------------------------- | ------------------------------------------------- |
-| `npm run dev`                     | Start API with nodemon (auto-restarts on changes) |
-| `npm run start`                   | Start API in production mode                      |
-| `npm run seeds:locations`         | Seed MongoDB with governorate/city data           |
-| `npm run dev --prefix client`     | Launch Vite dev server for the React app          |
-| `npm run build --prefix client`   | Build the client for production                   |
-| `npm run preview --prefix client` | Preview the built client bundle                   |
+| Command               | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `npm run dev`         | Start Express with nodemon and auto-connect to Mongo      |
+| `npm start`           | Production start (uses `node index.js`)                   |
+| `npm run seeds:locations` | Populate MongoDB with governorate/city fixtures      |
 
----
-
-## API Highlights
-
-- `POST /api/auth/signup` – Register a new user
-- `POST /api/auth/signin` – Email/password login
-- `POST /api/auth/google` – Google OAuth login
-- `POST /api/listings/create` – Create listing (auth required)
-- `GET /api/listings/get/:id` – Fetch listing by id
-- `GET /api/listings/get` – Search listings with query params
-- `POST /api/favorites/:listingId` – Add favourite (auth required)
-- `DELETE /api/favorites/:listingId` – Remove favourite
-- `GET /api/favorites/ids` – Fetch favourite ids for current user
-
-> See `api/routes/` for the full route map and `api/controllers/` for implementation details.
+There are no automated tests yet—add unit/integration suites before scaling traffic.
 
 ---
 
-## Contributing & Next Steps
+## Core Endpoints
 
-- Add automated tests (integration & e2e) to protect core flows
-- Enhance favourites with listing snapshots to avoid extra queries
-- Extend filtering (e.g. governorate/city dropdowns) on the client
-- Deploy strategy: host the API on a Node-friendly provider and serve the Vite build via CDN or static hosting
+- `POST /api/auth/signup` – Create an account (email/password).
+- `POST /api/auth/signin` – Issue JWT cookie for existing users.
+- `POST /api/auth/google` – Google OAuth login/sign-up.
+- `POST /api/auth/send-verification` & `GET /api/auth/verify-email` – Email verification flow.
+- `POST /api/listings/create` – Create listing (auth required).
+- `PATCH /api/listings/update/:id` / `DELETE /api/listings/delete/:id` – Manage owned listings.
+- `GET /api/listings/get` – Filter/search listings with query params.
+- `GET /api/locations/governorates` – Retrieve normalized location data.
+- `POST /api/favorites/:listingId` – Toggle favorites for the signed-in user.
+- `POST /api/contact` – Send web contact form submissions via Resend.
+
+Refer to the files inside `routes/` and `controllers/` for the full request/response contracts.
+
+---
+
+## Deployment (Render example)
+
+1. **Create a Web Service** on Render pointing to this repo (or its mirror).  
+2. **Environment**: Node 18+, Build Command `npm install`, Start Command `npm start`.  
+3. **Environment Variables**: add all keys listed above (Render’s `ENV VARS` tab).  
+4. **MongoDB / Firebase**: supply hosted connection strings and service account values.  
+5. **Scaling**: enable persistent connections (Render automatically keeps the instance warm); set health check path to `/api/health`.  
+6. **CORS**: update `allowList` in `index.js` whenever domains change (`https://aqardot.com`, staging domains, etc.).
+
+Roll out using your usual Git workflow—Render builds on push to the selected branch.
+
+---
+
+## Maintenance Checklist
+
+- Rotate the Firebase service-account key regularly and keep it out of git.
+- Monitor MongoDB performance (indexes exist on purpose/category/location/price).
+- Configure structured logging/alerting (e.g., Render logs + LogDNA, APM, uptime monitors).
+- Back up the `locations` data or regenerate it with `npm run seeds:locations` when needed.
 
 ---
 
 ## License
 
-This project is currently unlicensed. Add your organisation’s license information here if required.
+Pending final decision. Add your organisation’s license text here if required.
