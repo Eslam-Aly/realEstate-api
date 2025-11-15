@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "seeds:locations": "node seeds/seedLocations.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=test vitest run --pool=threads --maxConcurrency=1",
     "dev": "nodemon index.js",
     "start": "node index.js",
     "build": "npm ci --prefix client --include=dev && npm run build --prefix client"
@@ -26,5 +26,11 @@
     "mongoose": "^8.19.0",
     "nodemailer": "^7.0.10",
     "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "mongodb-memory-server": "^10.3.0",
+    "supertest": "^7.1.4",
+    "vitest": "^4.0.9"
   }
 }

@@ -102,8 +102,25 @@ The server listens on `http://localhost:3000` by default, exposes `/api/*` route
 | `npm run dev`         | Start Express with nodemon and auto-connect to Mongo      |
 | `npm start`           | Production start (uses `node index.js`)                   |
 | `npm run seeds:locations` | Populate MongoDB with governorate/city fixtures      |
+| `npm test`            | Run Vitest-based integration suite (in-memory MongoDB)   |
 
-There are no automated tests yet—add unit/integration suites before scaling traffic.
+### Tests
+
+The API ships with a Vitest + Supertest integration suite that boots an in-memory MongoDB instance (`mongodb-memory-server`) and exercises every major route:
+
+- **Auth core + auxiliaries** – signup/signin/signout/me plus send-verification/verify-email, password reset flows, and Google OAuth (mocks `OAuth2Client` + Resend).
+- **Listings / Favorites / Locations** – full CRUD, search filters, favorites toggles, and governorate/city/area tree responses.
+- **User profile** – public profile, update, delete (with Firebase storage cleanup mocked), and owned listings.
+- **Contact + health** – contact relay success/failure paths and `/api/health`.
+
+Run locally with:
+
+```bash
+cd realEstate-api
+npm test
+```
+
+> The test suite binds ephemeral localhost ports; it won’t run inside restricted sandboxes that forbid `mongodb-memory-server`.
 
 ---
 
