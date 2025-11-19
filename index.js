@@ -24,6 +24,7 @@ const allowList = new Set([
   // add your custom domain later, e.g. "https://app.your-domain.com"
   "https://www.aqardot.com",
   "https://aqardot.com",
+  "https://real-estate-client-git-staging-eslam-alys-projects.vercel.app",
 ]);
 
 // Matches Vercel preview deployments for this project
