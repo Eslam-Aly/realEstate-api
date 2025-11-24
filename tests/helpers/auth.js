@@ -19,8 +19,23 @@ export async function createTestUser({
 }
 
 export function buildAuthCookie(userId) {
-  const token = jwt.sign({ id: userId }, process.env.JWT_SECRET, {
-    expiresIn: process.env.ACCESS_TOKEN_TTL || "30m",
-  });
+  const token = jwt.sign(
+    { id: userId, typ: "access" },
+    process.env.JWT_SECRET,
+    {
+      expiresIn: process.env.ACCESS_TOKEN_TTL || "30m",
+    }
+  );
   return `access_token=${token}; Path=/; HttpOnly`;
+}
+
+export function buildRefreshCookie(userId) {
+  const token = jwt.sign(
+    { id: userId, typ: "refresh" },
+    process.env.JWT_REFRESH_SECRET || process.env.JWT_SECRET,
+    {
+      expiresIn: process.env.REFRESH_TOKEN_TTL || "7d",
+    }
+  );
+  return `refresh_token=${token}; Path=/; HttpOnly`;
 }

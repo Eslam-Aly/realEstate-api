@@ -5,6 +5,7 @@ import errorHandler from "../utils/error.js";
 import Listing from "../models/listing.model.js";
 import Favorite from "../models/favorite.model.js";
 import { deleteStorageFilesByUrl } from "../utils/firebaseStorage.js";
+import { authCookieOptions } from "./auth.controller.js";
 
 /**
  * Public endpoint: fetches limited public user info (username, avatar, createdAt).
@@ -99,7 +100,8 @@ export const deleteUser = async (req, res, next) => {
       await deleteStorageFilesByUrl(storageTargets);
     }
 
-    res.clearCookie("access_token");
+    res.clearCookie("access_token", authCookieOptions);
+    res.clearCookie("refresh_token", authCookieOptions);
     res
       .status(200)
       .json({ message: "User and related data deleted successfully." });

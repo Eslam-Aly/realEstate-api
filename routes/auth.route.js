@@ -9,6 +9,7 @@ import {
   verifyEmail,
   requestPasswordReset,
   resetPassword,
+  refresh,
 } from "../controllers/auth.controller.js";
 import { verifyAuth } from "../middlewares/auth.js";
 import User from "../models/user.model.js";
@@ -30,6 +31,7 @@ router.post("/signup", signup);
 router.post("/signin", signin);
 router.post("/google", google);
 router.get("/signout", signout);
+router.post("/refresh", refresh);
 router.post("/send-verification", sendEmailVerification);
 router.get("/verify-email", verifyEmail);
 router.post("/request-password-reset", requestPasswordReset);

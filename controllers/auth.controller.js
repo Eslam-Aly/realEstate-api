@@ -23,6 +23,12 @@ const ACCESS_TOKEN_TTL = process.env.ACCESS_TOKEN_TTL || "30m";
 const ACCESS_TOKEN_MAXAGE_MS = Number(
   process.env.ACCESS_TOKEN_MAXAGE_MS || 30 * 60 * 1000
 );
+const REFRESH_TOKEN_TTL = process.env.REFRESH_TOKEN_TTL || "7d";
+const REFRESH_TOKEN_MAXAGE_MS = Number(
+  process.env.REFRESH_TOKEN_MAXAGE_MS || 7 * 24 * 60 * 60 * 1000
+);
+const REFRESH_TOKEN_SECRET =
+  process.env.JWT_REFRESH_SECRET || process.env.JWT_SECRET;
 
 // Create short-lived signed tokens for actions (verify, reset)
 const makeActionToken = (payload, expiresIn) =>
@@ -60,6 +66,34 @@ const baseCookieOptions = {
   sameSite: isProduction ? "lax" : "lax",
   secure: isProduction,
   domain: isProduction ? ".aqardot.com" : undefined,
+};
+export const authCookieOptions = baseCookieOptions;
+
+const setAuthCookies = (res, userId) => {
+  const accessToken = jwt.sign(
+    { id: userId, typ: "access" },
+    process.env.JWT_SECRET,
+    { expiresIn: ACCESS_TOKEN_TTL }
+  );
+  const refreshToken = jwt.sign(
+    { id: userId, typ: "refresh" },
+    REFRESH_TOKEN_SECRET,
+    { expiresIn: REFRESH_TOKEN_TTL }
+  );
+
+  res.cookie("access_token", accessToken, {
+    ...baseCookieOptions,
+    maxAge: ACCESS_TOKEN_MAXAGE_MS,
+  });
+  res.cookie("refresh_token", refreshToken, {
+    ...baseCookieOptions,
+    maxAge: REFRESH_TOKEN_MAXAGE_MS,
+  });
+};
+
+const clearAuthCookies = (res) => {
+  res.clearCookie("access_token", { ...baseCookieOptions });
+  res.clearCookie("refresh_token", { ...baseCookieOptions });
 };
 
 /**
@@ -127,18 +161,10 @@ export const signin = async (req, res, next) => {
       );
     }
 
-    const token = jwt.sign({ id: isValidUser._id }, process.env.JWT_SECRET, {
-      expiresIn: ACCESS_TOKEN_TTL,
-    });
     const { password: pass, ...userData } = isValidUser._doc;
 
-    res
-      .cookie("access_token", token, {
-        ...baseCookieOptions,
-        maxAge: ACCESS_TOKEN_MAXAGE_MS,
-      })
-      .status(200)
-      .json(userData);
+    setAuthCookies(res, isValidUser._id);
+    res.status(200).json(userData);
   } catch (error) {
     next(error);
   }
@@ -199,18 +225,10 @@ export const google = async (req, res, next) => {
     }
 
     // Issue short-lived JWT and set cookie
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
-      expiresIn: ACCESS_TOKEN_TTL,
-    });
     const { password: pass, ...rest } = user._doc;
 
-    res
-      .cookie("access_token", token, {
-        ...baseCookieOptions,
-        maxAge: ACCESS_TOKEN_MAXAGE_MS,
-      })
-      .status(200)
-      .json(rest);
+    setAuthCookies(res, user._id);
+    res.status(200).json(rest);
   } catch (error) {
     if (error?.code === 11000) {
       const field = Object.keys(error.keyPattern || {})[0] || "field";
@@ -225,8 +243,39 @@ export const google = async (req, res, next) => {
  */
 export const signout = (req, res, next) => {
   try {
-    res.clearCookie("access_token", { ...baseCookieOptions });
+    clearAuthCookies(res);
     res.status(200).json({ message: "User signed out successfully" });
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
+ * Issues a new access token (and refresh token) when presented with a valid refresh token.
+ * Used by the frontend to silently re-authenticate when the short-lived access token expires.
+ */
+export const refresh = async (req, res, next) => {
+  try {
+    const refreshCookie = req.cookies?.refresh_token;
+    if (!refreshCookie) {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
+
+    let decoded;
+    try {
+      decoded = jwt.verify(refreshCookie, REFRESH_TOKEN_SECRET);
+      if (decoded.typ && decoded.typ !== "refresh") {
+        return res.status(401).json({ message: "Unauthorized" });
+      }
+    } catch {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
+
+    const user = await User.findById(decoded.id).select("-password").lean();
+    if (!user) return res.status(401).json({ message: "Unauthorized" });
+
+    setAuthCookies(res, user._id);
+    res.status(200).json({ user });
   } catch (error) {
     next(error);
   }

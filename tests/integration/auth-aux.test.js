@@ -131,5 +131,6 @@ describe("Auth auxiliary flows", () => {
     expect(created).toBeTruthy();
     const cookies = res.headers["set-cookie"] || [];
     expect(cookies.some((c) => c.startsWith("access_token="))).toBe(true);
+    expect(cookies.some((c) => c.startsWith("refresh_token="))).toBe(true);
   });
 });

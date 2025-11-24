@@ -2,7 +2,11 @@ import request from "supertest";
 import { describe, it, expect } from "vitest";
 import app from "../../index.js";
 import User from "../../models/user.model.js";
-import { createTestUser, buildAuthCookie } from "../helpers/auth.js";
+import {
+  createTestUser,
+  buildAuthCookie,
+  buildRefreshCookie,
+} from "../helpers/auth.js";
 
 const signupRoute = "/api/auth/signup";
 const signinRoute = "/api/auth/signin";
@@ -49,7 +53,7 @@ describe("Auth routes", () => {
     expect(res.body?.message).toBe("username, email and password are required");
   });
 
-  it("signs in a user and sets an access_token cookie", async () => {
+  it("signs in a user and sets access + refresh cookies", async () => {
     const email = `signin_${Date.now()}@example.com`;
     const plainPassword = "Password123!";
     await request(app)
@@ -65,6 +69,9 @@ describe("Auth routes", () => {
     expect(Array.isArray(signinCookies)).toBe(true);
     expect(
       signinCookies.some((cookie) => cookie.startsWith("access_token="))
+    ).toBe(true);
+    expect(
+      signinCookies.some((cookie) => cookie.startsWith("refresh_token="))
     ).toBe(true);
     expect(res.body).toMatchObject({
       email,
@@ -124,5 +131,27 @@ describe("Auth routes", () => {
           /expires=thu, 01 jan 1970/i.test(cookie)
       )
     ).toBe(true);
+    expect(
+      cookies.some(
+        (cookie) =>
+          cookie.startsWith("refresh_token=") &&
+          /expires=thu, 01 jan 1970/i.test(cookie)
+      )
+    ).toBe(true);
+  });
+
+  it("refreshes tokens with a valid refresh cookie", async () => {
+    const { user } = await createTestUser();
+    const refreshCookie = buildRefreshCookie(user._id);
+
+    const res = await request(app)
+      .post("/api/auth/refresh")
+      .set("Cookie", refreshCookie);
+
+    expect(res.status).toBe(200);
+    const cookies = res.headers["set-cookie"] || [];
+    expect(cookies.some((c) => c.startsWith("access_token="))).toBe(true);
+    expect(cookies.some((c) => c.startsWith("refresh_token="))).toBe(true);
+    expect(res.body?.user?._id).toBe(user._id.toString());
   });
 });
