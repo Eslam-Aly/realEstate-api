@@ -12,6 +12,9 @@ export async function verifyAuth(req, res, next) {
     if (!token) return res.status(401).json({ message: "Unauthorized" });
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    if (decoded.typ && decoded.typ !== "access") {
+      return res.status(401).json({ message: "Unauthorized" });
+    }
     const user = await User.findById(decoded.id)
       .select("_id email emailVerified username")
       .lean();
