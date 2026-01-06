@@ -165,4 +165,4 @@ Roll out using your usual Git workflow—Render builds on push to the selected b
 
 ## License
 
-Pending final decision. Add your organisation’s license text here if required.
+Pending final decision.
